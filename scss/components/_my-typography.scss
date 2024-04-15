@@ -35,23 +35,22 @@ $body-font-family: "Montserrat", sans-serif;
 
 	&--description {
 		font-size: 1.5rem;
+		line-height: 2rem;
 		display: block;
-		// margin-top: 1.2rem;
-		// text-transform: none;
 	}
 }
 
-.display-3 {
-	font-family: $body-font-family;
+// .display-3 {
+// 	font-family: $body-font-family;
 
-	&--title {
-		font-size: 4rem;
-		text-transform: capitalize;
-		font-family: $heading-font-family;
-		// display: inline-block;
-		// background-image: linear-gradient(to right, $primary, $secondary);
-		// background-clip: text;
-		// -webkit-background-clip: text;
-		// -webkit-text-fill-color: transparent;
-	}
-}
+// 	&--title {
+
+// 		text-transform: capitalize;
+// 		font-family: $heading-font-family;
+// 		// display: inline-block;
+// 		// background-image: linear-gradient(to right, $primary, $secondary);
+// 		// background-clip: text;
+// 		// -webkit-background-clip: text;
+// 		// -webkit-text-fill-color: transparent;
+// 	}
+// }
