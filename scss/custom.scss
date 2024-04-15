@@ -3,6 +3,10 @@
 
 // Include any default variable overrides here (though functions won't be available)
 @import "../scss/components/my-variable";
+@import "../scss/components/my-typography";
+@import "../scss/components/my-mixins";
 @import "../node_modules/bootstrap/scss/bootstrap";
 
 // Then add additional custom code here
+@import "../scss/sections/1-navbar";
+@import "../scss/sections/2-hero-section";
