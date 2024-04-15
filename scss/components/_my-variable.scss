@@ -1,5 +1,10 @@
 // Mina variabler
 
 // Färger
-$bg-primary: #fd7e14; //Orange
+$primary: #fd7e14; //--bs-orange
 $secondary: #6f42c1; //purple
+
+$theme-colors: (
+	"primary": $primary,
+	"secondary": $secondary,
+);
