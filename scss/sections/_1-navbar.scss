@@ -1,6 +1,9 @@
 // Navbar section
-
 .navbar-brand {
 	font-family: $header-font-family;
-	// font-size: 60px;
+	font-size: 60px;
+}
+
+.navbar {
+	@include gradient-background($color-gradient-start, $color-gradient-end);
 }

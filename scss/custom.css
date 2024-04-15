@@ -11404,4 +11404,9 @@ textarea.form-control-lg {
 }
 .navbar-brand {
   font-family: "Sacramento";
+  font-size: 60px;
+}
+
+.navbar {
+  background: linear-gradient(to right, #fd7e14, #6f42c1);
 }/*# sourceMappingURL=custom.css.map */
