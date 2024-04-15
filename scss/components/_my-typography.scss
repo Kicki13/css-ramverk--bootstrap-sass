@@ -9,3 +9,21 @@ $header-font-family: "Sacramento";
 $body-font-family: "Montserrat", sans-serif;
 
 // $bs-navbar-brand-font-size: 1.5rem;
+
+.display-2 {
+	margin-bottom: 1rem;
+	font-family: $body-font-family;
+
+	&--hero {
+		// display: inline-block;
+		font-size: 5rem;
+		font-family: $header-font-family;
+	}
+
+	&--description {
+		font-size: 1.5rem;
+		display: block;
+		// margin-top: 1.2rem;
+		// text-transform: none;
+	}
+}

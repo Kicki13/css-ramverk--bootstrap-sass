@@ -1,0 +1,4 @@
+// Hero section
+.hero-section {
+	@include gradient-background($color-gradient-start, $color-gradient-end);
+}
