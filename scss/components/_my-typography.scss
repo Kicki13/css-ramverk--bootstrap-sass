@@ -5,7 +5,7 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
 
 // $font-family-sans-serif: "Sacramento", sans-serif;
-$header-font-family: "Sacramento";
+$heading-font-family: "Sacramento";
 $body-font-family: "Montserrat", sans-serif;
 
 // $bs-navbar-brand-font-size: 1.5rem;
@@ -14,10 +14,23 @@ $body-font-family: "Montserrat", sans-serif;
 	margin-bottom: 1rem;
 	font-family: $body-font-family;
 
-	&--hero {
+	&--heading {
 		// display: inline-block;
 		font-size: 5rem;
-		font-family: $header-font-family;
+		font-family: $heading-font-family;
+	}
+
+	&--title {
+		font-size: 4rem;
+		// text-transform: capitalize;
+		font-family: $heading-font-family;
+	}
+
+	&--introduction {
+		font-family: $body-font-family;
+		font-size: 2rem;
+		line-height: 2.8rem;
+		display: block;
 	}
 
 	&--description {
@@ -25,5 +38,20 @@ $body-font-family: "Montserrat", sans-serif;
 		display: block;
 		// margin-top: 1.2rem;
 		// text-transform: none;
+	}
+}
+
+.display-3 {
+	font-family: $body-font-family;
+
+	&--title {
+		font-size: 4rem;
+		text-transform: capitalize;
+		font-family: $heading-font-family;
+		// display: inline-block;
+		// background-image: linear-gradient(to right, $primary, $secondary);
+		// background-clip: text;
+		// -webkit-background-clip: text;
+		// -webkit-text-fill-color: transparent;
 	}
 }
