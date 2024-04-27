@@ -35,9 +35,11 @@
               Mer info
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#">Om Mig</a></li>
-                    <li><a class="dropdown-item" href="#">FAQ</a></li>
-                    <li><a class="dropdown-item" href="#">Referenser</a></li>
+                    <li><a class="dropdown-item" href="#work-section">Arbeten</a></li>
+                    <li><a class="dropdown-item" href="#referenser-section">Referenser</a></li>
+                    <li><a class="dropdown-item" href="#about-section">Om mig</a></li>
+                    <li><a class="dropdown-item" href="#pris-section">Prislista</a></li>
+                    <li><a class="dropdown-item" href="#blogg-section">Blogg</a></li>
                 </ul>
             </li>
           <li class="nav-item fw-semibold text-uppercase">
@@ -59,20 +61,20 @@
         <div class="modal-body">
             <form>
                 <div class="mb-3">
-                    <select class="form-select">
-                      <option>Best time to call</option>
-                      <option value="morning">Morning</option>
-                      <option value="afternoon">Afternoon</option>
-                      <option value="evening">Evening</option>
-                    </select>
+                    <label for="namn" class="col-form-label">Ditt namn</label>
+                    <input type="text" class="form-control" id="namn">
                   </div>
+                  <div class="input-group mb-3">
+                      <span class="input-group-text">@</span>
+                      <input type="email" class="form-control" placeholder="Email" />
+                    </div>
                 <div class="mb-3">
-                  <label for="namn" class="col-form-label">Ditt namn</label>
-                  <input type="text" class="form-control" id="namn">
-                </div>
-                <div class="input-group mb-3">
-                    <span class="input-group-text">@</span>
-                    <input type="email" class="form-control" placeholder="Email" />
+                    <select class="form-select">
+                      <option>Ämne</option>
+                      <option value="morning">Anställning</option>
+                      <option value="afternoon">Uppdrag</option>
+                      <option value="evening">Övrigt</option>
+                    </select>
                   </div>
                 <div class="mb-3">
                   <label for="message-text" class="col-form-label">Ditt meddelande</label>
@@ -222,13 +224,252 @@
 </section>
 
 <!-- **********************************************************
-            4 - Referenser section
+            4 - work section
 *************************************************************** -->
-<section id="referenser-section" class="referense-section">
+<section id="work-section" class="work-section pt-5">
+        <div class="container">
+          <div class="row text-center mt-5">
+            <h1 class="pt-5 display-2--heading">Mitt fantastiska arbete</h1>
+            <div class="heading-line"></div>
+            <p class="lead">
+                Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att vara involverade i. Varje projekt representerar en unik utmaning där jag har använt min expertis och kreativitet för att leverera enastående resultat.
+            </p>
+          </div>
+          <!-- FILTER BUTTONS  -->
+          <div class="row mt-5 mb-4 g-3 text-center">
+            <!-- Filter funktion med Isotop  https://isotope.metafizzy.co/ -->
+            <div id="isotope-filters" class="col-md-12">
+                <button class="btn btn-outline-primary active" type="button" data-filter="*"><span>Alla</span></button>
+				<button class="btn btn-outline-primary" type="button" data-filter=".webb"><span>Webb</span></button>
+				<button class="btn btn-outline-primary" type="button" data-filter=".design"><span>Design</span></button>
+				<button class="btn btn-outline-primary" type="button" data-filter=".mobil"><span>Mobil</span></button>
+				<button class="btn btn-outline-primary" type="button" data-filter=".foto"><span>Foto</span></button>
+            </div>
+          </div>
+      
+          <!-- Arbete poster  -->
+          <section id="work-wrapper" data-wow-duration="1s" data-wow-delay=".5s">
+            <div class="container-fluid">
+                <div class="row">
+                    <div id="isotope-container">
+                        <!-- work 1 -->
+                        <div class="col-lg-4 col-md-6 webb design">
+                            <div class="portfolio-box shadow">
+                                <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <div class="caption">
+                                        <h4>project name goes here 1</h4>
+                                        <p>category project</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- work 1 end -->
+
+                        <!-- work 2 -->
+                        <div class="col-lg-4 col-md-6 design foto">
+                            <div class="portfolio-box shadow">
+                                <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                                <div class="portfolio-info">
+                                    <div class="caption">
+                                        <h4>project name goes here 1</h4>
+                                        <p>category project</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- work 2 end -->
+
+                    </div>
+                </div>
+            </div>
+          </section>
+        </div>
+</section>
+
+<!-- **********************************************************
+            5 - Referenser section
+*************************************************************** -->
+<section id="referenser-section" class="referenser pt-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+    <div class="container">
+        <div class="row text-center text-white mt-5">
+          <h1 class="pt-5 display-2--heading">Referenser från mina sammarbetspartern</h1>
+                   
+        </div>
+    </div>
+    <div class="row align-items-center">
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <!-- CAROUSEL ITEM 1 -->
+            <div class="carousel-item active">
+              <!-- testimonials card  -->
+              <div class="referenser__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae. Distinctio.
+                  <i class="fas fa-quote-right"></i>
+                  <div class="ratings p-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </p>
+              </div>
+              <!-- client picture  -->
+              <div class="referenser__picture">
+                <img src="images/testimonials/client-1.jpg" alt="client-1 picture" class="rounded-circle img-fluid">
+              </div>
+              <!-- client name & role  -->
+              <div class="referenser__name">
+                <h3>Patrick Muriungi</h3>
+                <p class="fw-light">CEO & founder</p>
+              </div>
+            </div>     
+            <!-- CAROUSEL ITEM 2 -->
+            <div class="carousel-item">
+              <!-- testimonials card  -->
+              <div class="referenser__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae. Distinctio.
+                  <i class="fas fa-quote-right"></i>
+                  <div class="ratings p-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </p>
+              </div>
+              <!-- client picture  -->
+              <div class="referenser__picture">
+                <img src="images/testimonials/client-2.jpg" alt="client-2 picture" class="rounded-circle img-fluid">
+              </div>
+              <!-- client name & role  -->
+              <div class="referenser__name">
+                <h3>Joy Marete</h3>
+                <p class="fw-light">Finance Manager</p>
+              </div>
+            </div>     
+            <!-- CAROUSEL ITEM 3 -->
+            <div class="carousel-item">
+              <!-- testimonials card  -->
+              <div class="referenser__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae. Distinctio.
+                  <i class="fas fa-quote-right"></i>
+                  <div class="ratings p-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </p>
+              </div>
+              <!-- client picture  -->
+              <div class="referenser__picture">
+                <img src="images/testimonials/client-3.jpg" alt="client-3 picture" class="rounded-circle img-fluid">
+              </div>
+              <!-- client name & role  -->
+              <div class="referenser__name">
+                <h3>ClaireBelle Zawadi</h3>
+                <p class="fw-light">Global brand manager</p>
+              </div>
+            </div>     
+            <!-- CAROUSEL ITEM 4 -->
+            <div class="carousel-item">
+              <!-- testimonials card  -->
+              <div class="referenser__card">
+                <p class="lh-lg">
+                  <i class="fas fa-quote-left"></i>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                  Placeat aut consequatur illo animi optio exercitationem doloribus eligendi iusto atque repudiandae. Distinctio.
+                  <i class="fas fa-quote-right"></i>
+                  <div class="ratings p-1">
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                    <i class="fas fa-star"></i>
+                  </div>
+                </p>
+              </div>
+              <!-- client picture  -->
+              <div class="referenser__picture">
+                <img src="images/testimonials/client-4.jpg" alt="client-4 picture" class="rounded-circle img-fluid">
+              </div>
+              <!-- client name & role  -->
+              <div class="referenser__name">
+                <h3>Uhuru Kenyatta</h3>
+                <p class="fw-light">C.E.O & Founder</p>
+              </div>
+            </div>     
+          </div>
+          <div class="text-center">
+            <button class="btn btn-outline-light fas fa-long-arrow-alt-left" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          </button>
+          <button class="btn btn-outline-light fas fa-long-arrow-alt-right" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+
+  
+</section>
+
+<!-- **********************************************************
+            6 - Om mig section
+*************************************************************** -->
+<section id="about-section" class="about-section pt-5">
+    <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="pt-5 display-2--heading">Vem är då jag?</h1>
+          <div class="heading-line"></div>
+        </div>
+    </div>
     
 </section>
+
+<!-- **********************************************************
+            7 - Priser section
+*************************************************************** -->
+<section id="pris-section" class="pris-section pt-5">
+    <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="pt-5 display-2--heading">Priser på mina tjänster</h1>
+          <div class="heading-line"></div>
+        </div>
+    </div>
+    
+</section>
+
+<!-- **********************************************************
+            8 - Bloggen section
+*************************************************************** -->
+<section id="blogg-section" class="blogg-section pt-5">
+    <div class="container">
+        <div class="row text-center mt-5">
+          <h1 class="pt-5 display-2--heading">Senast på bloggen</h1>
+          <div class="heading-line"></div>
+        </div>
+    </div>
+    
+</section>
+
  <!-- **********************************************************
-            5 - footer section
+           9 - footer section
 *************************************************************** -->               
 <footer class="footer">
     <div class="container">
@@ -367,6 +608,14 @@
   <i class="fas fa-chevron-up"></i>
 </a>
 
+<!-- Bootstap  -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Isotope  -->
+<script src="js/isotope/isotope.pkgd.min.js"></script>
+
+<!-- Extern JavaScript -->
+<script src="js/script.js"></script>
+
 </body>
 </html>

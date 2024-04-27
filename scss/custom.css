@@ -11467,4 +11467,121 @@ textarea.form-control-lg {
 i {
   font-size: 6rem;
   color: #6610f2;
+}
+
+.referenser {
+  position: relative;
+  padding: 0;
+  background: linear-gradient(to right, #fd7e14, #6610f2);
+}
+.referenser__card {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 2rem 1.25rem;
+  border-radius: 0.625rem;
+  height: auto;
+  text-align: center;
+}
+.referenser__card i {
+  font-size: 1.5rem;
+  color: rgba(253, 126, 20, 0.7);
+}
+.referenser__card .ratings i {
+  color: rgba(253, 126, 20, 0.7);
+  font-size: 1rem;
+}
+.referenser__picture {
+  width: 6rem;
+  height: 6rem;
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.referenser__picture img {
+  border: 0.325rem solid rgba(253, 126, 20, 0.7);
+}
+.referenser__name {
+  padding-top: 3rem;
+  margin-bottom: 1rem;
+  text-align: center;
+  font-weight: 500;
+  color: white;
+}
+.referenser__name h3, .referenser__name .h3 {
+  padding-top: 0.8rem;
+  text-transform: capitalize;
+}
+.referenser__name p {
+  padding-bottom: 2rem;
+  text-transform: capitalize;
+}
+
+.footer {
+  padding-top: 1rem;
+}
+
+.contact-box {
+  position: relative;
+}
+.contact-box__icon {
+  width: 2rem;
+  stroke: #fd7e14;
+  padding-top: 0.5rem;
+}
+.contact-box__info {
+  padding: 0.4rem;
+  font-weight: 600;
+}
+.contact-box__info--title {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+.contact-box__info--subtitle {
+  font-size: 0.8rem;
+  text-decoration: none;
+}
+
+.footer-sm a {
+  color: white;
+}
+.footer-sm a i {
+  font-size: 1rem;
+  margin-left: 1rem;
+}
+
+.campany-list {
+  display: block;
+  list-style-type: none;
+  position: relative;
+}
+.campany-list li {
+  margin-bottom: 0.5rem;
+  text-decoration: none;
+}
+.campany-list li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: black;
+}
+.footer-bottom__copyright {
+  font-weight: 400;
+}
+.footer-bottom__copyright a {
+  text-decoration: none;
+}
+
+.back-to-top {
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: white;
+  font-size: 1rem;
 }/*# sourceMappingURL=custom.css.map */
