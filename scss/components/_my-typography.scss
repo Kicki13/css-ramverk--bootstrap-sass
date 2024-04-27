@@ -40,17 +40,16 @@ $body-font-family: "Montserrat", sans-serif;
 	}
 }
 
-// .display-3 {
-// 	font-family: $body-font-family;
+.display-3 {
+	font-family: $body-font-family;
 
-// 	&--title {
-
-// 		text-transform: capitalize;
-// 		font-family: $heading-font-family;
-// 		// display: inline-block;
-// 		// background-image: linear-gradient(to right, $primary, $secondary);
-// 		// background-clip: text;
-// 		// -webkit-background-clip: text;
-// 		// -webkit-text-fill-color: transparent;
-// 	}
-// }
+	&--title {
+		font-size: 1.2rem;
+		text-transform: capitalize;
+		font-weight: 600;
+		font-family: $heading-font-family;
+		display: inline-block;
+		background-image: linear-gradient(to right, $primary, $secondary);
+		background-clip: text;
+	}
+}
