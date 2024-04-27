@@ -2,3 +2,8 @@
 .hero-section {
 	@include gradient-background($color-gradient-start, $color-gradient-end);
 }
+
+i {
+	font-size: 6rem;
+	color: $secondary;
+}
