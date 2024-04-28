@@ -1,5 +1,9 @@
 @charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
+.pt-10 {
+  padding-top: 10rem;
+}
+
 .display-2 {
   margin-bottom: 1rem;
   font-family: "Montserrat", sans-serif;
@@ -11489,32 +11493,24 @@ i {
   background: linear-gradient(to right, #fd7e14, #6610f2);
 }
 .referenser__card {
-  background-color: rgba(255, 255, 255, 0.8);
-  padding: 2rem 1.25rem;
-  border-radius: 0.625rem;
-  height: auto;
+  background-color: white;
+  padding: 2rem;
   text-align: center;
 }
 .referenser__card i {
   font-size: 1.5rem;
   color: rgba(253, 126, 20, 0.7);
 }
-.referenser__card .ratings i {
-  color: rgba(253, 126, 20, 0.7);
-  font-size: 1rem;
-}
-.referenser__picture {
-  width: 6rem;
-  height: 6rem;
+.referenser__bild {
+  width: 8rem;
+  height: 8rem;
   position: absolute;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
-.referenser__picture img {
+.referenser__bild img {
   border: 0.325rem solid rgba(253, 126, 20, 0.7);
 }
 .referenser__name {
-  padding-top: 3rem;
+  padding-top: 6rem;
   margin-bottom: 1rem;
   text-align: center;
   font-weight: 500;

@@ -4,31 +4,22 @@
 	@include gradient-background($color-gradient-start, $color-gradient-end);
 
 	&__card {
-		background-color: rgba(white, 0.8);
-		padding: 2rem 1.25rem;
-		border-radius: 0.625rem;
-		height: auto;
+		background-color: white;
+		padding: 2rem;
 		text-align: center;
 
 		i {
 			font-size: 1.5rem;
 			color: rgba($primary, 0.7);
 		}
-
-		.ratings {
-			i {
-				color: rgba($primary, 0.7);
-				font-size: 1rem;
-			}
-		}
 	}
 
-	&__picture {
-		width: 6rem;
-		height: 6rem;
+	&__bild {
+		width: 8rem;
+		height: 8rem;
 		position: absolute;
-		left: 50%;
-		transform: translate(-50%, -50%);
+		// left: 50%;
+		// transform: translate(-50%, -50%);
 
 		img {
 			border: 0.325rem solid rgba($primary, 0.7);
@@ -36,7 +27,7 @@
 	}
 
 	&__name {
-		padding-top: 3rem;
+		padding-top: 6rem;
 		margin-bottom: 1rem;
 		text-align: center;
 		font-weight: 500;
