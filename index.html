@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-
-<html lang="sv">
+<html lang="sv"></html>
+<!-- <html lang="sv" data-bs-theme="dark"> -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -9,7 +9,17 @@
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
-	<body>
+    <body>
+	<!-- <body data-bs-theme="dark"> 
+         <div class="form-check form-switch mx-4">
+            <input class="form-check-input p-2"
+            type="checkbox"
+            role="switch"
+            id="flexSwitchCheckChecked"
+            checked
+            online="myFunction()"
+            />
+        </div> -->
 		
 <!-- **********************************************************
             1 - Navbar Section
@@ -248,7 +258,7 @@
             </div>
           </div>
       
-          <!-- Arbete poster  -->
+          <!-- Work poster  -->
           <!-- <section id="work-wrapper" data-wow-duration="1s" data-wow-delay=".5s"> -->
             <div class="album py-5 bg-light">
             <div class="container">
@@ -546,15 +556,17 @@
           <div class="heading-line"></div>
         </div>
     </div>
-    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,176C320,171,400,149,480,154.7C560,160,640,192,720,186.7C800,181,880,139,960,149.3C1040,160,1120,224,1200,250.7C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
 </section>
 
  <!-- **********************************************************
            9 - footer section
 *************************************************************** -->               
-<footer class="footer">
+<footer id="footer-section" class="footer-section pt-5 py-5">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,176C320,171,400,149,480,154.7C560,160,640,192,720,186.7C800,181,880,139,960,149.3C1040,160,1120,224,1200,250.7C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
     <div class="container">
-        <footer class="py-5">
+        
+        <!-- <footer class="py-5"> -->
           <div class="row">
             <div class="col-6 col-md-2 mb-3">
               <h5>Section</h5>
@@ -609,16 +621,23 @@
               <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
               <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
-          </div>  
+          </div> 
+          <!-- **********************************************************
+            Knapp tillbaka till början
+*************************************************************** -->
+          <a href="#" class="shadow btn-primary rounded-circle back-to-top">
+            <i class="fas fa-chevron-up"></i>
+          </a> 
   </footer>
+
 <!-- **********************************************************
             Knapp tillbaka till början
 *************************************************************** -->   
 
 
-<a href="#" class="shadow btn-primary rounded-circle back-to-top">
+<!-- <a href="#" class="shadow btn-primary rounded-circle back-to-top">
   <i class="fas fa-chevron-up"></i>
-</a>
+</a> -->
 
 <!-- Bootstap  -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>

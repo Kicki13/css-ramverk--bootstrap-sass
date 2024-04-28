@@ -11525,65 +11525,8 @@ i {
   text-transform: capitalize;
 }
 
-.footer {
-  padding-top: 1rem;
-}
-
-.contact-box {
-  position: relative;
-}
-.contact-box__icon {
-  width: 2rem;
-  stroke: #fd7e14;
-  padding-top: 0.5rem;
-}
-.contact-box__info {
-  padding: 0.4rem;
-  font-weight: 600;
-}
-.contact-box__info--title {
-  color: white;
-  text-decoration: none;
-  font-size: 1rem;
-}
-.contact-box__info--subtitle {
-  font-size: 0.8rem;
-  text-decoration: none;
-}
-
-.footer-sm a {
-  color: white;
-}
-.footer-sm a i {
-  font-size: 1rem;
-  margin-left: 1rem;
-}
-
-.campany-list {
-  display: block;
-  list-style-type: none;
-  position: relative;
-}
-.campany-list li {
-  margin-bottom: 0.5rem;
-  text-decoration: none;
-}
-.campany-list li a {
-  color: white;
-  text-decoration: none;
-}
-
-.footer-bottom {
-  background-color: black;
-}
-.footer-bottom__copyright {
-  font-weight: 400;
-}
-.footer-bottom__copyright a {
-  text-decoration: none;
-}
-
 .back-to-top {
+  background-color: black;
   position: fixed;
   width: 3rem;
   height: 3rem;
