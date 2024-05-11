@@ -1,30 +1,17 @@
 <!DOCTYPE html>
 <html lang="sv"></html>
-<!-- <html lang="sv" data-bs-theme="dark"> -->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <!-- <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap" rel="stylesheet"> -->
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
     <body>
-	<!-- <body data-bs-theme="dark"> 
-         <div class="form-check form-switch mx-4">
-            <input class="form-check-input p-2"
-            type="checkbox"
-            role="switch"
-            id="flexSwitchCheckChecked"
-            checked
-            online="myFunction()"
-            />
-        </div> -->
-		
 <!-- **********************************************************
-            1 - Navbar Section
+            1 - Navbar Section med modal
 *************************************************************** -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-primary shadow sticky-top">
+<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
     <div class="container">
         <a class="navbar-brand" href="#">Christina Näsström
             <!-- <img src="https://placehold.co/400x100" alt="Logga" /> -->
@@ -33,35 +20,47 @@
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav ms-auto">
+        <ul class="navbar-nav nav-underline ms-auto">
             <li class="nav-item">
                 <a class="nav-link me-3 fw-semibold text-uppercase active" aria-current="page" href="#">Hem</a>
             </li>
             <li class="nav-item">
-                <a class="nav-link me-3 fw-semibold text-uppercase" href="#service-section">Tjänster</a>
+                <a class="nav-link me-3 fw-semibold text-uppercase" href="#work-section">Arbeten</a>
             </li>
             <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle me-3 fw-semibold text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                <a class="nav-link dropdown-toggle fw-semibold text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Mer info
                 </a>
                 <ul class="dropdown-menu">
-                    <li><a class="dropdown-item" href="#work-section">Arbeten</a></li>
+                    <li><a class="dropdown-item" href="#service-section">Tjänster</a></li>
                     <li><a class="dropdown-item" href="#referenser-section">Referenser</a></li>
                     <li><a class="dropdown-item" href="#about-section">Om mig</a></li>
                     <li><a class="dropdown-item" href="#pris-section">Prislista</a></li>
                     <li><a class="dropdown-item" href="#blogg-section">Blogg</a></li>
                 </ul>
-            </li>
-          <li class="nav-item fw-semibold text-uppercase">
-            <a class="btn btn-outline-primary btn-border-radius text-white p-2 px-4 mx-4" data-bs-toggle="modal"
+            </li> <!--btn btn-outline-primary rounded-pill text-light fw-semibold text-uppercase px-4 mx-3 -->
+          <li class="nav-item">
+            <a class="btn btn-outline-primary text-light fw-semibold text-uppercase px-3 mx-3" data-bs-toggle="modal"
             data-bs-target="#myModal" href="#">Kontakt</a>
+          </li>
+          <li class="nav-item">
+            <div class="btn-group">
+                <button class="btn btn-light btn-light-dark fw-semibold text-uppercase btn-sm" data-bs-theme-value="light">Ljust</button>
+                <button class="btn btn-dark btn-light-dark fw-semibold text-uppercase btn-sm" data-bs-theme-value="dark">Mörkt</button>
+               
+            </div>
+                    <!-- <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>  -->
+                    <!-- Set the switch to "checked" by default -->
+                    <!-- <label class="form-check-label" for="darkModeSwitch">Mörk/ljust läge</label>
+                </div> -->
           </li>
         </ul>
       </div>
     </div>
   </nav>
 <!-- Modal -->
-<div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
@@ -71,30 +70,30 @@
         <div class="modal-body">
             <form>
                 <div class="mb-3">
-                    <label for="namn" class="col-form-label">Ditt namn</label>
-                    <input type="text" class="form-control" id="namn">
-                  </div>
-                  <div class="input-group mb-3">
+                    <input type="text" class="form-control" placeholder="Namn">
+                </div>
+                <div class="input-group mb-3">
                       <span class="input-group-text">@</span>
                       <input type="email" class="form-control" placeholder="Email" />
-                    </div>
+                </div>
                 <div class="mb-3">
                     <select class="form-select">
-                      <option>Ämne</option>
-                      <option value="anstallning">Anställning</option>
-                      <option value="konsult_uppdrag">Konsult uppdrag</option>
-                      <option value="prata">Bara prata</option>
-                      <option value="annat">Annat</option>
+                        <option>Ämne</option>
+                        <option value="anstallning">Anställning</option>
+                        <option value="konsult_uppdrag">Konsult uppdrag</option>
+                        <option value="prata">Bara prata</option>
+                        <option value="annat">Annat</option>
                     </select>
-                  </div>
-                <div class="mb-3">
-                  <label for="message-text" class="col-form-label">Ditt meddelande</label>
-                  <textarea class="form-control" id="message-text"></textarea>
                 </div>
+                <div class="mb-3">
+                  <textarea class="form-control" id="message-text" placeholder="Meddelande"></textarea>
+                </div>
+                <div class="mb-3">
+                    <input type="checkbox" class="form-check-input" id="check" />
+                    <label for="check" class="form-check-label"> Är du redo att skicka meddelandet ?</label>
+                  </div>
+                  <button type="button" class="btn btn-primary">Skicka</button>
               </form>
-        </div>
-        <div class="modal-footer">
-          <button type="button" class="btn btn-primary">Skicka</button>
         </div>
       </div>
     </div>
@@ -107,44 +106,320 @@
 <section id="hero-section" class="hero-section">
     <div class="container">
         <div class="row align-items-center"> 
-            <!-- <div class="row align-items-center text-white">  -->
             <div class="col-md-10 text-start pt-5">
                 <h1 class="display-2">
-                    <span class="display-2--heading text-white">Upptäck mästaren bakom webben...</span>
+                    <span class="display-2--heading text-light"> Upptäck mästaren bakom webben... </span>
                 </h1>
             </div>
             <div class="row pt-3">
                 <div class="col-md-6 text-start">
-                    <h1 class="display-2">
-                        <span class="display-2--description lh-base text-white">Stig in i den digitala världen och möt visionära webmaster, Christina. Med en passion för pixlar och en fingertoppskänsla för kod är Christina arkitekten bakom den sömlösa online-upplevelsen du snart ska utforska. Beväpnad med kreativitet och teknisk skicklighet väver hon samman design och funktionalitet för att skapa fängslande webbplatser som lämnar ett bestående intryck.</span>
-                    </h1>
-                    <!-- btn-border-radius<i class="bi bi-envelope"></i> -->
-                    <button type="button" class="btn-lg rounded-pill btn-rounded">Vem är vår webmaster?<span><i class="bi-alarm"></i></span></button>
+                    <!-- Text vänstersida -->
+                    <div class="text-container pt-3">
+                        <h1 class="display-2">
+                            <span class="display-2--description lh-base text-light">Stig in i den digitala världen och möt visionära webmaster, Christina. Med en passion för pixlar och en fingertoppskänsla för kod är Christina arkitekten bakom den sömlösa online-upplevelsen du snart ska utforska. Beväpnad med kreativitet och teknisk skicklighet väver hon samman design och funktionalitet för att skapa fängslande webbplatser som lämnar ett bestående intryck.</span>
+                        </h1>
+                        <!-- type="button" role="button" -->
+                        <!-- class="btn-lg rounded-pill btn-rounded" -->
+                        <a href="#about-section" class="shadow btn btn-hero position-relative btn-lg bg-body"> Vem är vår webmaster? <span class="badge text-bg-primary position-absolute top-50"><i class="bi bi-arrow-right"></i></span></a>
+                    </div>
                 </div>
-                        <!-- Höger sida-->
-                        <div class="col-md-6">
-                            <div class="video-box">
-                            <!-- <div class="modal-dialog modal-sm"> -->
-                    <!-- <video width="600" autoplay loop muted > -->
-                        <!-- <video class="embed-responsive-item" width="320" height="240"autoplay loop muted > -->
-                    <!-- <video width="320" height="240" controls> -->
-                        <!-- <source src="video/video.mp4" type="video/mp4">
-                        Your browser does not support the video tag.
-                    </video>
-                    <span class="video-span">Videomaterial från Freepik, laddat ner från videvo.net</span> -->
-                    <img src="images/illustrationer/hero.svg" alt="webbutveckling" class="img-fluid">
+                <div class="col-md-6">
+                    <!-- Bild högersida-->
+                    <div class="image-container">
+                        <img src="images/illustrationer/hero.svg" alt="webbutveckling" class="img-fluid">
+                    </div>
                 </div>
-              </div>
             </div>
-            
             </div>
           </div>
-      </div>
+          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path fill="#fff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,128C384,107,480,117,576,101.3C672,85,768,43,864,53.3C960,64,1056,128,1152,160C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
+          </svg> -->
+
+          <!-- "#fff" -->
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
 </section>
 
 <!-- **********************************************************
-            3 - Service section
+            3 - work section
+*************************************************************** -->
+<section id="work-section" class="work-section pt-7">
+    <div class="container">
+      <div class="row text-center">
+        <h1 class="display-2--heading">Mitt fantastiska arbete</h1>
+        <div class="heading-line"></div>
+        <p class="lead">
+            Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att vara involverade i. Varje projekt representerar en unik utmaning där jag har använt min expertis och kreativitet för att leverera enastående resultat.
+        </p>
+      </div>
+      <div class="button-group filters-button-group">
+        <button class="button is-checked" data-filter="*">show all</button>
+        <button class="button" data-filter=".metal">metal</button>
+        <button class="button" data-filter=".transition">transition</button>
+      </div>
+      
+      <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
+        <div class="element-item transition metal " data-category="transition">
+          <h3 class="name">Mercury</h3>
+          <p class="symbol">Hg</p>
+          <p class="number">80</p>
+          <p class="weight">200.59</p>
+        </div>
+        <div class="element-item metalloid " data-category="metalloid">
+          <h3 class="name">Tellurium</h3>
+          <p class="symbol">Te</p>
+          <p class="number">52</p>
+          <p class="weight">127.6</p>
+        </div>
+        <div class="element-item post-transition metal " data-category="post-transition">
+          <h3 class="name">Bismuth</h3>
+          <p class="symbol">Bi</p>
+          <p class="number">83</p>
+          <p class="weight">208.980</p>
+        </div>
+        <div class="element-item post-transition metal " data-category="post-transition">
+          <h3 class="name">Lead</h3>
+          <p class="symbol">Pb</p>
+          <p class="number">82</p>
+          <p class="weight">207.2</p>
+        </div>
+        <div class="element-item transition metal " data-category="transition">
+          <h3 class="name">Gold</h3>
+          <p class="symbol">Au</p>
+          <p class="number">79</p>
+          <p class="weight">196.967</p>
+        </div>
+        <div class="element-item alkali metal " data-category="alkali">
+          <h3 class="name">Potassium</h3>
+          <p class="symbol">K</p>
+          <p class="number">19</p>
+          <p class="weight">39.0983</p>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+      <!-- Filter knappar   -->
+      <!-- <div class="row mt-5 mb-4 g-3 button-group filter-button-group"> -->
+        <!-- Filter funktion med Isotop  https://isotope.metafizzy.co/ -->
+        <!-- <div class="col d-flex justify-content-center" id="isotope-filters">
+            <button class="btn btn-outline-primary mx-1 active" type="button is-checked" data-filter="*">Alla</button>
+            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".webb"><span>Webb</span></button>
+            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".design"><span>Design</span></button>
+            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".mobil"><span>Mobil</span></button>
+            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".foto"><span>Foto</span></button>
+        </div>
+      </div> -->
+  
+      <!-- Work poster  -->
+      <!-- <div class = "row justify-content-center g-4" id = "projekt-lista"> -->
+        <!-- projekt 1-->
+        <!-- <div class = "col-lg-4 col-md-6 element-item webb mobil" data-category="webb mobil">
+            <div class = "product-item">
+                <div class = "product-img">
+                    <img src = "images/portratt/kvinna1.webp" class = "img-fluid d-block mx-auto">
+                </div>
+                <div class = "product-content text-center py-3">
+                    <span class = "d-block text-uppercase fw-bold">product name</span>
+                    <span class = "d-block">$ 68.00</span>
+                </div>
+            </div>
+        </div> -->
+          <!-- End of projekt 1-->
+          <!-- projekt 2-->
+        <!-- <div class = "col-lg-4 col-md-6 element-item webb design" data-category="design webb">
+            <div class = "product-item">
+                <div class = "product-img">
+                    <img src = "images/portratt/kvinna2.webp" class = "img-fluid d-block mx-auto">
+                </div>
+                <div class = "product-content text-center py-3">
+                    <span class = "d-block text-uppercase fw-bold">product name</span>
+                    <span class = "d-block">$ 68.00</span>
+                </div>
+            </div>
+        </div> -->
+        <!-- End of projekt 2-->
+        <!-- projekt 3-->
+        <!-- <div class = "col-lg-4 col-md-6 element-item design" data-category="design">
+            <div class = "product-item">
+                <div class = "product-img">
+                    <img src = "images/portratt/kvinna3.webp" class = "img-fluid d-block mx-auto">
+                </div>
+                <div class = "product-content text-center py-3">
+                    <span class = "d-block text-uppercase fw-bold">product name</span>
+                    <span class = "d-block">$ 68.00</span>
+                </div>
+            </div>
+        </div> -->
+        <!-- End of projekt 3-->
+        <!-- projekt 4-->
+        <!-- <div class = "col-lg-4 col-md-6 element-item foto mobil" data-category="mobil foto">
+            <div class = "product-item">
+                <div class = "product-img">
+                    <img src = "images/portratt/kvinna4.webp" class = "img-fluid d-block mx-auto">
+                </div>
+                <div class = "product-content text-center py-3">
+                    <span class = "d-block text-uppercase fw-bold">product name</span>
+                    <span class = "d-block">$ 68.00</span>
+                </div>
+            </div>
+        </div> -->
+        <!-- End of projekt 4-->
+
+        <!-- <div class="album py-5">
+        <div class="container">
+            <div class="row">
+                <div id="isotope-container"> -->
+                     <!-- work 1 -->
+                  
+                      <!-- End of work 1 -->
+
+                         <!-- work 2 -->
+                    <!-- <div class="col-md-4">
+                        <div class="card mb-4 shadow-sm">
+                            <svg
+                              class="bd-placeholder-img card-img-top"
+                              width="100%"
+                              height="225"
+                              xmlns="http://www.w3.org/2000/svg"
+                              preserveAspectRatio="xMidYMid slice"
+                              focusable="false"
+                              role="img"
+                              aria-label="Placeholder: Thumbnail"
+                            >
+                              <title>Placeholder</title>
+                              <rect width="100%" height="100%" fill="#55595c"></rect>
+                              <text x="50%" y="50%" fill="#eceeef" dy=".3em">
+                                Thumbnail
+                              </text>
+                            </svg>
+                            <div class="card-body">
+                              <p class="card-text">
+                                This is a wider card with supporting text below as a natural
+                                lead-in to additional content. This content is a little bit
+                                longer.
+                              </p>
+                              <div
+                                class="d-flex justify-content-between align-items-center"
+                              >
+                                <div class="btn-group">
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-outline-secondary"
+                                  >
+                                    View
+                                  </button>
+                                  <button
+                                    type="button"
+                                    class="btn btn-sm btn-outline-secondary"
+                                  >
+                                    Edit
+                                  </button>
+                                </div>
+                                <small class="text-muted">9 mins</small>
+                              </div>
+                            </div>
+                          </div>
+                        </div>  -->
+                        <!-- End of work 2 -->
+                   
+                    <!-- <div class="col-lg-4 col-md-6 webb design">
+                        <div class="portfolio-box shadow">
+                            <img src="#" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 1</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- work 1 end -->
+
+                    <!--Kort test-->
+                    <!-- <div class="col webb design">
+                        <div class="card shadow-sm">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              
+                          <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                      <!--End kort test-->
+                      <!--Kort test-->
+                    <!-- <div class="col webb">
+                        <div class="card shadow-sm">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              
+                          <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                      <!--End kort test-->
+                      <!--Kort test-->
+                    <!-- <div class="col design">
+                        <div class="card shadow-sm">
+                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+              
+                          <div class="card-body">
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <div class="d-flex justify-content-between align-items-center">
+                              <div class="btn-group">
+                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
+                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+                              </div>
+                              <small class="text-muted">9 mins</small>
+                            </div>
+                          </div>
+                        </div>
+                      </div> -->
+                      <!--End kort test-->
+                    <!-- work 2 -->
+                    <!-- <div class="col-lg-4 col-md-6 design foto">
+                        <div class="portfolio-box shadow">
+                            <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
+                            <div class="portfolio-info">
+                                <div class="caption">
+                                    <h4>project name goes here 1</h4>
+                                    <p>category project</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div> -->
+                    <!-- work 2 end -->
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+      <!-- </section> -->
+    
+    </div>
+</section>
+
+<!-- **********************************************************
+            4 - Service section
 *************************************************************** -->
 <section id="service-section" class="service-section pt-5">
     <div class="container pt-5">
@@ -156,7 +431,7 @@
       <div class="container">
         <div class="row pt-2 pb-2 mt-5 mb-5">
             <div class="col-md-6 border-end border-2">
-               <div class="bg-white p-3">
+               <div class="p-3">
                 <h2 class="pt-5 text-center display-2--introduction">Jag erbjuder komplett uppsättning tjänster för att ta din digitala närvaro till nya höjder och förverkliga dina visioner.</h2>
                </div> 
             </div>
@@ -232,128 +507,6 @@
           </div>
         </div>
       </div>
-</section>
-
-<!-- **********************************************************
-            4 - work section
-*************************************************************** -->
-<section id="work-section" class="work-section pt-5">
-        <div class="container">
-          <div class="row text-center mt-5">
-            <h1 class="pt-5 display-2--heading">Mitt fantastiska arbete</h1>
-            <div class="heading-line"></div>
-            <p class="lead">
-                Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att vara involverade i. Varje projekt representerar en unik utmaning där jag har använt min expertis och kreativitet för att leverera enastående resultat.
-            </p>
-          </div>
-          <!-- FILTER BUTTONS  -->
-          <div class="row mt-5 mb-4 g-3 text-center">
-            <!-- Filter funktion med Isotop  https://isotope.metafizzy.co/ -->
-            <div id="isotope-filters" class="col-md-12">
-                <button class="btn btn-outline-primary active" type="button" data-filter="*"><span>Alla</span></button>
-				<button class="btn btn-outline-primary" type="button" data-filter=".webb"><span>Webb</span></button>
-				<button class="btn btn-outline-primary" type="button" data-filter=".design"><span>Design</span></button>
-				<button class="btn btn-outline-primary" type="button" data-filter=".mobil"><span>Mobil</span></button>
-				<button class="btn btn-outline-primary" type="button" data-filter=".foto"><span>Foto</span></button>
-            </div>
-          </div>
-      
-          <!-- Work poster  -->
-          <!-- <section id="work-wrapper" data-wow-duration="1s" data-wow-delay=".5s"> -->
-            <div class="album py-5 bg-light">
-            <div class="container">
-                <!-- <div class="container-fluid"> -->
-                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-                    <div id="isotope-container">
-                        <!-- work 1 -->
-                        <!-- <div class="col-lg-4 col-md-6 webb design">
-                            <div class="portfolio-box shadow">
-                                <img src="#" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                                <div class="portfolio-info">
-                                    <div class="caption">
-                                        <h4>project name goes here 1</h4>
-                                        <p>category project</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- work 1 end -->
-
-                        <!--Kort test-->
-                        <div class="col webb design">
-                            <div class="card shadow-sm">
-                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  
-                              <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--End kort test-->
-                          <!--Kort test-->
-                        <div class="col webb">
-                            <div class="card shadow-sm">
-                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  
-                              <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--End kort test-->
-                          <!--Kort test-->
-                        <div class="col design">
-                            <div class="card shadow-sm">
-                              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-                  
-                              <div class="card-body">
-                                <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                                <div class="d-flex justify-content-between align-items-center">
-                                  <div class="btn-group">
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                    <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                                  </div>
-                                  <small class="text-muted">9 mins</small>
-                                </div>
-                              </div>
-                            </div>
-                          </div>
-                          <!--End kort test-->
-                        <!-- work 2 -->
-                        <!-- <div class="col-lg-4 col-md-6 design foto">
-                            <div class="portfolio-box shadow">
-                                <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                                <div class="portfolio-info">
-                                    <div class="caption">
-                                        <h4>project name goes here 1</h4>
-                                        <p>category project</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div> -->
-                        <!-- work 2 end -->
-
-                    </div>
-                </div>
-            </div>
-        </div>
-          <!-- </section> -->
-        
-        </div>
 </section>
 
 <!-- **********************************************************
@@ -521,12 +674,76 @@
 *************************************************************** -->
 <section id="about-section" class="about-section pt-5">
     <div class="container">
-        <div class="row text-center mt-5">
-          <h1 class="pt-5 display-2--heading">Vem är då jag?</h1>
-          <div class="heading-line"></div>
-        </div>
-        
-    </div>
+        <div class="row mt-5">
+          <h1 class="pt-5 display-2--heading text-center">Vem är då jag?</h1>
+       
+          <div class="col-md-6 display-2--description fw-light">
+            <p>Jag är en mångsidig individ med en passion för teknik, konst och naturen. För närvarande befinner jag mig mitt i min utbildning till webmaster vid Högskolan Väst, där jag fördjupar mig i webbutveckling och design.</p>
+
+            <p>Mitt hem är beläget på landet i den vackra naturen i Jämtland, där jag delar min tillvaro med min sambo och våra fyra charmiga Connemara-ponnyer samt en charmig katt.</p>
+
+            <p>Min passion för hästar och ridning har varit en central del av mitt liv, och även om jag inte tävlar längre så njuter jag fortfarande av träningen och gemenskapen kring westernridning. Jag tar gärna en ridturer genom den vackra jämtländska naturen. Fotografering är en av mina favorithobbies, och jag tar ofta med mig kameran på mina äventyr för att fånga ögonblicken och skönheten i naturen.</p>
+
+            <p>När jag inte är ute i naturen ägnar jag mig åt att var kreativ och då genom att måla och göra layouter. Att uttrycka mig genom konst och design är något jag verkligen brinner för och som ger mig stor glädje.</p>
+
+            <p>Min erfarenhet inom webbprogrammering, design och fotografering sträcker sig över många år, och jag har en djup förståelse för hur man skapar digitala lösningar som är både funktionella och estetiskt tilltalande. Jag trivs bäst när jag får möjlighet att utveckla och skapa något som är skräddarsytt för ett specifikt ändamål, och jag känner stort nöje i att se mina idéer och projekt ta form och bli verklighet.</p>
+          </div>
+            <div class="col-md-6">
+                  <h3 class="text-uppercase fw-bold">Skills</h3>
+                  <p>
+                    Här är en lista över mina kunskaper med dessa dumma procentsatser som inte betyder någonting 😉
+                  </p>
+                  <h5><i class="fas fa-check"></i> HTML 5</h5>
+                  <div
+                    class="progress mb-4"
+                    role="progressbar"
+                    aria-valuenow="100"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 100%">100%</div>
+                  </div>
+      
+                  <h5><i class="fas fa-check"></i> CSS</h5>
+                  <div
+                    class="progress mb-4"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 90%">90%</div>
+                  </div>
+      
+                  <h5><i class="fas fa-check"></i> JavaScript</h5>
+                  <div
+                    class="progress mb-4"
+                    role="progressbar"
+                    aria-valuenow="90"
+                    aria-valuemin="0"
+                    aria-valuemax="100"
+                  >
+                    <div class="progress-bar" style="width: 90%">90%</div>
+                  </div>
+      
+                 
+                  </div>
+                </div>
+              </div>
+              <div class="row mt-5 text-center">
+                <div class="col-12">
+                  <a
+                    href="#"
+                    class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+                    >Hire Me Now</a
+                  >
+                  <a
+                    href="#"
+                    class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+                    >Ladda mer mitt CV</a
+                  >
+                </div>
+            </div>
     
 </section>
 
@@ -536,14 +753,101 @@
 <section id="pris-section" class="pris-section pt-5">
     <div class="container">
         <div class="row text-center mt-5">
-          <h1 class="pt-5 display-2--heading">Priser på mina tjänster</h1>
-          <div class="heading-line"></div>
+            <h1 class="pt-5 display-2--heading">Priser på mina tjänster</h1>
+            <div class="heading-line"></div>
+            <div class="row mt-5">
+                <div class="col-md-4">
+                <!-- Pris kort 1 -->
+                    <div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
+                        <div class="card-body">
+                            <div class="heading-line">kort 1</div>
+                            <p class="text-muted">for freelancers</p>
+                            <h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
+                            <ul class="list-group list-group-flush fs-5 mb-5">
+                                <li class="list-group-item border-0">
+                                    <i class="bi bi-check2"></i> text text
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <i class="bi bi-check2"></i> mer text
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <i class="bi bi-check2"></i> ännu mera text
+                                </li>
+                                <li class="list-group-item border-0">
+                                    <i class="bi bi-check2"></i> slut text
+                                </li>
+                            </ul>
+                            <div class="d-grid">
+                               <button class="btn btn-primarey-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg">
+                                knapp
+                               </button> 
+                            </div>
+                        </div>
+                    </div>
+                </div> <!-- End of Pris kort 1 -->
+
+                <div class="col-md-4">
+                 <!-- Pris kort 2 -->
+                 <div class="card text-bg-primary rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
+                    <div class="card-body">
+                        <div class="heading-line text-white">kort 2</div>
+                        <p class="text-white">for freelancers</p>
+                        <h2 class="fs-1 fw-bold mt-4 mb-5 text-white">2000 kr</h2>
+                        <ul class="list-group list-group-flush fs-5 mb-5">
+                            <li class="list-group-item border-0 text-bg-primary text-white">
+                                <i class="bi bi-check2 text-white"></i> text text
+                            </li>
+                            <li class="list-group-item border-0 text-bg-primary text-white">
+                                <i class="bi bi-check2 text-white"></i> mer text
+                            </li>
+                            <li class="list-group-item border-0 text-bg-primary text-white">
+                                <i class="bi bi-check2 v"></i> ännu mera text
+                            </li>
+                            <li class="list-group-item border-0 text-bg-primary text-white">
+                                <i class="bi bi-check2 text-white"></i> slut text
+                            </li>
+                        </ul>
+                        <div class="d-grid">
+                           <button class="btn btn-white-rounded-4 bg-white text-primary mt-5 mb-4 shadow-lg">
+                            knapp
+                           </button> 
+                        </div>
+                    </div>
+                </div>
+                </div> <!-- End of Pris kort 2 -->
+                <div class="col-md-4">
+                 <!-- Pris kort 3 -->
+                 <div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
+                    <div class="card-body">
+                        <div class="heading-line">kort 3</div>
+                        <p class="text-muted">for freelancers</p>
+                        <h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
+                        <ul class="list-group list-group-flush fs-5 mb-5">
+                            <li class="list-group-item border-0">
+                                <i class="bi bi-check2"></i> text text
+                            </li>
+                            <li class="list-group-item border-0">
+                                <i class="bi bi-check2"></i> mer text
+                            </li>
+                            <li class="list-group-item border-0">
+                                <i class="bi bi-check2"></i> ännu mera text
+                            </li>
+                            <li class="list-group-item border-0">
+                                <i class="bi bi-check2"></i> slut text
+                            </li>
+                        </ul>
+                        <div class="d-grid">
+                           <button class="btn btn-primary-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg">
+                            knapp
+                           </button> 
+                        </div>
+                    </div>
+                </div>
+                </div> <!-- End of Pris kort 3 -->
+
+            </div>
         </div>
-
-
-
     </div>
-    
 </section>
 
 <!-- **********************************************************
@@ -568,7 +872,7 @@
         
         <!-- <footer class="py-5"> -->
           <div class="row">
-            <div class="col-6 col-md-2 mb-3">
+            <div class="col-6 col-md-6 mb-3">
               <h5>Section</h5>
               <ul class="nav flex-column">
                 <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
@@ -579,27 +883,6 @@
               </ul>
             </div>
       
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              </ul>
-            </div>
-      
-            <div class="col-6 col-md-2 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              </ul>
-            </div>
       
             <div class="col-md-5 offset-md-1 mb-3">
               <form>
@@ -622,25 +905,20 @@
               <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
             </ul>
           </div> 
-          <!-- **********************************************************
-            Knapp tillbaka till början
-*************************************************************** -->
-          <a href="#" class="shadow btn-primary rounded-circle back-to-top">
-            <i class="fas fa-chevron-up"></i>
-          </a> 
-  </footer>
-
 <!-- **********************************************************
             Knapp tillbaka till början
-*************************************************************** -->   
+*************************************************************** -->
+          <a href="#" class="shadow btn-primary bg-primary rounded-circle back-to-top">
+            <i class="bi bi-arrow-up"></i>
+            </a> 
+ </div>
+</footer>
 
-
-<!-- <a href="#" class="shadow btn-primary rounded-circle back-to-top">
-  <i class="fas fa-chevron-up"></i>
-</a> -->
-
-<!-- Bootstap  -->
+<!-- Bootstrap  -->
 <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+
+<!-- Bootstrap darkmode kod -->
+<script src="js/darkmode-toggler.js"></script>
 
 <!-- Isotope  -->
 <script src="js/isotope/isotope.pkgd.min.js"></script>

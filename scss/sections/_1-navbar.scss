@@ -7,3 +7,7 @@
 .navbar {
 	@include gradient-background($color-gradient-start, $color-gradient-end);
 }
+
+.btn-light-dark {
+	margin: 0px;
+}

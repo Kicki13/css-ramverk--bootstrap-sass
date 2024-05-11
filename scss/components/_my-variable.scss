@@ -1,21 +1,42 @@
 // Mina variabler
 
 // Färger
-$primary: #fd7e14; //--bs-orange
+$primary: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
 // $secondary: #6f42c1; //purple
-$secondary: #6610f2; //Indigo
+$secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
 // $secondary: #ffc107; //Gul
 // $secondary: #dc3545; //Röd
 // $secondary: #d63384; //Rosa
 // $secondary: #adb5bd; //Grå
+$dark: #2b3041; //Blå-svart
+$light: #f3f6f9; // Grå-vit
 
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
+	"dark": $dark,
+	"light": $light,
 );
 
 $color-gradient-start: $primary;
 $color-gradient-end: $secondary;
+
+//Modal
+// $modal-content-bg: gradient-background($color-gradient-start, $color-gradient-end);
+
+// Spacers
+$spacer: 1rem !default;
+$spacers: (
+	0: 0,
+	1: $spacer * 0.25,
+	2: $spacer * 0.5,
+	3: $spacer,
+	4: $spacer * 1.5,
+	5: $spacer * 3,
+	6: $spacer * 6,
+	7: $spacer * 8,
+	8: $spacer * 12,
+) !default;
 
 .pt-10 {
 	padding-top: 10rem;

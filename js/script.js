@@ -1,43 +1,82 @@
 // Mina gjorda arbeten
-$(window).on("load", function () {
-	//Gör att webbplatsen är inladdad
+// $(window).on("load", function () {
+//Gör att webbplatsen är inladdad
 
-	/* Lägg till och ta bort isotope-hidden class till work-bilderna, innan initiering av Isotope:  */
+/* Lägg till och ta bort isotope-hidden class till work-bilderna, innan initiering av Isotope:  */
 
-	// Ta bort isotope-hidden class om work-elementet inte är dolt
-	var itemReveal = Isotope.Item.prototype.reveal;
+// Ta bort isotope-hidden class om work-elementet inte är dolt
+// var itemReveal = Isotope.Item.prototype.reveal;
 
-	Isotope.Item.prototype.reveal = function () {
-		itemReveal.apply(this, arguments);
-		$(this.element).find(".work-item").removeClass("isotope-hidden");
-	};
+// Isotope.Item.prototype.reveal = function () {
+// 	itemReveal.apply(this, arguments);
+// 	$(this.element).find(".work-item").removeClass("isotope-hidden");
+// };
 
-	// Lägg till isotope-hidden class om work-elementet inte är dolt
-	var itemHide = Isotope.Item.prototype.hide;
+// Lägg till isotope-hidden class om work-elementet inte är dolt
+// var itemHide = Isotope.Item.prototype.hide;
 
-	Isotope.Item.prototype.hide = function () {
-		itemHide.apply(this, arguments);
-		$(this.element).find(".work-item").addClass("isotope-hidden");
-	};
+// Isotope.Item.prototype.hide = function () {
+// 	itemHide.apply(this, arguments);
+// 	$(this.element).find(".work-item").addClass("isotope-hidden");
+// };
 
-	// Iitialize Isotope
-	$("#isotope-container").isotope({});
+// external js: isotope.pkgd.js
 
-	// filtrera objekt när man klickar på knappen
-	$("#isotope-filters").on("click", "button", function () {
-		// få filtervärde
-		var filterValue = $(this).attr("data-filter");
-
-		// filter
-		$("#isotope-container").isotope({
-			filter: filterValue,
-		});
-
-		// aktiv knapp
-		$("#isotope-filters").find(".active").removeClass("active");
-		$(this).addClass("active");
-	});
+// init Isotope
+var iso = new Isotope(".grid", {
+	itemSelector: ".element-item",
+	layoutMode: "fitRows",
 });
+
+// bind filter button click
+var filtersElem = document.querySelector(".filters-button-group");
+filtersElem.addEventListener("click", function (event) {
+	// only work with buttons
+	if (!matchesSelector(event.target, "button")) {
+		return;
+	}
+	var filterValue = event.target.getAttribute("data-filter");
+	// use matching filter function
+	filterValue = filterFns[filterValue] || filterValue;
+	iso.arrange({ filter: filterValue });
+});
+
+// change is-checked class on buttons
+var buttonGroups = document.querySelectorAll(".button-group");
+for (var i = 0, len = buttonGroups.length; i < len; i++) {
+	var buttonGroup = buttonGroups[i];
+	radioButtonGroup(buttonGroup);
+}
+
+function radioButtonGroup(buttonGroup) {
+	buttonGroup.addEventListener("click", function (event) {
+		// only work with buttons
+		if (!matchesSelector(event.target, "button")) {
+			return;
+		}
+		buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
+		event.target.classList.add("is-checked");
+	});
+}
+
+// Iitialize Isotope
+// $("#isotope-container").isotope({});
+
+// filtrera objekt när man klickar på knappen
+// $("#isotope-filters").on("click", "button", function () {
+// få filtervärde
+// var filterValue = $(this).attr("data-filter");
+
+// filter
+// $("#isotope-container").isotope({
+// 	filter: filterValue,
+// });
+
+// aktiv knapp
+// 		$("#isotope-filters").find(".active").removeClass("active");
+// 		$(this).addClass("active");
+// 	});
+// });
 
 // function myFunction() {
 // 	var element = document.body;

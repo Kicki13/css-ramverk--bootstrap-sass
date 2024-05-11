@@ -7,8 +7,15 @@
 // $font-family-sans-serif: "Sacramento", sans-serif;
 $heading-font-family: "Sacramento";
 $body-font-family: "Montserrat", sans-serif;
+$font-family-sans-serif: "Montserrat", sans-serif;
 
 // $bs-navbar-brand-font-size: 1.5rem;
+
+//Line height
+$line-height-base: 1.7;
+
+// Marginal botten efter rubrik
+$headings-margin-bottom: $spacer * 1;
 
 .display-2 {
 	margin-bottom: 1rem;

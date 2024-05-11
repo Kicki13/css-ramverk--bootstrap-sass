@@ -106,7 +106,7 @@
 
 // STYLE THE BACK TO TOP BUTTON
 .back-to-top {
-	background-color: black;
+	background-color: $primary;
 	position: fixed;
 	width: 3rem;
 	height: 3rem;
@@ -115,7 +115,7 @@
 	z-index: 9999;
 
 	i {
-		color: white;
+		color: $light;
 		font-size: 1rem;
 		// @include absoluteCenter;
 	}

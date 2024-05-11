@@ -1,39 +1,81 @@
 // Mina knappar
 
 $button-radius: 50px;
+// $button-padding-x: 10px;
+// $button-padding-y: 10px;
 
 $btn-border-radius: $button-radius;
 $btn-border-radius-sm: $button-radius;
 $btn-border-radius-lg: $button-radius;
 
-.btn-rounded {
-	position: relative;
-	padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
-	font-weight: 700;
-	margin: 0;
-	border: 0.1rem solid rgba(white, 0.6);
-	background-color: white;
-	display: block;
+// $btn-font-family: $heading-font-family;
+// $btn-font-weight:
+// $btn-padding-x: $button-padding-x;
+// $btn-padding-x-sm: $button-padding-x;
+// $btn-padding-x-lg: $button-padding-x;
+// $btn-padding-y: $button-padding-y;
+// $btn-padding-y-sm: $button-padding-y;
+// $btn-padding-y-lg: $button-padding-y;
+$navbar-toggler-border-radius: 5px;
+// .btn-rounded {
+// 	// position: relative;
+// 	padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+// 	// font-weight: 700;
+// 	margin: 0;
+// 	border: 0.1rem solid rgba($light, 0.6);
+// 	background-color: $light;
 
-	span {
-		position: absolute;
-		background-color: $primary;
-		width: 2.5rem;
-		height: 2.5rem;
-		top: 50%;
-		right: 5px;
-		transform: translateY(-50%);
-		border-radius: 50%;
+// 	display: block;
 
-		i {
-			color: white;
-			font-size: 5rem;
-			line-height: 2.5rem;
-		}
-	}
-}
+// 	span {
+// 		// position: absolute;
+// 		// background-color: $primary;
 
+// 		width: 2.5rem;
+// 		height: 2.5rem;
+// 		// top: 50%;
+
+// 		// right: 5px;
+// 		transform: translateY(-50%);
+// 		border-radius: 50%;
+
+// 		i {
+// 			color: $light;
+// 			font-size: 1rem;
+// 			line-height: 2.5rem;
+// 		}
+// 	}
+// }
+
+// .hero-section {
+// 	// position: relative;
+// 	padding: 0.8375rem 4.375rem 0.8375rem 1.25rem;
+// 	// font-weight: 700;
+// 	margin: 0;
+// 	border: 0.1rem solid rgba(white, 0.6);
+// 	background-color: white;
+// 	// display: block;
+
+// 	span {
+// 		// position: absolute;
+// 		background-color: $primary;
+// 		width: 2.5rem;
+// 		height: 2.5rem;
+// 		top: 50%;
+// 		right: 5px;
+// 		transform: translateY(-50%);
+// 		border-radius: 50%;
+
+// 		i {
+// 			color: white;
+// 			font-size: 1rem;
+// 			line-height: 2.5rem;
+// 		}
+// 	}
+// }
 // &:hover {
 // 	// @include gradient;
 // 	color: white;
 // }
+
+// Knapp  till toppen
