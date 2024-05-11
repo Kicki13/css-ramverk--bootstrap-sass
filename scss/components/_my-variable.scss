@@ -21,6 +21,14 @@ $theme-colors: (
 $color-gradient-start: $primary;
 $color-gradient-end: $secondary;
 
+// svg {
+// 	forced-color-adjust: preserve-parent-color;
+// 	// fill: $light;
+// 	// body.dark-theme path {
+// 	// 	fill: $light;
+// 	// }
+// }
+
 //Modal
 // $modal-content-bg: gradient-background($color-gradient-start, $color-gradient-end);
 
@@ -37,6 +45,8 @@ $spacers: (
 	7: $spacer * 8,
 	8: $spacer * 12,
 ) !default;
+
+$image-hover-overlay-transition: all 0.3s ease-in-out;
 
 .pt-10 {
 	padding-top: 10rem;
