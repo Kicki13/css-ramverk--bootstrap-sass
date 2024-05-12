@@ -17,7 +17,11 @@
   font-size: 4rem;
   font-family: "Sacramento";
 }
-.display-2--introduction {
+.display-2--rubrik {
+  font-size: 3rem;
+  font-family: "Sacramento";
+}
+.display-2-- .display-2--introduction {
   font-family: "Montserrat", sans-serif;
   font-size: 2rem;
   line-height: 2.8rem;
@@ -41,6 +45,20 @@
   background-image: linear-gradient(to right, #fd7e14, #6610f2);
   -webkit-background-clip: text;
           background-clip: text;
+}
+
+.back-to-top {
+  background-color: #fd7e14;
+  position: fixed;
+  width: 3rem;
+  height: 3rem;
+  right: 1.875rem;
+  bottom: 1.875rem;
+  z-index: 9999;
+}
+.back-to-top i {
+  color: #f3f6f9;
+  font-size: 1rem;
 }
 
 /*!
@@ -13069,18 +13087,4 @@ textarea.form-control-lg {
 .referenser__name p {
   padding-bottom: 2rem;
   text-transform: capitalize;
-}
-
-.back-to-top {
-  background-color: #fd7e14;
-  position: fixed;
-  width: 3rem;
-  height: 3rem;
-  right: 1.875rem;
-  bottom: 1.875rem;
-  z-index: 9999;
-}
-.back-to-top i {
-  color: #f3f6f9;
-  font-size: 1rem;
 }/*# sourceMappingURL=custom.css.map */

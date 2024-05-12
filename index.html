@@ -7,9 +7,9 @@
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
-    <body>
+    <body class="bg-light">
 <!-- **********************************************************
-            1 - Navbar Section med modal
+            1 - Navbar section med kontakt modal
 *************************************************************** -->
 <nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
     <div class="container">
@@ -59,7 +59,7 @@
       </div>
     </div>
 </nav>
-<!-- Modal -->
+<!-- Kontakt Modal -->
     <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
@@ -98,7 +98,7 @@
       </div>
     </div>
     </div> 
-<!--End of modal i huvud navigeringen-->
+<!--End of kontakt modal i huvud navigeringen-->
 
 <!-- **********************************************************
             2 - Hero section
@@ -132,16 +132,13 @@
             </div>
             </div>
           </div>
-          <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path fill="#fff" fill-opacity="1" d="M0,256L48,229.3C96,203,192,149,288,128C384,107,480,117,576,101.3C672,85,768,43,864,53.3C960,64,1056,128,1152,160C1248,192,1344,192,1392,192L1440,192L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path>
-          </svg> -->
-
-          <!-- "#fff" -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=currentColor fill-opacity="1" d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
+         <!-- Våg-dropp mönster -->
+          <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
 </section>
 
 <!-- **********************************************************
-            3 - work section
+            3 - Work section
 *************************************************************** -->
 <section id="work-section" class="work-section pt-8">
     <div class="container">
@@ -513,7 +510,9 @@
             5 - Referenser section
 *************************************************************** -->
 <section id="referenser-section" class="referenser">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+    <!-- Våg-dropp mönster -->
+    <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
 
     <div class="container">
         <div class="row text-center text-white">
@@ -665,7 +664,9 @@
         </div>
       </div>
     </div>
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+    <!-- Våg-dropp mönster -->
+    <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
   
 </section>
 
@@ -688,7 +689,9 @@
 
             <p>Min erfarenhet inom webbprogrammering, design och fotografering sträcker sig över många år, och jag har en djup förståelse för hur man skapar digitala lösningar som är både funktionella och estetiskt tilltalande. Jag trivs bäst när jag får möjlighet att utveckla och skapa något som är skräddarsytt för ett specifikt ändamål, och jag känner stort nöje i att se mina idéer och projekt ta form och bli verklighet.</p>
           </div>
+          <!-- Höger sida -->
             <div class="col-md-6">
+                <img src="images/portratt/webmaster-400x400.webp" alt="porträtt" class="img-fluid img-portrait rounded-2 shadow">    
                   <h3 class="text-uppercase fw-bold">Skills</h3>
                   <p>
                     Här är en lista över mina kunskaper med dessa dumma procentsatser som inte betyder någonting 😉
@@ -886,7 +889,7 @@
                       </li>
                     </ul>
                     <h2 class="card-title h4 m-0">
-                      <a class="link-dark text-decoration-none" href="#!">15 bästa nya typsnitt 2024</a>
+                      <a class="link-dark text-decoration-none display-2--rubrik" href="#!">15 bästa nya typsnitt 2024</a>
                     </h2>
                     <p class="card-text">Med en värld som ständigt strävar efter att kombinera estetik och funktionalitet, spelar typsnitt en avgörande roll i designlandskapet. Så låt oss dyka in i världen av typografi och upptäcka de mest spännande typsnitten som 2024 har att erbjuda.</p>
                   </div>
@@ -895,11 +898,11 @@
                   <ul class="list-unstyled d-flex align-items-center m-0">
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
                         <div class="ms-2 fs-7">
-                            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="rounded-circle">
+                            <img src="images/portratt/webmaster-40x40.webp" alt="författare" class="rounded-circle">
                         </div>
                     </li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7">Jane Doe</span>
+                        <span class="ms-2 fs-7">Christina</span>
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
@@ -907,7 +910,7 @@
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 10 </span>    
+                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 7 </span>    
                     </li>
                   </ul>
                 </div>
@@ -939,7 +942,7 @@
                       </li>
                     </ul>
                     <h2 class="card-title h4 m-0">
-                      <a class="link-dark text-decoration-none" href="#!">Vad kostar en webbutvecklare</a>
+                      <a class="link-dark text-decoration-none display-2--rubrik" href="#!">Vad kostar en webbutvecklare</a>
                     </h2>
                     <p class="card-text">Att utforska kostnaden för en webbutvecklare är som att öppna en låda med olika priser och möjligheter. Precis som med alla professionella tjänster varierar priset på en webbutvecklare beroende på flera faktorer, inklusive deras erfarenhet, kompetens, plats och projektets omfattning. I denna inledning kommer vi att utforska dessa faktorer och hur de påverkar kostnaden för att anställa en webbutvecklare.</p>
                   </div>
@@ -948,19 +951,19 @@
                   <ul class="list-unstyled d-flex align-items-center m-0">
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
                         <div class="ms-2 fs-7">
-                            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="rounded-circle">
+                            <img src="images/portratt/webmaster-40x40.webp" alt="författare" class="rounded-circle">
                         </div>
                     </li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7">Jane Doe</span>
+                        <span class="ms-2 fs-7">Christina</span>
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 11 maj 2024 </span>
+                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 2 maj 2024 </span>
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 10 </span>    
+                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 3 </span>    
                     </li>
                   </ul>
                 </div>
@@ -992,7 +995,7 @@
                       </li>
                     </ul>
                     <h2 class="card-title h4 m-0">
-                      <a class="link-dark text-decoration-none" href="#!">Behöver du som företag en logotyp eller inte?</a>
+                      <a class="link-dark text-decoration-none display-2--rubrik" href="#!">Behöver du som företag en logotyp eller inte?</a>
                     </h2>
                     <p class="card-text">Frågan om företag behöver en logotyp eller inte är som att öppna upp för en diskussion om företagets själ och synlighet i den konkurrensutsatta världen av näringslivet. Denna gång ska vi utforska betydelsen av en logotyp för företag och reflektera över om den verkligen är en nödvändighet eller om det finns undantag från denna regel.</p>
                   </div>
@@ -1001,19 +1004,19 @@
                   <ul class="list-unstyled d-flex align-items-center m-0">
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
                         <div class="ms-2 fs-7">
-                            <img src="https://i.pravatar.cc/40?img=1" alt="user__image" class="rounded-circle">
+                            <img src="images/portratt/webmaster-40x40.webp" alt="författare" class="rounded-circle">
                         </div>
                     </li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7">Jane Doe</span>
+                        <span class="ms-2 fs-7">Christina</span>
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 11 maj 2024 </span>
+                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 5 maj 2024 </span>
                     </li>
                     <li><span class="px-3">&bull;</span></li>
                     <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 10 </span>    
+                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 2 </span>    
                     </li>
                   </ul>
                 </div>
@@ -1021,59 +1024,78 @@
             </article>
           </div>
           <!-- End of bloggpost 3-->
-  
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,176C320,171,400,149,480,154.7C560,160,640,192,720,186.7C800,181,880,139,960,149.3C1040,160,1120,224,1200,250.7C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
 </section>
 
  <!-- **********************************************************
-           9 - footer section
+           9 - Footer section
 *************************************************************** -->               
-<footer id="footer-section" class="footer-section pt-5 py-5">
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#fff" fill-opacity="1" d="M0,160L40,165.3C80,171,160,181,240,176C320,171,400,149,480,154.7C560,160,640,192,720,186.7C800,181,880,139,960,149.3C1040,160,1120,224,1200,250.7C1280,277,1360,267,1400,261.3L1440,256L1440,320L1400,320C1360,320,1280,320,1200,320C1120,320,1040,320,960,320C880,320,800,320,720,320C640,320,560,320,480,320C400,320,320,320,240,320C160,320,80,320,40,320L0,320Z"></path></svg>
+<footer id="footer-section" class="footer-section  bg-primary pt-5 py-5">
     <div class="container">
-        
         <!-- <footer class="py-5"> -->
-          <div class="row">
-            <div class="col-6 col-md-6 mb-3">
-              <h5>Section</h5>
-              <ul class="nav flex-column">
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Home</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Features</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">Pricing</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">FAQs</a></li>
-                <li class="nav-item mb-2"><a href="#" class="nav-link p-0 text-muted">About</a></li>
-              </ul>
+        <div class="row">
+            <div class="col-md-5">
+                    <!-- col-md-4 mb-md-0 md-4 -->
+                    <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+                        <h2 class="footer-heading display-2--title text-light">Christinas Portfolio</h2>
+                        <ul class="list-unstyled">
+                            <li><p class="d-block text-light">Hitta hit</p></li>
+                            <li><p class="d-block text-light"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.290666297449!2d14.397264253853875!3d63.26070455700405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fca576155a02f%3A0xea31c2fee0ef1b98!2s835%2091%20H%C3%A4ste!5e0!3m2!1ssv!2sse!4v1715529223465!5m2!1ssv!2sse" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></li>
+                        </ul>
+                    </div>
             </div>
-      
-      
-            <div class="col-md-5 offset-md-1 mb-3">
-              <form>
-                <h5>Subscribe to our newsletter</h5>
-                <p>Monthly digest of what's new and exciting from us.</p>
-                <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-                  <label for="newsletter1" class="visually-hidden">Email address</label>
-                  <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-                  <button class="btn btn-primary" type="button">Subscribe</button>
+            <div class="col-md-3">
+                <div class="row">
+                    <div class="col-md-4 mb-md-0 md-4">
+                        <ul class="list-unstyled">
+                            <li><a href="#" class="py-1 d-block text-light text-decoration-none text-center">Hem</a></li>
+                            <li><a href="#work-section" class="py-1 d-block text-light text-decoration-none text-center">Arbeten</a></li>
+                            <li><a href="#service-section" class="py-1 d-block text-light text-decoration-none text-center">Tjänster</a></li>
+                            <li><a href="#refernser-section" class="py-1 d-block text-light text-decoration-none text-center">Referenser</a></li>
+                            <li><a href="about-section" class="py-1 d-block text-light text-decoration-none text-center">Om mig</a></li>
+                            <li><a href="#pris-section" class="py-1 d-block text-light text-decoration-none text-center">Prislista</a></li>
+                            <li><a href="#blogg-section" class="py-1 d-block text-light text-decoration-none text-center">Blogg</a></li>
+                        </ul>
+                    </div>
                 </div>
-              </form>
             </div>
-          </div>
-      
-          <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
-            <p>&copy; 2022 Company, Inc. All rights reserved.</p>
-            <ul class="list-unstyled d-flex">
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-              <li class="ms-3"><a class="link-dark" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
-            </ul>
-          </div> 
-<!-- **********************************************************
-            Knapp tillbaka till början
-*************************************************************** -->
-          <a href="#" class="shadow btn-primary bg-primary rounded-circle back-to-top">
+            <div class="col-md-4">
+                <div class="row justify-content-end">
+                    <!-- col-md-12 col-lg-11 mb-md-0 mb-4 -->
+                    <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+                        <h2 class="display-2--rubrik text-light">Följ mig på... </h2>
+                        <ul class="footer-social list-unstyled p-0">
+                            <li class="social-ikon">
+                                <a class="link-light" href="#"><i class="bi bi-github"></i></a>
+                            </li>
+                            <li class="social-ikon">
+                                <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
+                            </li>
+                            <li class="social-ikon">
+                                <a class="link-light" href="#"><i class="bi bi-instagram"></i></a>
+                                </li>
+                        </ul>
+                        <h2 class="display-2--rubrik text-light mt-5">Nyhetsbrev ?</h2>
+                        <form action="#" class="subscribe-form">
+                            <div class="form-group d-flex">
+                                <input type="email" class="form-control rounded-4" placeholder="Ange din epost">
+                                </input>
+                                <input type="submit" value="Prenumerera" class="form-control bg-secondary text-light submit border-0 rounded-4">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="d-flex flex-column flex-sm-row justify-content-center my-4 border-top">
+            <p class="mt-2">&copy; 2024 Alla rättigheter reserverade | Denna webbsida är gjord med <i class="bi bi-balloon-heart"></i> av Christina Näsström</p>
+        </div> 
+        <!-- **********************************************************
+            Knapp tillbaka till början     btn-primary
+        *************************************************************** -->
+        <a href="#" class="shadow bg-secondary rounded-circle back-to-top">
             <i class="bi bi-arrow-up"></i>
-            </a> 
- </div>
+        </a> 
+    </div>
 </footer>
 
 <!-- Bootstrap  -->

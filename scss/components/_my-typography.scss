@@ -1,6 +1,5 @@
-// Mina typsnitt
-// Google typsnitt
-// Sacramento och Montserrat
+// -- Mina typsnitt --
+// Google typsnitt -- Sacramento och Montserrat
 
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
 
@@ -33,7 +32,12 @@ $headings-margin-bottom: $spacer * 1;
 		font-family: $heading-font-family;
 	}
 
-	&--introduction {
+	&--rubrik {
+		font-size: 3rem;
+		font-family: $heading-font-family;
+	}
+
+	&-- &--introduction {
 		font-family: $body-font-family;
 		font-size: 2rem;
 		line-height: 2.8rem;

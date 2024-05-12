@@ -10,12 +10,15 @@ $secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
 // $secondary: #adb5bd; //Grå
 $dark: #2b3041; //Blå-svart
 $light: #f3f6f9; // Grå-vit
+$transparent: bg-transparent;
 
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
 	"dark": $dark,
 	"light": $light,
+	// "white": $light,
+	// "black": $dark,,
 );
 
 $color-gradient-start: $primary;
