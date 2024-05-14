@@ -1,4 +1,25 @@
 // Mina gjorda arbeten
+// init Isotope
+var $lista = $(".lista").isotope({
+	itemSelector: ".element-item",
+	layoutMode: "fitRows",
+});
+
+// bind filter on select change
+$(".filter-button-group").on("click", "button", function () {
+	// get filter value from option value
+	var filterValue = $(this).attr("data-filter");
+	// use filterFn if matches value
+	// filterValue = filterFns[filterValue] || filterValue;
+	$lista.isotope({ filter: filterValue });
+});
+
+// $(document).ready(function () {
+
+// $(".navbar-toggler").click(function () {
+// 	$(".navbar-toggler").toggleClass("change");
+// });
+
 // $(window).on("load", function () {
 //Gör att webbplatsen är inladdad
 
@@ -23,41 +44,41 @@
 // external js: isotope.pkgd.js
 
 // init Isotope
-var iso = new Isotope(".grid", {
-	itemSelector: ".element-item",
-	layoutMode: "fitRows",
-});
+// var iso = new Isotope(".album", {
+// 	itemSelector: ".element-item",
+// 	layoutMode: "fitRows",
+// });
 
 // bind filter button click
-var filtersElem = document.querySelector(".filters-button-group");
-filtersElem.addEventListener("click", function (event) {
-	// only work with buttons
-	if (!matchesSelector(event.target, "button")) {
-		return;
-	}
-	var filterValue = event.target.getAttribute("data-filter");
-	// use matching filter function
-	filterValue = filterFns[filterValue] || filterValue;
-	iso.arrange({ filter: filterValue });
-});
+// var filtersElem = document.querySelector(".filters-button-group");
+// filtersElem.addEventListener("click", function (event) {
+// 	// only work with buttons
+// 	if (!matchesSelector(event.target, "button")) {
+// 		return;
+// 	}
+// 	var filterValue = event.target.getAttribute("data-filter");
+// 	// use matching filter function
+// 	filterValue = filterFns[filterValue] || filterValue;
+// 	iso.arrange({ filter: filterValue });
+// });
 
 // change is-checked class on buttons
-var buttonGroups = document.querySelectorAll(".button-group");
-for (var i = 0, len = buttonGroups.length; i < len; i++) {
-	var buttonGroup = buttonGroups[i];
-	radioButtonGroup(buttonGroup);
-}
+// var buttonGroups = document.querySelectorAll(".button-group");
+// for (var i = 0, len = buttonGroups.length; i < len; i++) {
+// 	var buttonGroup = buttonGroups[i];
+// 	radioButtonGroup(buttonGroup);
+// }
 
-function radioButtonGroup(buttonGroup) {
-	buttonGroup.addEventListener("click", function (event) {
-		// only work with buttons
-		if (!matchesSelector(event.target, "button")) {
-			return;
-		}
-		buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
-		event.target.classList.add("is-checked");
-	});
-}
+// function radioButtonGroup(buttonGroup) {
+// 	buttonGroup.addEventListener("click", function (event) {
+// 		// only work with buttons
+// 		if (!matchesSelector(event.target, "button")) {
+// 			return;
+// 		}
+// 		buttonGroup.querySelector(".is-checked").classList.remove("is-checked");
+// 		event.target.classList.add("is-checked");
+// 	});
+// }
 
 // Iitialize Isotope
 // $("#isotope-container").isotope({});
@@ -91,3 +112,4 @@ function radioButtonGroup(buttonGroup) {
 // 		}
 // 	}
 // }
+// });

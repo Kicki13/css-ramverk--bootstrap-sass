@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv" data-bs-theme="dark"></html>
+<html lang="sv" data-bs-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -7,925 +7,1028 @@
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
-    <body class="bg-light">
-<!-- **********************************************************
+	<!-- <body class="bg-light"> -->
+	<body class="bg-light">
+		<!-- **********************************************************
             1 - Navbar section med kontakt modal
-*************************************************************** -->
-<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
-    <div class="container">
-        <a class="navbar-brand" href="#">Christina Näsström
-            <!-- <img src="https://placehold.co/400x100" alt="Logga" /> -->
-        </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav nav-underline ms-auto">
-            <li class="nav-item">
-                <a class="nav-link me-3 fw-semibold text-uppercase active" aria-current="page" href="#">Hem</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link me-3 fw-semibold text-uppercase" href="#work-section">Arbeten</a>
-            </li>
-            <li class="nav-item dropdown" data-bs-theme="light">
-                <a class="nav-link dropdown-toggle fw-semibold text-uppercase" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Mer info
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
-                    <li><a class="dropdown-item" href="#service-section">Tjänster</a></li>
-                    <li><a class="dropdown-item" href="#referenser-section">Referenser</a></li>
-                    <li><a class="dropdown-item" href="#about-section">Om mig</a></li>
-                    <li><a class="dropdown-item" href="#pris-section">Prislista</a></li>
-                    <li><a class="dropdown-item" href="#blogg-section">Blogg</a></li>
-                </ul>
-            </li> <!--btn btn-outline-primary rounded-pill text-light fw-semibold text-uppercase px-4 mx-3 -->
-          <li class="nav-item">
-            <a class="btn btn-outline-primary text-light fw-semibold text-uppercase px-3 mx-3" data-bs-toggle="modal"
-            data-bs-target="#myModal" href="#">Kontakt</a>
-          </li>
-          <li class="nav-item">
-            <div class="btn-group">
-                <button class="btn btn-light btn-light-dark fw-semibold text-uppercase btn-sm" data-bs-theme-value="light">Ljust</button>
-                <button class="btn btn-dark btn-light-dark fw-semibold text-uppercase btn-sm" data-bs-theme-value="dark">Mörkt</button>
-               
-            </div>
-                    <!-- <div class="form-check form-switch">
+        *************************************************************** -->
+		<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
+			<div class="container">
+				<a class="navbar-brand" href="#"
+					>Christina Näsström
+					<!-- <img src="https://placehold.co/400x100" alt="Logga" /> -->
+				</a>
+				<button
+					class="navbar-toggler"
+					type="button"
+					data-bs-toggle="collapse"
+					data-bs-target="#navbarSupportedContent"
+					aria-controls="navbarSupportedContent"
+					aria-expanded="false"
+					aria-label="Toggle navigation"
+				>
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<ul class="navbar-nav nav-underline ms-auto">
+						<li class="nav-item">
+							<a
+								class="nav-link me-3 fw-semibold text-uppercase active"
+								aria-current="page"
+								href="#"
+								>Hem</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link me-3 fw-semibold text-uppercase" href="#work-section"
+								>Arbeten</a
+							>
+						</li>
+						<li class="nav-item dropdown" data-bs-theme="light">
+							<a
+								class="nav-link dropdown-toggle fw-semibold text-uppercase"
+								href="#"
+								role="button"
+								data-bs-toggle="dropdown"
+								aria-expanded="false"
+							>
+								Mer info
+							</a>
+							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+								<li><a class="dropdown-item" href="#service-section">Tjänster</a></li>
+								<li><a class="dropdown-item" href="#referenser-section">Referenser</a></li>
+								<li><a class="dropdown-item" href="#about-section">Om mig</a></li>
+								<li><a class="dropdown-item" href="#pris-section">Prislista</a></li>
+								<li><a class="dropdown-item" href="#blogg-section">Blogg</a></li>
+							</ul>
+						</li>
+						<!--btn btn-outline-primary rounded-pill text-light fw-semibold text-uppercase px-4 mx-3 -->
+						<li class="nav-item">
+							<a
+								class="btn btn-outline-primary text-light fw-semibold text-uppercase px-3 mx-3"
+								data-bs-toggle="modal"
+								data-bs-target="#myModal"
+								href="#"
+								>Kontakt</a
+							>
+						</li>
+						<li class="nav-item">
+							<div class="btn-group">
+								<button
+									class="btn btn-sm btn-light fw-semibold text-uppercase"
+									data-bs-theme-value="light"
+								>
+									Ljust
+								</button>
+								<button
+									class="btn btn-sm btn-dark fw-semibold text-uppercase"
+									data-bs-theme-value="dark"
+								>
+									Mörkt
+								</button>
+							</div>
+							<!-- <div class="form-check form-switch">
                     <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>  -->
-                    <!-- Set the switch to "checked" by default -->
-                    <!-- <label class="form-check-label" for="darkModeSwitch">Mörk/ljust läge</label>
+							<!-- Set the switch to "checked" by default -->
+							<!-- <label class="form-check-label" for="darkModeSwitch">Mörk/ljust läge</label>
                 </div> -->
-          </li>
-        </ul>
-      </div>
-    </div>
-</nav>
-<!-- Kontakt Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-      <div class="modal-content">
-        <div class="modal-header">
-          <h1 class="modal-title fs-5" id="myModalLabel">Kontakta mig</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-        </div>
-        <div class="modal-body">
-            <form>
-                <div class="mb-3">
-                    <input type="text" class="form-control" placeholder="Namn">
-                </div>
-                <div class="input-group mb-3">
-                      <span class="input-group-text">@</span>
-                      <input type="email" class="form-control" placeholder="Email" />
-                </div>
-                <div class="mb-3">
-                    <select class="form-select">
-                        <option>Ämne</option>
-                        <option value="anstallning">Anställning</option>
-                        <option value="konsult_uppdrag">Konsult uppdrag</option>
-                        <option value="prata">Bara prata</option>
-                        <option value="annat">Annat</option>
-                    </select>
-                </div>
-                <div class="mb-3">
-                  <textarea class="form-control" id="message-text" placeholder="Meddelande"></textarea>
-                </div>
-                <div class="mb-3">
-                    <input type="checkbox" class="form-check-input" id="check" />
-                    <label for="check" class="form-check-label"> Är du redo att skicka meddelandet ?</label>
-                  </div>
-                  <button type="button" class="btn btn-primary">Skicka</button>
-              </form>
-        </div>
-      </div>
-    </div>
-    </div> 
-<!--End of kontakt modal i huvud navigeringen-->
+						</li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+		<!-- Kontakt Modal -->
+		<div
+			class="modal fade"
+			id="myModal"
+			tabindex="-1"
+			aria-labelledby="exampleModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+						<h1 class="modal-title fs-5" id="myModalLabel">Kontakta mig</h1>
+						<button
+							type="button"
+							class="btn-close"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="modal-body">
+						<form>
+							<div class="mb-3">
+								<input type="text" class="form-control" placeholder="Namn" />
+							</div>
+							<div class="input-group mb-3">
+								<span class="input-group-text">@</span>
+								<input type="email" class="form-control" placeholder="Email" />
+							</div>
+							<div class="mb-3">
+								<select class="form-select">
+									<option>Ämne</option>
+									<option value="anstallning">Anställning</option>
+									<option value="konsult_uppdrag">Konsult uppdrag</option>
+									<option value="prata">Bara prata</option>
+									<option value="annat">Annat</option>
+								</select>
+							</div>
+							<div class="mb-3">
+								<textarea
+									class="form-control"
+									id="message-text"
+									placeholder="Meddelande"
+								></textarea>
+							</div>
+							<div class="mb-3">
+								<input type="checkbox" class="form-check-input" id="check" />
+								<label for="check" class="form-check-label">
+									Är du redo att skicka meddelandet ?</label
+								>
+							</div>
+							<button type="button" class="btn btn-primary">Skicka</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--End of kontakt modal i navigeringen-->
 
-<!-- **********************************************************
+		<!-- **********************************************************
             2 - Hero section
-*************************************************************** -->
-<section id="hero-section" class="hero-section">
-    <div class="container">
-        <div class="row align-items-center"> 
-            <div class="col-md-10 text-start pt-5">
-                <h1 class="display-2">
-                    <span class="display-2--heading text-light"> Upptäck mästaren bakom webben... </span>
-                </h1>
-            </div>
-            <div class="row pt-3">
-                <div class="col-md-6 text-start">
-                    <!-- Text vänstersida -->
-                    <div class="text-container pt-3">
-                        <h1 class="display-2">
-                            <span class="display-2--description lh-base text-light">Stig in i den digitala världen och möt visionära webmaster, Christina. Med en passion för pixlar och en fingertoppskänsla för kod är Christina arkitekten bakom den sömlösa online-upplevelsen du snart ska utforska. Beväpnad med kreativitet och teknisk skicklighet väver hon samman design och funktionalitet för att skapa fängslande webbplatser som lämnar ett bestående intryck.</span>
-                        </h1>
-                        <!-- type="button" role="button" -->
-                        <!-- class="btn-lg rounded-pill btn-rounded" -->
-                        <a href="#about-section" class="shadow btn btn-hero position-relative btn-lg bg-body"> Vem är vår webmaster? <span class="badge text-bg-primary position-absolute top-50"><i class="bi bi-arrow-right"></i></span></a>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <!-- Bild högersida-->
-                    <div class="image-container">
-                        <img src="images/illustrationer/hero.svg" alt="webbutveckling" class="img-fluid">
-                    </div>
-                </div>
-            </div>
-            </div>
-          </div>
-         <!-- Våg-dropp mönster -->
-          <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
-      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"></path></svg>
-</section>
+        *************************************************************** -->
+		<section id="hero-section" class="hero-section">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-10 text-start pt-5">
+						<h1 class="display-2">
+							<span class="display-2--heading text-light">
+								Upptäck mästaren bakom webben...
+							</span>
+						</h1>
+					</div>
+					<div class="row pt-3">
+						<div class="col-md-6 text-start">
+							<!-- Text vänstersida -->
+							<div class="text-container pt-3">
+								<h1 class="display-2">
+									<span class="display-2--description lh-base text-light"
+										>Stig in i den digitala världen och möt visionära webmaster,
+										Christina. Med en passion för pixlar och en fingertoppskänsla för kod
+										är Christina arkitekten bakom den sömlösa online-upplevelsen du snart
+										ska utforska. Beväpnad med kreativitet och teknisk skicklighet väver
+										hon samman design och funktionalitet för att skapa fängslande
+										webbplatser som lämnar ett bestående intryck.</span
+									>
+								</h1>
+								<!-- type="button" role="button" -->
+								<!-- class="btn-lg rounded-pill btn-rounded" -->
+								<a
+									href="#about-section"
+									class="shadow btn btn-hero position-relative btn-lg bg-body"
+								>
+									Vem är vår webmaster?
+									<span class="badge text-bg-primary position-absolute top-50"
+										><i class="bi bi-arrow-right"></i></span
+								></a>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<!-- Bild högersida-->
+							<div class="image-container">
+								<img
+									src="images/illustrationer/hero.svg"
+									alt="webbutveckling"
+									class="img-fluid"
+								/>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Våg-dropp mönster -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path
+					fill="#f3f6f9"
+					fill-opacity="1"
+					d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"
+				></path>
+			</svg>
+		</section>
 
-<!-- **********************************************************
+		<!-- **********************************************************
             3 - Work section
-*************************************************************** -->
-<section id="work-section" class="work-section pt-8">
-    <div class="container">
-      <div class="row text-center">
-        <h1 class="display-2--heading">Mitt fantastiska arbete</h1>
-        <div class="heading-line"></div>
-        <p class="lead">
-            Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att vara involverade i. Varje projekt representerar en unik utmaning där jag har använt min expertis och kreativitet för att leverera enastående resultat.
-        </p>
-      </div>
-      <div class="button-group filters-button-group">
-        <button class="button is-checked" data-filter="*">show all</button>
-        <button class="button" data-filter=".metal">metal</button>
-        <button class="button" data-filter=".transition">transition</button>
-      </div>
-      
-      <div class="grid" data-isotope='{ "itemSelector": ".grid-item", "layoutMode": "fitRows" }'>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Mercury</h3>
-          <p class="symbol">Hg</p>
-          <p class="number">80</p>
-          <p class="weight">200.59</p>
-        </div>
-        <div class="element-item metalloid " data-category="metalloid">
-          <h3 class="name">Tellurium</h3>
-          <p class="symbol">Te</p>
-          <p class="number">52</p>
-          <p class="weight">127.6</p>
-        </div>
-        <div class="element-item post-transition metal " data-category="post-transition">
-          <h3 class="name">Bismuth</h3>
-          <p class="symbol">Bi</p>
-          <p class="number">83</p>
-          <p class="weight">208.980</p>
-        </div>
-        <div class="element-item post-transition metal " data-category="post-transition">
-          <h3 class="name">Lead</h3>
-          <p class="symbol">Pb</p>
-          <p class="number">82</p>
-          <p class="weight">207.2</p>
-        </div>
-        <div class="element-item transition metal " data-category="transition">
-          <h3 class="name">Gold</h3>
-          <p class="symbol">Au</p>
-          <p class="number">79</p>
-          <p class="weight">196.967</p>
-        </div>
-        <div class="element-item alkali metal " data-category="alkali">
-          <h3 class="name">Potassium</h3>
-          <p class="symbol">K</p>
-          <p class="number">19</p>
-          <p class="weight">39.0983</p>
-        </div>
-      </div>
-      
+        *************************************************************** -->
+		<section id="work-section" class="work-section pt-8">
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="display-2--heading">Mitt fantastiska arbete</h1>
+					<div class="heading-line"></div>
+					<p class="lead">
+						Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att
+						vara involverade i. Varje projekt representerar en unik utmaning där jag har
+						använt min expertis och kreativitet för att leverera enastående resultat.
+					</p>
+				</div>
+				<!-- Filter knappar   -->
+				<!-- Filter funktion med Isotop  https://isotope.metafizzy.co/ -->
+				<div
+					id="filters"
+					class="col d-flex justify-content-center button-group filter-button-group"
+				>
+					<button class="btn btn-outline-primary mx-1" type="button" data-filter="*">
+						Alla
+					</button>
+					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".webb">
+						Webb
+					</button>
+					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".design">
+						Design
+					</button>
+					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".mobil">
+						Mobil
+					</button>
+					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".foto">
+						Foto
+					</button>
+				</div>
+				<!-- Projekt/work lista/poster  -->
+				<!--  justify-content-center g-4 -->
+				<div class="row align-items-start lista">
+					<!-- projekt 1  col-lg-4 mb-4 col-md-6 -->
+					<div class="col">
+						<div class="card shadow-sm">
+							<div class="element-item webb" data-category="webb">
+								<img
+									src="images/blogg/fonts-400x400.webp"
+									alt="bild"
+									class="card-img-top img-fluid"
+								/>
+								<div class="card-body">
+									<div class="card-title">Webb</div>
+									<p class="card-text"></p>
+									<div class="d-flex justify-content-between align-items-center">
+										<div class="btn-group">
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												View
+											</button>
+											<button type="button" class="btn btn-sm btn-outline-secondary">
+												Edit
+											</button>
+										</div>
+										<small class="text-muted">9 mins</small>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- End of projekt 1-->
 
+				<!-- projekt 2-->
+				<div class="col">
+					<div class="card shadow-sm">
+						<div class="element-item foto" data-category="foto">
+							<img
+								src="images/blogg/pris-400x400.webp"
+								alt="bild"
+								class="card-img-top img-fluid"
+							/>
+							<div class="card-body">
+								<div class="card-title">foto</div>
+								<p class="card-text"></p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-secondary">
+											View
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-secondary">
+											Edit
+										</button>
+									</div>
+									<small class="text-muted">9 mins</small>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- End of projekt 2-->
 
+			<!-- projekt 3-->
 
+			<!-- End of projekt 3-->
 
+			<!-- projekt 4-->
 
+			<!-- End of projekt 4-->
 
+			<!-- projekt 5-->
 
-      <!-- Filter knappar   -->
-      <!-- <div class="row mt-5 mb-4 g-3 button-group filter-button-group"> -->
-        <!-- Filter funktion med Isotop  https://isotope.metafizzy.co/ -->
-        <!-- <div class="col d-flex justify-content-center" id="isotope-filters">
-            <button class="btn btn-outline-primary mx-1 active" type="button is-checked" data-filter="*">Alla</button>
-            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".webb"><span>Webb</span></button>
-            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".design"><span>Design</span></button>
-            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".mobil"><span>Mobil</span></button>
-            <button class="btn btn-outline-primary mx-1" type="button" data-filter=".foto"><span>Foto</span></button>
-        </div>
-      </div> -->
-  
-      <!-- Work poster  -->
-      <!-- <div class = "row justify-content-center g-4" id = "projekt-lista"> -->
-        <!-- projekt 1-->
-        <!-- <div class = "col-lg-4 col-md-6 element-item webb mobil" data-category="webb mobil">
-            <div class = "product-item">
-                <div class = "product-img">
-                    <img src = "images/portratt/kvinna1.webp" class = "img-fluid d-block mx-auto">
-                </div>
-                <div class = "product-content text-center py-3">
-                    <span class = "d-block text-uppercase fw-bold">product name</span>
-                    <span class = "d-block">$ 68.00</span>
-                </div>
-            </div>
-        </div> -->
-          <!-- End of projekt 1-->
-          <!-- projekt 2-->
-        <!-- <div class = "col-lg-4 col-md-6 element-item webb design" data-category="design webb">
-            <div class = "product-item">
-                <div class = "product-img">
-                    <img src = "images/portratt/kvinna2.webp" class = "img-fluid d-block mx-auto">
-                </div>
-                <div class = "product-content text-center py-3">
-                    <span class = "d-block text-uppercase fw-bold">product name</span>
-                    <span class = "d-block">$ 68.00</span>
-                </div>
-            </div>
-        </div> -->
-        <!-- End of projekt 2-->
-        <!-- projekt 3-->
-        <!-- <div class = "col-lg-4 col-md-6 element-item design" data-category="design">
-            <div class = "product-item">
-                <div class = "product-img">
-                    <img src = "images/portratt/kvinna3.webp" class = "img-fluid d-block mx-auto">
-                </div>
-                <div class = "product-content text-center py-3">
-                    <span class = "d-block text-uppercase fw-bold">product name</span>
-                    <span class = "d-block">$ 68.00</span>
-                </div>
-            </div>
-        </div> -->
-        <!-- End of projekt 3-->
-        <!-- projekt 4-->
-        <!-- <div class = "col-lg-4 col-md-6 element-item foto mobil" data-category="mobil foto">
-            <div class = "product-item">
-                <div class = "product-img">
-                    <img src = "images/portratt/kvinna4.webp" class = "img-fluid d-block mx-auto">
-                </div>
-                <div class = "product-content text-center py-3">
-                    <span class = "d-block text-uppercase fw-bold">product name</span>
-                    <span class = "d-block">$ 68.00</span>
-                </div>
-            </div>
-        </div> -->
-        <!-- End of projekt 4-->
+			<!-- End of projekt 5-->
 
-        <!-- <div class="album py-5">
-        <div class="container">
-            <div class="row">
-                <div id="isotope-container"> -->
-                     <!-- work 1 -->
-                  
-                      <!-- End of work 1 -->
+			<!-- projekt 6-->
 
-                         <!-- work 2 -->
-                    <!-- <div class="col-md-4">
-                        <div class="card mb-4 shadow-sm">
-                            <svg
-                              class="bd-placeholder-img card-img-top"
-                              width="100%"
-                              height="225"
-                              xmlns="http://www.w3.org/2000/svg"
-                              preserveAspectRatio="xMidYMid slice"
-                              focusable="false"
-                              role="img"
-                              aria-label="Placeholder: Thumbnail"
-                            >
-                              <title>Placeholder</title>
-                              <rect width="100%" height="100%" fill="#55595c"></rect>
-                              <text x="50%" y="50%" fill="#eceeef" dy=".3em">
-                                Thumbnail
-                              </text>
-                            </svg>
-                            <div class="card-body">
-                              <p class="card-text">
-                                This is a wider card with supporting text below as a natural
-                                lead-in to additional content. This content is a little bit
-                                longer.
-                              </p>
-                              <div
-                                class="d-flex justify-content-between align-items-center"
-                              >
-                                <div class="btn-group">
-                                  <button
-                                    type="button"
-                                    class="btn btn-sm btn-outline-secondary"
-                                  >
-                                    View
-                                  </button>
-                                  <button
-                                    type="button"
-                                    class="btn btn-sm btn-outline-secondary"
-                                  >
-                                    Edit
-                                  </button>
-                                </div>
-                                <small class="text-muted">9 mins</small>
-                              </div>
-                            </div>
-                          </div>
-                        </div>  -->
-                        <!-- End of work 2 -->
-                   
-                    <!-- <div class="col-lg-4 col-md-6 webb design">
-                        <div class="portfolio-box shadow">
-                            <img src="#" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                            <div class="portfolio-info">
-                                <div class="caption">
-                                    <h4>project name goes here 1</h4>
-                                    <p>category project</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- work 1 end -->
+			<!-- End of projekt 6-->
 
-                    <!--Kort test-->
-                    <!-- <div class="col webb design">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              
-                          <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                              </div>
-                              <small class="text-muted">9 mins</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-                      <!--End kort test-->
-                      <!--Kort test-->
-                    <!-- <div class="col webb">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              
-                          <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                              </div>
-                              <small class="text-muted">9 mins</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-                      <!--End kort test-->
-                      <!--Kort test-->
-                    <!-- <div class="col design">
-                        <div class="card shadow-sm">
-                          <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-              
-                          <div class="card-body">
-                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-                            <div class="d-flex justify-content-between align-items-center">
-                              <div class="btn-group">
-                                <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                                <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                              </div>
-                              <small class="text-muted">9 mins</small>
-                            </div>
-                          </div>
-                        </div>
-                      </div> -->
-                      <!--End kort test-->
-                    <!-- work 2 -->
-                    <!-- <div class="col-lg-4 col-md-6 design foto">
-                        <div class="portfolio-box shadow">
-                            <img src="images/portfolio/portfolio-1.jpg" alt="portfolio 1 image" title="portfolio 1 picture" class="img-fluid">
-                            <div class="portfolio-info">
-                                <div class="caption">
-                                    <h4>project name goes here 1</h4>
-                                    <p>category project</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div> -->
-                    <!-- work 2 end -->
+			<!-- <div class="element-item design" data-category="design">
+                        <h3 class="item-name">design</h3>
                     </div>
-                </div>
-            </div>
-        </div>
-    </div>
-      <!-- </section> -->
-    
-    </div>
-</section>
+                    <div class="element-item foto" data-category="foto">
+                        <h3 class="item-name">foto 2</h3>
+                    </div>
+                    <div class="element-item mobil" data-category="mobil">
+                        <h3 class="item-name">mobil</h3>
+                    </div> -->
+			<!-- </div> -->
+			<!-- </div> -->
+			<!-- </div> -->
+			<!-- </div>  -->
+			<!-- </div> -->
+		</section>
 
-<!-- **********************************************************
+		<!-- **********************************************************
             4 - Service section
-*************************************************************** -->
-<section id="service-section" class="service-section pt-5">
-    <div class="container">
-        <div class="row text-center">
-          <h1 class="display-2--heading">Vad jag gör - Mina tjänster</h1>  
-          <div class="mb-5"></div>
-        </div>
-      </div> 
-      <div class="container">
-        <div class="row pt-2 pb-2 mt-5 mb-5">
-            <div class="col-md-6 border-end border-2">
-               <div class="p-3">
-                <h2 class="pt-5 text-center display-2--introduction">Jag erbjuder komplett uppsättning tjänster för att ta din digitala närvaro till nya höjder och förverkliga dina visioner.</h2>
-               </div> 
-            </div>
-            <div class="col-md-6">
-                <div class="text-start">
-                    <div class="fw-light display-2--description">Från elegant layout till genomtänkt användarupplevelse strävar vi alltid efter att leverera designlösningar som framhäver din identitet och får din publik att ta aktion. Vi tar hänsyn till de senaste designtrenderna och bästa praxis för att säkerställa att din webbplats inte bara ser fantastisk ut, utan också är intuitiv att använda på alla enheter.</div>
-                    <div class="pt-2 fw-light display-2--description">Oavsett om du behöver en helt ny webbplats eller en uppfräschning av din befintliga online-närvaro, är vi redo att omsätta dina idéer till verklighet och skapa en digital närvaro som sticker ut.</div>
-                    <div class="pt-2 fw-light display-2--description">Kontakta oss idag för att diskutera dina designbehov och låt oss hjälpa dig att göra ett starkt intryck online.                 
-                    </div>    
-                </div>
-            </div>
-        </div>
-      </div>
-      <div class="container">
-        <!-- 1a min tjänster -->
-        <div class="row pt-5">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-paper-plane"></div>
-              <h3 class="display-2--title mt-1">Webbutveckling</h3>
-              <p class="display-2--description fw-light">
-                Vår process sträcker sig från noggrann planering och analys till skapandet av imponerande användargränssnitt och pålitliga bakomliggande system. Vi använder de senaste teknikerna och verktygen inom frontend- och backend-utveckling för att leverera högkvalitativa lösningar som möter dina behov och önskemål.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary">Läs mer
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-            <div class="services__pic">
-              <img src="images/illustrationer/webbutveckling.svg" alt="webbutveckling" class="img-fluid">
-            </div>
-          </div>
-        </div>
-        <!-- 2a min tjänster  -->
-        <div class="row pt-5">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
-            <div class="services__pic">
-              <img src="images/illustrationer/webbdesign.svg" alt="webbdesign" class="img-fluid">
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-code"></div>
-              <h3 class="pt-5 display-2--title mt-1">Webbdesign</h3>
-              <p class="display-2--description fw-light">
-                Från elegant layout till genomtänkt användarupplevelse strävar vi alltid efter att leverera designlösningar som framhäver din identitet och får din publik att ta aktion. Vi tar hänsyn till de senaste designtrenderna och bästa praxis för att säkerställa att din webbplats inte bara ser fantastisk ut, utan också är intuitiv att använda på alla enheter.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary">Läs mer
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- 3e min tjänster  -->
-        <div class="row pt-5">
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
-            <div class="services__content">
-              <div class="icon d-block fas fa-cloud-upload-alt"></div>
-              <h3 class="pt-5 display-2--title mt-1">Fotografering</h3>
-              <p class="display-2--description fw-light">
-                Oavsett om det är porträtt, bröllop, evenemang eller företagsfotografi, tar vi oss tid att förstå dina behov och önskemål för att skapa skräddarsydda bilder som överträffar dina förväntningar. Med en kombination av teknisk skicklighet och kreativ vision strävar vi efter att leverera bilder som berättar en historia och väcker känslor.
-              </p>
-              <button type="button" class="rounded-pill btn-rounded border-primary">Läs mer
-                <span><i class="fas fa-arrow-right"></i></span>
-              </button>
-            </div>
-          </div>
-          <div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
-            <div class="services__pic">
-              <img src="images/illustrationer/fotografering.svg" alt="fotografering" class="img-fluid">
-            </div>
-          </div>
-        </div>
-      </div>
-</section>
+        *************************************************************** -->
+		<section id="service-section" class="service-section pt-5">
+			<div class="container">
+				<div class="row text-center">
+					<h1 class="display-2--heading">Vad jag gör - Mina tjänster</h1>
+					<div class="mb-5"></div>
+				</div>
+			</div>
+			<div class="container">
+				<div class="row pt-2 pb-2 mt-5 mb-5">
+					<div class="col-md-6 border-end border-2">
+						<div class="p-3">
+							<h2 class="pt-5 text-center display-2--introduction">
+								Jag erbjuder komplett uppsättning tjänster för att ta din digitala närvaro
+								till nya höjder och förverkliga dina visioner.
+							</h2>
+						</div>
+					</div>
+					<div class="col-md-6">
+						<div class="text-start">
+							<div class="fw-light display-2--description">
+								Från elegant layout till genomtänkt användarupplevelse strävar vi alltid
+								efter att leverera designlösningar som framhäver din identitet och får din
+								publik att ta aktion. Vi tar hänsyn till de senaste designtrenderna och
+								bästa praxis för att säkerställa att din webbplats inte bara ser fantastisk
+								ut, utan också är intuitiv att använda på alla enheter.
+							</div>
+							<div class="pt-2 fw-light display-2--description">
+								Oavsett om du behöver en helt ny webbplats eller en uppfräschning av din
+								befintliga online-närvaro, är vi redo att omsätta dina idéer till verklighet
+								och skapa en digital närvaro som sticker ut.
+							</div>
+							<div class="pt-2 fw-light display-2--description">
+								Kontakta oss idag för att diskutera dina designbehov och låt oss hjälpa dig
+								att göra ett starkt intryck online.
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="container">
+				<!-- 1a min tjänster -->
+				<div class="row pt-5">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+						<div class="services__content">
+							<div class="icon d-block fas fa-paper-plane"></div>
+							<h3 class="display-2--title mt-1">Webbutveckling</h3>
+							<p class="display-2--description fw-light">
+								Vår process sträcker sig från noggrann planering och analys till skapandet
+								av imponerande användargränssnitt och pålitliga bakomliggande system. Vi
+								använder de senaste teknikerna och verktygen inom frontend- och
+								backend-utveckling för att leverera högkvalitativa lösningar som möter dina
+								behov och önskemål.
+							</p>
+							<button type="button" class="rounded-pill btn-rounded border-primary">
+								Läs mer
+								<span><i class="fas fa-arrow-right"></i></span>
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+						<div class="services__pic">
+							<img
+								src="images/illustrationer/webbutveckling.svg"
+								alt="webbutveckling"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+				<!-- 2a min tjänster  -->
+				<div class="row pt-5">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-start">
+						<div class="services__pic">
+							<img
+								src="images/illustrationer/webbdesign.svg"
+								alt="webbdesign"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+						<div class="services__content">
+							<div class="icon d-block fas fa-code"></div>
+							<h3 class="pt-5 display-2--title mt-1">Webbdesign</h3>
+							<p class="display-2--description fw-light">
+								Från elegant layout till genomtänkt användarupplevelse strävar vi alltid
+								efter att leverera designlösningar som framhäver din identitet och får din
+								publik att ta aktion. Vi tar hänsyn till de senaste designtrenderna och
+								bästa praxis för att säkerställa att din webbplats inte bara ser fantastisk
+								ut, utan också är intuitiv att använda på alla enheter.
+							</p>
+							<button type="button" class="rounded-pill btn-rounded border-primary">
+								Läs mer
+								<span><i class="fas fa-arrow-right"></i></span>
+							</button>
+						</div>
+					</div>
+				</div>
+				<!-- 3e min tjänster  -->
+				<div class="row pt-5">
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4">
+						<div class="services__content">
+							<div class="icon d-block fas fa-cloud-upload-alt"></div>
+							<h3 class="pt-5 display-2--title mt-1">Fotografering</h3>
+							<p class="display-2--description fw-light">
+								Oavsett om det är porträtt, bröllop, evenemang eller företagsfotografi, tar
+								vi oss tid att förstå dina behov och önskemål för att skapa skräddarsydda
+								bilder som överträffar dina förväntningar. Med en kombination av teknisk
+								skicklighet och kreativ vision strävar vi efter att leverera bilder som
+								berättar en historia och väcker känslor.
+							</p>
+							<button type="button" class="rounded-pill btn-rounded border-primary">
+								Läs mer
+								<span><i class="fas fa-arrow-right"></i></span>
+							</button>
+						</div>
+					</div>
+					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 services mt-4 text-end">
+						<div class="services__pic">
+							<img
+								src="images/illustrationer/fotografering.svg"
+								alt="fotografering"
+								class="img-fluid"
+							/>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
 
-<!-- **********************************************************
+		<!-- **********************************************************
             5 - Referenser section
-*************************************************************** -->
-<section id="referenser-section" class="referenser">
-    <!-- Våg-dropp mönster -->
-    <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
+        *************************************************************** -->
+		<section id="referenser-section" class="referenser">
+			<!-- Våg-dropp mönster -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path
+					fill="#f3f6f9"
+					fill-opacity="1"
+					d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
+				></path>
+			</svg>
 
-    <div class="container">
-        <div class="row text-center text-white">
-          <h1 class="display-2--heading pb-4">Referenser från mina sammarbetspartern</h1>
-        </div>
-    </div>
-    <div class="row align-items-center">
-        <div id="referenser" class="carousel slide" data-bs-ride="carousel">
-          <!-- Indicators/dots -->
-        <div class="carousel-indicators">
-            <button type="button" data-bs-target="#referenser" data-bs-slide-to="0" class="active"></button>
-            <button type="button" data-bs-target="#referenser" data-bs-slide-to="1"></button>
-            <button type="button" data-bs-target="#referenser" data-bs-slide-to="2"></button>
-            <button type="button" data-bs-target="#referenser" data-bs-slide-to="3"></button>
-            <button type="button" data-bs-target="#referenser" data-bs-slide-to="4"></button>
-        </div>  
-             
-        <!-- The slideshow/carousel -->
-        <div class="carousel-inner">
-            <!-- Karousel -- kort 1 -- https://getbootstrap.com/docs/5.3/components/carousel/ -->
-            <div class="carousel-item active">
-                <div class="row justify-content-center">
-                    <div class="card w-50 mb-3 text-center">
-                        <div class="card-body pb-2">
-                        <!--Företags namnet-->
-                            <h5 class="card-title">Brightside Technologies</h5>
-                            <blockquote class="blockquote mb-0">
-                            <p class="card-text">
-                                "Vi är oerhört nöjda med det arbete som Christina har utfört för oss. Hennes förmåga att kombinera skicklig webbutveckling, elegant design och professionell fotografering har verkligen lyft vår digitala närvaro till nya höjder. Vi rekommenderar varmt hennes tjänster till alla som söker en pålitlig och kreativ partner för sina digitala projekt."
-                            </p></blockquote>
-                        </div>
-                    </div>
-                    <div class="referenser__bild pt-10">
-                        <img src="images/portratt/kvinna1.webp" alt="kvinna 1" class="rounded-circle img-fluid">
-                    </div>
-                    <!-- client name & role  -->
-                    <div class="referenser__name">
-                        <h3>Sofia Andersson</h3>
-                        <p class="fw-light">Marknadschef</p>
-                    </div>
-                </div>
-            </div> <!-- End of kort 1 -->
+			<div class="container">
+				<div class="row text-center text-white">
+					<h1 class="display-2--heading pb-4">Referenser från mina sammarbetspartern</h1>
+				</div>
+			</div>
+			<div class="row align-items-center">
+				<div id="referenser" class="carousel slide" data-bs-ride="carousel">
+					<!-- Indicators/dots -->
+					<div class="carousel-indicators">
+						<button
+							type="button"
+							data-bs-target="#referenser"
+							data-bs-slide-to="0"
+							class="active"
+						></button>
+						<button type="button" data-bs-target="#referenser" data-bs-slide-to="1"></button>
+						<button type="button" data-bs-target="#referenser" data-bs-slide-to="2"></button>
+						<button type="button" data-bs-target="#referenser" data-bs-slide-to="3"></button>
+						<button type="button" data-bs-target="#referenser" data-bs-slide-to="4"></button>
+					</div>
 
-            <!-- Karousel -- kort 2 -- -->
-            <div class="carousel-item ">
-                <div class="row justify-content-center">
-                    <div class="card w-50 mb-3 text-center">
-                        <div class="card-body pb-2">
-                        <!--Företags namnet-->
-                            <h5 class="card-title">GreenLeaf Fashion</h5>
-                            <blockquote class="blockquote mb-0">
-                            <!--Företagets referens-->    
-                            <p class="card-text">
-                                "Tack vare Christina har vi fått en fantastisk webbplats och visuell identitet som verkligen speglar vårt varumärke. Hennes expertis inom webbutveckling, design och fotografering har varit ovärderlig för oss. Vi är mycket imponerade och rekommenderar dem starkt till alla som söker en partner för sina digitala behov."
-                            </p></blockquote>
-                        </div>
-                    </div>
-                    <!--Bild på personen som refererade-->  
-                    <div class="referenser__bild pt-10">
-                        <img src="images/portratt/man1.webp" alt="man 1" class="rounded-circle img-fluid">
-                    </div>
-                    <!--Namn & titel på personen som refererade-->
-                    <div class="referenser__name">
-                        <h3>Jonas Svensson</h3>
-                        <p class="fw-light">VD</p>
-                    </div>
-                </div>
-            </div> <!-- End of kort 2 -->
+					<!-- The slideshow/carousel -->
+					<div class="carousel-inner">
+						<!-- Karousel -- kort 1 -- https://getbootstrap.com/docs/5.3/components/carousel/ -->
+						<div class="carousel-item active">
+							<div class="row justify-content-center">
+								<div class="card w-50 mb-3 text-center">
+									<div class="card-body pb-2">
+										<!--Företags namnet-->
+										<h5 class="card-title">Brightside Technologies</h5>
+										<blockquote class="blockquote mb-0">
+											<p class="card-text">
+												"Vi är oerhört nöjda med det arbete som Christina har utfört för
+												oss. Hennes förmåga att kombinera skicklig webbutveckling,
+												elegant design och professionell fotografering har verkligen
+												lyft vår digitala närvaro till nya höjder. Vi rekommenderar
+												varmt hennes tjänster till alla som söker en pålitlig och
+												kreativ partner för sina digitala projekt."
+											</p>
+										</blockquote>
+									</div>
+								</div>
+								<div class="referenser__bild pt-10">
+									<img
+										src="images/portratt/kvinna1.webp"
+										alt="kvinna 1"
+										class="rounded-circle img-fluid"
+									/>
+								</div>
+								<!-- client name & role  -->
+								<div class="referenser__name">
+									<h3>Sofia Andersson</h3>
+									<p class="fw-light">Marknadschef</p>
+								</div>
+							</div>
+						</div>
+						<!-- End of kort 1 -->
 
-            <!-- Karousel -- kort 3 -- -->
-            <div class="carousel-item ">
-                <div class="row justify-content-center">
-                    <div class="card w-50 mb-3 text-center">
-                        <div class="card-body pb-2">
-                        <!--Företags namnet-->
-                            <h5 class="card-title">Creative Solutions AB</h5>
-                            <blockquote class="blockquote mb-0">
-                            <!--Företagets referens-->    
-                            <p class="card-text">
-                                "Vi är så tacksamma för det fantastiska arbete som christina har gjort för oss. Hennes förmåga att förstå våra behov och översätta dem till fantastisk design och användarvänlig webbutveckling har verkligen överträffat våra förväntningar. Vi ser fram emot att fortsätta samarbeta med dem på framtida projekt." 
-                            </p></blockquote>
-                        </div>
-                    </div>
-                    <!--Bild på personen som refererade-->  
-                    <div class="referenser__bild pt-10">
-                        <img src="images/portratt/kvinna2.webp" alt="kvinna 2" class="rounded-circle img-fluid">
-                    </div>
-                    <!--Namn & titel på personen som refererade-->
-                    <div class="referenser__name">
-                        <h3>Maria Karlsson</h3>
-                        <p class="fw-light">Kreativ chef</p>
-                    </div>
-                </div>
-            </div> <!-- End of kort 3 -->
+						<!-- Karousel -- kort 2 -- -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="card w-50 mb-3 text-center">
+									<div class="card-body pb-2">
+										<!--Företags namnet-->
+										<h5 class="card-title">GreenLeaf Fashion</h5>
+										<blockquote class="blockquote mb-0">
+											<!--Företagets referens-->
+											<p class="card-text">
+												"Tack vare Christina har vi fått en fantastisk webbplats och
+												visuell identitet som verkligen speglar vårt varumärke. Hennes
+												expertis inom webbutveckling, design och fotografering har varit
+												ovärderlig för oss. Vi är mycket imponerade och rekommenderar
+												dem starkt till alla som söker en partner för sina digitala
+												behov."
+											</p>
+										</blockquote>
+									</div>
+								</div>
+								<!--Bild på personen som refererade-->
+								<div class="referenser__bild pt-10">
+									<img
+										src="images/portratt/man1.webp"
+										alt="man 1"
+										class="rounded-circle img-fluid"
+									/>
+								</div>
+								<!--Namn & titel på personen som refererade-->
+								<div class="referenser__name">
+									<h3>Jonas Svensson</h3>
+									<p class="fw-light">VD</p>
+								</div>
+							</div>
+						</div>
+						<!-- End of kort 2 -->
 
-            <!-- Karousel -- kort 4 -- -->
-            <div class="carousel-item ">
-                <div class="row justify-content-center">
-                    <div class="card w-50 mb-3 text-center">
-                        <div class="card-body pb-2">
-                        <!--Företags namnet-->
-                            <h5 class="card-title">Peak Performance Consulting</h5>
-                            <blockquote class="blockquote mb-0">
-                            <!--Företagets referens-->    
-                            <p class="card-text">
-                                "Vi är otroligt imponerade av det arbete som Christina har gjort för oss. Hennes skickliga webbutveckling, kreativa design och professionella fotografering har verkligen hjälpt oss att förbättra vår online-närvaro och attrahera nya kunder. Vi rekommenderar henne starkt till alla som söker en pålitlig och kompetent partner för sina digitala projekt."
-                            </p></blockquote>
-                        </div>
-                    </div>
-                    <!--Bild på personen som refererade-->  
-                    <div class="referenser__bild pt-10">
-                        <img src="images/portratt/man2.webp" alt="man 2" class="rounded-circle img-fluid">
-                    </div>
-                    <!--Namn & titel på personen som refererade-->
-                    <div class="referenser__name">
-                        <h3>Erik Johansson</h3>
-                        <p class="fw-light">HR-chef</p>
-                    </div>
-                </div>
-            </div> <!-- End of kort 4 -->
+						<!-- Karousel -- kort 3 -- -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="card w-50 mb-3 text-center">
+									<div class="card-body pb-2">
+										<!--Företags namnet-->
+										<h5 class="card-title">Creative Solutions AB</h5>
+										<blockquote class="blockquote mb-0">
+											<!--Företagets referens-->
+											<p class="card-text">
+												"Vi är så tacksamma för det fantastiska arbete som christina har
+												gjort för oss. Hennes förmåga att förstå våra behov och
+												översätta dem till fantastisk design och användarvänlig
+												webbutveckling har verkligen överträffat våra förväntningar. Vi
+												ser fram emot att fortsätta samarbeta med dem på framtida
+												projekt."
+											</p>
+										</blockquote>
+									</div>
+								</div>
+								<!--Bild på personen som refererade-->
+								<div class="referenser__bild pt-10">
+									<img
+										src="images/portratt/kvinna2.webp"
+										alt="kvinna 2"
+										class="rounded-circle img-fluid"
+									/>
+								</div>
+								<!--Namn & titel på personen som refererade-->
+								<div class="referenser__name">
+									<h3>Maria Karlsson</h3>
+									<p class="fw-light">Kreativ chef</p>
+								</div>
+							</div>
+						</div>
+						<!-- End of kort 3 -->
 
-            <!-- Karousel -- kort 5 -- -->
-            <div class="carousel-item ">
-                <div class="row justify-content-center">
-                    <div class="card w-50 mb-3 text-center">
-                        <div class="card-body pb-2">
-                        <!--Företags namnet-->
-                            <h5 class="card-title">BlueWave Entertainment</h5>
-                            <blockquote class="blockquote mb-0">
-                            <!--Företagets referens-->    
-                            <p class="card-text">
-                                "Tack vare christina har vi fått en imponerande webbplats och bildmaterial som verkligen fångar vår varumärkesidentitet. Hennes professionalism, kreativitet och dedikation till att leverera högkvalitativa resultat har gjort dem till en ovärderlig partner för oss. Vi ser fram emot att fortsätta samarbeta med henne på framtida projekt."
-                            </p></blockquote>
-                        </div>
-                    </div>
-                    <!--Bild på personen som refererade-->  
-                    <div class="referenser__bild pt-10">
-                        <img src="images/portratt/kvinna3.webp" alt="kvinna 3" class="rounded-circle img-fluid">
-                    </div>
-                    <!--Namn & titel på personen som refererade-->
-                    <div class="referenser__name">
-                        <h3>Emma Nilsson</h3>
-                        <p class="fw-light">Kommunikationsansvarig</p>
-                    </div>
-                </div>
-            </div> <!-- End of kort 5 -->
+						<!-- Karousel -- kort 4 -- -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="card w-50 mb-3 text-center">
+									<div class="card-body pb-2">
+										<!--Företags namnet-->
+										<h5 class="card-title">Peak Performance Consulting</h5>
+										<blockquote class="blockquote mb-0">
+											<!--Företagets referens-->
+											<p class="card-text">
+												"Vi är otroligt imponerade av det arbete som Christina har gjort
+												för oss. Hennes skickliga webbutveckling, kreativa design och
+												professionella fotografering har verkligen hjälpt oss att
+												förbättra vår online-närvaro och attrahera nya kunder. Vi
+												rekommenderar henne starkt till alla som söker en pålitlig och
+												kompetent partner för sina digitala projekt."
+											</p>
+										</blockquote>
+									</div>
+								</div>
+								<!--Bild på personen som refererade-->
+								<div class="referenser__bild pt-10">
+									<img
+										src="images/portratt/man2.webp"
+										alt="man 2"
+										class="rounded-circle img-fluid"
+									/>
+								</div>
+								<!--Namn & titel på personen som refererade-->
+								<div class="referenser__name">
+									<h3>Erik Johansson</h3>
+									<p class="fw-light">HR-chef</p>
+								</div>
+							</div>
+						</div>
+						<!-- End of kort 4 -->
 
+						<!-- Karousel -- kort 5 -- -->
+						<div class="carousel-item">
+							<div class="row justify-content-center">
+								<div class="card w-50 mb-3 text-center">
+									<div class="card-body pb-2">
+										<!--Företags namnet-->
+										<h5 class="card-title">BlueWave Entertainment</h5>
+										<blockquote class="blockquote mb-0">
+											<!--Företagets referens-->
+											<p class="card-text">
+												"Tack vare christina har vi fått en imponerande webbplats och
+												bildmaterial som verkligen fångar vår varumärkesidentitet.
+												Hennes professionalism, kreativitet och dedikation till att
+												leverera högkvalitativa resultat har gjort dem till en
+												ovärderlig partner för oss. Vi ser fram emot att fortsätta
+												samarbeta med henne på framtida projekt."
+											</p>
+										</blockquote>
+									</div>
+								</div>
+								<!--Bild på personen som refererade-->
+								<div class="referenser__bild pt-10">
+									<img
+										src="images/portratt/kvinna3.webp"
+										alt="kvinna 3"
+										class="rounded-circle img-fluid"
+									/>
+								</div>
+								<!--Namn & titel på personen som refererade-->
+								<div class="referenser__name">
+									<h3>Emma Nilsson</h3>
+									<p class="fw-light">Kommunikationsansvarig</p>
+								</div>
+							</div>
+						</div>
+						<!-- End of kort 5 -->
+					</div>
+				</div>
+			</div>
+			<!-- Våg-dropp mönster -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+				<path
+					fill="#f3f6f9"
+					fill-opacity="1"
+					d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
+				></path>
+			</svg>
+		</section>
 
-        </div>
-      </div>
-    </div>
-    <!-- Våg-dropp mönster -->
-    <!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#f3f6f9" fill-opacity="1" d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
-  
-</section>
-
-<!-- **********************************************************
+		<!-- **********************************************************
             6 - Om mig section
-*************************************************************** -->
-<section id="about-section" class="about-section pt-6">
-    <div class="container">
-        <div class="row mt-5">
-          <h1 class="display-2--heading text-center">Vem är då jag?</h1>
-       
-          <div class="col-md-6 display-2--description fw-light">
-            <p>Jag är en mångsidig individ med en passion för teknik, konst och naturen. För närvarande befinner jag mig mitt i min utbildning till webmaster vid Högskolan Väst, där jag fördjupar mig i webbutveckling och design.</p>
+        *************************************************************** -->
+		<section id="about-section" class="about-section pt-6">
+			<div class="container">
+				<div class="row mt-5">
+					<h1 class="display-2--heading text-center">Vem är då jag?</h1>
+					<div class="col-md-6 display-2--description fw-light">
+						<p>
+							Jag är en mångsidig individ med en passion för teknik, konst, djur och natur.
+							För närvarande befinner jag mig mitt i min utbildning till webmaster vid
+							Högskolan Väst, där jag fördjupar mig i webbutveckling och design.
+						</p>
+						<!-- accordion-flush -->
+						<div class="accordion" id="accordionFlushExample">
+							<div class="accordion-item">
+								<h2 class="accordion-header">
+									<!-- data-bs-target="#panelsStayOpen-collapseOne" -->
+									<button
+										class="accordion-button"
+										type="button"
+										data-bs-toggle="collapse"
+										data-bs-target="#panelsStayOpen-collapseOne"
+										aria-expanded="true"
+										aria-controls="panelsStayOpen-collapseOne"
+									>
+										Läs mer
+									</button>
+								</h2>
+								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
+									<div class="accordion-body bg-light">
+										<p class="pt-2">
+											Mitt hem är beläget på landet i den vackra naturen i Jämtland, där
+											jag delar min tillvaro med min sambo och våra fyra charmiga
+											Connemara-ponnyer samt en charmig katt.
+										</p>
 
-            <p>Mitt hem är beläget på landet i den vackra naturen i Jämtland, där jag delar min tillvaro med min sambo och våra fyra charmiga Connemara-ponnyer samt en charmig katt.</p>
+										<p>
+											Min passion för hästar och ridning har varit en central del av mitt
+											liv, och även om jag inte tävlar längre så njuter jag fortfarande
+											av träningen och gemenskapen kring westernridning. Jag tar gärna en
+											ridturer genom den vackra jämtländska naturen. Fotografering är en
+											av mina favorithobbies, och jag tar ofta med mig kameran på mina
+											äventyr för att fånga ögonblicken och skönheten i naturen.
+										</p>
 
-            <p>Min passion för hästar och ridning har varit en central del av mitt liv, och även om jag inte tävlar längre så njuter jag fortfarande av träningen och gemenskapen kring westernridning. Jag tar gärna en ridturer genom den vackra jämtländska naturen. Fotografering är en av mina favorithobbies, och jag tar ofta med mig kameran på mina äventyr för att fånga ögonblicken och skönheten i naturen.</p>
+										<p>
+											När jag inte är ute i naturen ägnar jag mig åt att var kreativ och
+											då genom att måla och göra layouter. Att uttrycka mig genom konst
+											och design är något jag verkligen brinner för och som ger mig stor
+											glädje.
+										</p>
+									</div>
+								</div>
+							</div>
+							<p class="mt-4">
+								Min erfarenhet inom webbprogrammering, design och fotografering sträcker sig
+								över många år, och jag har en djup förståelse för hur man skapar digitala
+								lösningar som är både funktionella och estetiskt tilltalande. Jag trivs bäst
+								när jag får möjlighet att utveckla och skapa något som är skräddarsytt för
+								ett specifikt ändamål, och jag känner stort nöje i att se mina idéer och
+								projekt ta form och bli verklighet.
+							</p>
+						</div>
+					</div>
+					<!-- Höger sida -->
+					<div class="col-md-6">
+						<img
+							src="images/portratt/webmaster-400x400.webp"
+							alt="porträtt"
+							class="img-fluid img-portrait rounded-2 shadow"
+						/>
+						<h3 class="text-uppercase fw-bold">Skills</h3>
+						<p>
+							Här är en lista över mina kunskaper med dessa dumma procentsatser som inte
+							betyder någonting 😉
+						</p>
+						<h5><i class="fas fa-check"></i> HTML 5</h5>
+						<div
+							class="progress mb-4"
+							role="progressbar"
+							aria-valuenow="100"
+							aria-valuemin="0"
+							aria-valuemax="100"
+						>
+							<div class="progress-bar" style="width: 100%">100%</div>
+						</div>
 
-            <p>När jag inte är ute i naturen ägnar jag mig åt att var kreativ och då genom att måla och göra layouter. Att uttrycka mig genom konst och design är något jag verkligen brinner för och som ger mig stor glädje.</p>
+						<h5><i class="fas fa-check"></i> CSS</h5>
+						<div
+							class="progress mb-4"
+							role="progressbar"
+							aria-valuenow="90"
+							aria-valuemin="0"
+							aria-valuemax="100"
+						>
+							<div class="progress-bar" style="width: 90%">90%</div>
+						</div>
 
-            <p>Min erfarenhet inom webbprogrammering, design och fotografering sträcker sig över många år, och jag har en djup förståelse för hur man skapar digitala lösningar som är både funktionella och estetiskt tilltalande. Jag trivs bäst när jag får möjlighet att utveckla och skapa något som är skräddarsytt för ett specifikt ändamål, och jag känner stort nöje i att se mina idéer och projekt ta form och bli verklighet.</p>
-          </div>
-          <!-- Höger sida -->
-            <div class="col-md-6">
-                <img src="images/portratt/webmaster-400x400.webp" alt="porträtt" class="img-fluid img-portrait rounded-2 shadow">    
-                  <h3 class="text-uppercase fw-bold">Skills</h3>
-                  <p>
-                    Här är en lista över mina kunskaper med dessa dumma procentsatser som inte betyder någonting 😉
-                  </p>
-                  <h5><i class="fas fa-check"></i> HTML 5</h5>
-                  <div
-                    class="progress mb-4"
-                    role="progressbar"
-                    aria-valuenow="100"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="progress-bar" style="width: 100%">100%</div>
-                  </div>
-      
-                  <h5><i class="fas fa-check"></i> CSS</h5>
-                  <div
-                    class="progress mb-4"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="progress-bar" style="width: 90%">90%</div>
-                  </div>
-      
-                  <h5><i class="fas fa-check"></i> JavaScript</h5>
-                  <div
-                    class="progress mb-4"
-                    role="progressbar"
-                    aria-valuenow="90"
-                    aria-valuemin="0"
-                    aria-valuemax="100"
-                  >
-                    <div class="progress-bar" style="width: 90%">90%</div>
-                  </div>
-      
-                 
-                  </div>
-                </div>
-              </div>
-              <div class="row mt-5 text-center">
-                <div class="col-12">
-                  <a
-                    href="#"
-                    class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
-                    >Hire Me Now</a
-                  >
-                  <a
-                    href="#"
-                    class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
-                    >Ladda mer mitt CV</a
-                  >
-                </div>
-            </div>
-    
-</section>
+						<h5><i class="fas fa-check"></i> JavaScript</h5>
+						<div
+							class="progress mb-4"
+							role="progressbar"
+							aria-valuenow="90"
+							aria-valuemin="0"
+							aria-valuemax="100"
+						>
+							<div class="progress-bar" style="width: 90%">90%</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="row mt-5 text-center">
+				<div class="col-12">
+					<a
+						href="#referenser-section"
+						class="btn btn-outline-dark btn-lg text-uppercase px-5 mx-3 my-2"
+						>Se vad mina sammarbetetspartner säger</a
+					>
+					<a href="#" class="btn btn-dark btn-lg text-uppercase px-5 mx-3 my-2"
+						>Ladda mer mitt CV</a
+					>
+				</div>
+			</div>
+		</section>
 
-<!-- **********************************************************
+		<!-- **********************************************************
             7 - Priser section
-*************************************************************** -->
-<section id="pris-section" class="pris-section pt-6">
-    <div class="container">
-        <div class="row text-center mt-5">
-            <h1 class="display-2--heading">Priser på mina tjänster</h1>
-            <div class="heading-line"></div>
-            <div class="row mt-5">
-                <div class="col-md-4">
-                <!-- Pris kort 1 -->
-                    <div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
-                        <div class="card-body">
-                            <div class="heading-line">kort 1</div>
-                            <p class="text-muted">for freelancers</p>
-                            <h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
-                            <ul class="list-group list-group-flush fs-5 mb-5">
-                                <li class="list-group-item border-0">
-                                    <i class="bi bi-check2"></i> text text
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <i class="bi bi-check2"></i> mer text
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <i class="bi bi-check2"></i> ännu mera text
-                                </li>
-                                <li class="list-group-item border-0">
-                                    <i class="bi bi-check2"></i> slut text
-                                </li>
-                            </ul>
-                            <div class="d-grid">
-                               <button class="btn btn-primarey-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg">
-                                knapp
-                               </button> 
-                            </div>
-                        </div>
-                    </div>
-                </div> <!-- End of Pris kort 1 -->
+        *************************************************************** -->
+		<section id="pris-section" class="pris-section pt-6">
+			<div class="container">
+				<div class="row text-center mt-5">
+					<h1 class="display-2--heading">Priser på mina tjänster</h1>
+					<div class="heading-line"></div>
+					<div class="row mt-5">
+						<div class="col-md-4">
+							<!-- Pris kort 1 -->
+							<div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
+								<div class="card-body">
+									<div class="heading-line">kort 1</div>
+									<p class="text-muted">for freelancers</p>
+									<h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
+									<ul class="list-group list-group-flush fs-5 mb-5">
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> text text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> mer text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> ännu mera text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> slut text
+										</li>
+									</ul>
+									<div class="d-grid">
+										<button
+											class="btn btn-primarey-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg"
+										>
+											knapp
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Pris kort 1 -->
 
-                <div class="col-md-4">
-                 <!-- Pris kort 2 -->
-                 <div class="card text-bg-primary rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
-                    <div class="card-body">
-                        <div class="heading-line text-white">kort 2</div>
-                        <p class="text-white">for freelancers</p>
-                        <h2 class="fs-1 fw-bold mt-4 mb-5 text-white">2000 kr</h2>
-                        <ul class="list-group list-group-flush fs-5 mb-5">
-                            <li class="list-group-item border-0 text-bg-primary text-white">
-                                <i class="bi bi-check2 text-white"></i> text text
-                            </li>
-                            <li class="list-group-item border-0 text-bg-primary text-white">
-                                <i class="bi bi-check2 text-white"></i> mer text
-                            </li>
-                            <li class="list-group-item border-0 text-bg-primary text-white">
-                                <i class="bi bi-check2 v"></i> ännu mera text
-                            </li>
-                            <li class="list-group-item border-0 text-bg-primary text-white">
-                                <i class="bi bi-check2 text-white"></i> slut text
-                            </li>
-                        </ul>
-                        <div class="d-grid">
-                           <button class="btn btn-white-rounded-4 bg-white text-primary mt-5 mb-4 shadow-lg">
-                            knapp
-                           </button> 
-                        </div>
-                    </div>
-                </div>
-                </div> <!-- End of Pris kort 2 -->
-                <div class="col-md-4">
-                 <!-- Pris kort 3 -->
-                 <div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
-                    <div class="card-body">
-                        <div class="heading-line">kort 3</div>
-                        <p class="text-muted">for freelancers</p>
-                        <h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
-                        <ul class="list-group list-group-flush fs-5 mb-5">
-                            <li class="list-group-item border-0">
-                                <i class="bi bi-check2"></i> text text
-                            </li>
-                            <li class="list-group-item border-0">
-                                <i class="bi bi-check2"></i> mer text
-                            </li>
-                            <li class="list-group-item border-0">
-                                <i class="bi bi-check2"></i> ännu mera text
-                            </li>
-                            <li class="list-group-item border-0">
-                                <i class="bi bi-check2"></i> slut text
-                            </li>
-                        </ul>
-                        <div class="d-grid">
-                           <button class="btn btn-primary-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg">
-                            knapp
-                           </button> 
-                        </div>
-                    </div>
-                </div>
-                </div> <!-- End of Pris kort 3 -->
+						<div class="col-md-4">
+							<!-- Pris kort 2 -->
+							<div
+								class="card text-bg-primary rounded-4 shadow-lg border-0 mb-5 vstack gap-2"
+							>
+								<div class="card-body">
+									<div class="heading-line text-white">kort 2</div>
+									<p class="text-white">for freelancers</p>
+									<h2 class="fs-1 fw-bold mt-4 mb-5 text-white">2000 kr</h2>
+									<ul class="list-group list-group-flush fs-5 mb-5">
+										<li class="list-group-item border-0 text-bg-primary text-white">
+											<i class="bi bi-check2 text-white"></i> text text
+										</li>
+										<li class="list-group-item border-0 text-bg-primary text-white">
+											<i class="bi bi-check2 text-white"></i> mer text
+										</li>
+										<li class="list-group-item border-0 text-bg-primary text-white">
+											<i class="bi bi-check2 v"></i> ännu mera text
+										</li>
+										<li class="list-group-item border-0 text-bg-primary text-white">
+											<i class="bi bi-check2 text-white"></i> slut text
+										</li>
+									</ul>
+									<div class="d-grid">
+										<button
+											class="btn btn-white-rounded-4 bg-white text-primary mt-5 mb-4 shadow-lg"
+										>
+											knapp
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Pris kort 2 -->
+						<div class="col-md-4">
+							<!-- Pris kort 3 -->
+							<div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2">
+								<div class="card-body">
+									<div class="heading-line">kort 3</div>
+									<p class="text-muted">for freelancers</p>
+									<h2 class="fs-1 fw-bold mt-4 mb-5">2000 kr</h2>
+									<ul class="list-group list-group-flush fs-5 mb-5">
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> text text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> mer text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> ännu mera text
+										</li>
+										<li class="list-group-item border-0">
+											<i class="bi bi-check2"></i> slut text
+										</li>
+									</ul>
+									<div class="d-grid">
+										<button
+											class="btn btn-primary-rounded-4 bg-primary text-white mt-5 mb-4 shadow-lg"
+										>
+											knapp
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+						<!-- End of Pris kort 3 -->
+					</div>
+				</div>
+			</div>
+		</section>
 
-            </div>
-        </div>
-    </div>
-</section>
-
-<!-- **********************************************************
+		<!-- **********************************************************
             8 - Bloggen section
-*************************************************************** -->
-<section id="blogg-section" class="blogg-section pt-6">
-    <div class="container">
-        <div class="row text-center mt-5">
-          <h1 class="display-2--heading">Senast på bloggen</h1>
-          <div class="heading-line"></div>
-        </div>
-    </div>
+        *************************************************************** -->
+		<section id="blogg-section" class="blogg-section pt-6">
+			<div class="container">
+				<div class="row text-center mt-5">
+					<h1 class="display-2--heading">Senast på bloggen</h1>
+					<div class="heading-line"></div>
+				</div>
+			</div>
 
-    <div class="container overflow-hidden">
-        <div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
-          <!-- Bloggpost 1-->
-            <div class="col-12 col-lg-4">
-            <article>
-                <div class="card border-0 bg-transparent">
-                    <!-- class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong" -->
-                    <div class="card-img-top">
-                        <img class="img-fluid rounded-top-4 " loading="lazy" src="images/blogg/fonts.png" alt="Design">
-                            <a href="#!">
-                                <div class="card-img-overlay">
-                                    <a href="#" class="btn btn-primary text-light position-absolute top-0 end-0 m-1">Läs mer <i class="bi bi-chevron-double-right"></i></a>
+			<div class="container overflow-hidden">
+				<div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
+					<!-- Bloggpost 1-->
+					<div class="col-12 col-lg-4">
+						<article>
+							<div class="card border-0 bg-transparent">
+								<!-- <div class="card-img-top"> -->
+								<img
+									class="img-fluid rounded-top-4"
+									loading="lazy"
+									src="images/blogg/fonts-400x400.webp"
+									alt="Design"
+								/>
+								<!-- <a href="#"> -->
+								<!-- <div class="card-img-overlay">
+                                        <a href="#" class="btn btn-primary text-light position-absolute top-0 end-0 m-1">Läs mer <i class="bi bi-chevron-double-right"></i></a>
+                                    </div> -->
+								<!-- </a> -->
+								<!-- <div> -->
+							</div>
+
+							<!-- <div class="card-body m-0 p-0">
+                                <div class="mb-3">
+                                    <ul class="list-unstyled d-flex mb-3">
+                                        <li>
+                                            <a class="d-inline-flex px-2 py-1 border rounded-2 text-decoration-none fs-7 mt-2" href="#!">Typsnitt</a>
+                                        </li>
+                                    </ul>
+                                    <h2 class="card-title h4 m-0">
+                                        <a class="link-dark text-decoration-none display-2--rubrik" href="#!">15 bästa nya typsnitt 2024</a>
+                                    </h2>
+                                    <p class="card-text">Med en värld som ständigt strävar efter att kombinera estetik och funktionalitet, spelar typsnitt en avgörande roll i designlandskapet. Så låt oss dyka in i världen av typografi och upptäcka de mest spännande typsnitten som 2024 har att erbjuda.</p>
                                 </div>
-                            </a>
-                    <div>
-                </div>
+                            </div> -->
+							<!-- <div class="card-footer border-0 bg-transparent p-0 m-0">
+                                <ul class="list-unstyled d-flex align-items-center m-0">
+                                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
+                                        <div class="ms-2 fs-7">
+                                            <img src="images/portratt/webmaster-40x40.webp" alt="författare" class="rounded-circle">
+                                        </div>
+                                    </li>
+                                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
+                                        <span class="ms-2 fs-7">Christina</span>
+                                    </li>
+                                    <li><span class="px-3">&bull;</span></li>
+                                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
+                                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 11 maj 2024 </span>
+                                    </li>
+                                    <li><span class="px-3">&bull;</span></li>
+                                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
+                                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 7 </span>    
+                                </ul>
+                            </div> -->
+						</article>
+					</div>
+					<!-- End of bloggpost 1-->
 
-                <div class="card-body m-0 p-0">
-                  <div class="mb-3">
-                    <ul class="list-unstyled d-flex mb-3">
-                      <li>
-                        <a class="d-inline-flex px-2 py-1 border rounded-2 text-decoration-none fs-7 mt-2" href="#!">Typsnitt</a>
-                      </li>
-                    </ul>
-                    <h2 class="card-title h4 m-0">
-                      <a class="link-dark text-decoration-none display-2--rubrik" href="#!">15 bästa nya typsnitt 2024</a>
-                    </h2>
-                    <p class="card-text">Med en värld som ständigt strävar efter att kombinera estetik och funktionalitet, spelar typsnitt en avgörande roll i designlandskapet. Så låt oss dyka in i världen av typografi och upptäcka de mest spännande typsnitten som 2024 har att erbjuda.</p>
-                  </div>
-                </div>
-                <div class="card-footer border-0 bg-transparent p-0 m-0">
-                  <ul class="list-unstyled d-flex align-items-center m-0">
-                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <div class="ms-2 fs-7">
-                            <img src="images/portratt/webmaster-40x40.webp" alt="författare" class="rounded-circle">
-                        </div>
-                    </li>
-                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7">Christina</span>
-                    </li>
-                    <li><span class="px-3">&bull;</span></li>
-                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center">
-                        <span class="ms-2 fs-7"><i class="bi bi-calendar3"></i> 11 maj 2024 </span>
-                    </li>
-                    <li><span class="px-3">&bull;</span></li>
-                    <li class="fs-7 link-secondary text-decoration-none d-flex align-items-center" href="#!">
-                        <span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 7 </span>    
-                    </li>
-                  </ul>
-                </div>
-              </div>
-            </article>
-          </div>
-          <!-- End of bloggpost 1-->
-
-          <!-- Bloggpost 2-->
-          <div class="col-12 col-lg-4">
+					<!-- Bloggpost 2-->
+					<!-- <div class="col-12 col-lg-4">
             <article>
-                <div class="card border-0 bg-transparent">
-                    <!-- class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong" -->
-                    <div class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong">
-                        <img class="img-fluid rounded-top-4 " loading="lazy" src="images/blogg/pris.jpeg" alt="Design">
+                <div class="card border-0 bg-transparent"> -->
+					<!-- class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong" -->
+					<!-- <div class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong">
+                        <img class="img-fluid rounded-top-4 " loading="lazy" src="images/blogg/pris-400x400.webp" alt="Design">
                             <a href="#!">
                                 <div class="card-img-overlay">
                                     <a href="#" class="btn btn-primary text-light position-absolute top-0 end-0 m-1">Läs mer<i class="bi bi-chevron-double-right"></i></a>
@@ -969,16 +1072,16 @@
                 </div>
               </div>
             </article>
-          </div>
-          <!-- End of bloggpost 2-->
+          </div> -->
+					<!-- End of bloggpost 2-->
 
-          <!-- Bloggpost 3-->
-          <div class="col-12 col-lg-4">
+					<!-- Bloggpost 3-->
+					<!-- <div class="col-12 col-lg-4">
             <article>
                 <div class="card border-0 bg-transparent">
                     <!-- class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong" -->
-                    <div class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong">
-                        <img class="img-fluid rounded-top-4 " loading="lazy" src="images/blogg/logotyp.jpeg" alt="Design">
+					<!--  <div class="card-img-top hover-overlay mb-4 bg-image shadow-1-strong">
+                        <img class="img-fluid rounded-top-4 " loading="lazy" src="images/blogg/logotyp-400x400.webp" alt="Design">
                             <a href="#!">
                                 <div class="card-img-overlay">
                                     <a href="#" class="btn btn-primary text-light position-absolute top-0 end-0 m-1">Läs mer<i class="bi bi-chevron-double-right"></i></a>
@@ -1022,93 +1125,173 @@
                 </div>
               </div>
             </article>
-          </div>
-          <!-- End of bloggpost 3-->
-</section>
+          </div> -->
+					<!-- End of bloggpost 3-->
+				</div>
+			</div>
+		</section>
 
- <!-- **********************************************************
+		<!-- **********************************************************
            9 - Footer section
-*************************************************************** -->               
-<footer id="footer-section" class="footer-section  bg-primary pt-5 py-5">
-    <div class="container">
-        <!-- <footer class="py-5"> -->
-        <div class="row">
-            <div class="col-md-5">
-                    <!-- col-md-4 mb-md-0 md-4 -->
-                    <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
-                        <h2 class="footer-heading display-2--title text-light">Christinas Portfolio</h2>
-                        <ul class="list-unstyled">
-                            <li><p class="d-block text-light">Hitta hit</p></li>
-                            <li><p class="d-block text-light"><iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.290666297449!2d14.397264253853875!3d63.26070455700405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fca576155a02f%3A0xea31c2fee0ef1b98!2s835%2091%20H%C3%A4ste!5e0!3m2!1ssv!2sse!4v1715529223465!5m2!1ssv!2sse" width="400" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe></p></li>
-                        </ul>
-                    </div>
-            </div>
-            <div class="col-md-3">
-                <div class="row">
-                    <div class="col-md-4 mb-md-0 md-4">
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="py-1 d-block text-light text-decoration-none text-center">Hem</a></li>
-                            <li><a href="#work-section" class="py-1 d-block text-light text-decoration-none text-center">Arbeten</a></li>
-                            <li><a href="#service-section" class="py-1 d-block text-light text-decoration-none text-center">Tjänster</a></li>
-                            <li><a href="#refernser-section" class="py-1 d-block text-light text-decoration-none text-center">Referenser</a></li>
-                            <li><a href="about-section" class="py-1 d-block text-light text-decoration-none text-center">Om mig</a></li>
-                            <li><a href="#pris-section" class="py-1 d-block text-light text-decoration-none text-center">Prislista</a></li>
-                            <li><a href="#blogg-section" class="py-1 d-block text-light text-decoration-none text-center">Blogg</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="row justify-content-end">
-                    <!-- col-md-12 col-lg-11 mb-md-0 mb-4 -->
-                    <div class="col-md-12 col-lg-11 mb-md-0 mb-4">
-                        <h2 class="display-2--rubrik text-light">Följ mig på... </h2>
-                        <ul class="footer-social list-unstyled p-0">
-                            <li class="social-ikon">
-                                <a class="link-light" href="#"><i class="bi bi-github"></i></a>
-                            </li>
-                            <li class="social-ikon">
-                                <a class="link-light" href="#"><i class="bi bi-linkedin"></i></a>
-                            </li>
-                            <li class="social-ikon">
-                                <a class="link-light" href="#"><i class="bi bi-instagram"></i></a>
-                                </li>
-                        </ul>
-                        <h2 class="display-2--rubrik text-light mt-5">Nyhetsbrev ?</h2>
-                        <form action="#" class="subscribe-form">
-                            <div class="form-group d-flex">
-                                <input type="email" class="form-control rounded-4" placeholder="Ange din epost">
-                                </input>
-                                <input type="submit" value="Prenumerera" class="form-control bg-secondary text-light submit border-0 rounded-4">
-                            </div>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="d-flex flex-column flex-sm-row justify-content-center my-4 border-top">
-            <p class="mt-2">&copy; 2024 Alla rättigheter reserverade | Denna webbsida är gjord med <i class="bi bi-balloon-heart"></i> av Christina Näsström</p>
-        </div> 
-        <!-- **********************************************************
-            Knapp tillbaka till början     btn-primary
         *************************************************************** -->
-        <a href="#" class="shadow bg-secondary rounded-circle back-to-top">
-            <i class="bi bi-arrow-up"></i>
-        </a> 
-    </div>
-</footer>
+		<footer id="footer-section" class="footer-section bg-primary pt-5 py-5">
+			<div class="container">
+				<div class="row">
+					<!-- <div class="col-md-5"> -->
+					<!-- col-md-4 mb-md-0 md-4 -->
+					<div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+						<h2 class="footer-heading display-2--title text-light">Christinas Portfolio</h2>
+						<ul class="list-unstyled">
+							<li><p class="d-block text-light">Hitta hit</p></li>
+							<li>
+								<p class="d-block text-light">
+									<iframe
+										src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3590.290666297449!2d14.397264253853875!3d63.26070455700405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x466fca576155a02f%3A0xea31c2fee0ef1b98!2s835%2091%20H%C3%A4ste!5e0!3m2!1ssv!2sse!4v1715529223465!5m2!1ssv!2sse"
+										width="400"
+										height="250"
+										style="border: 0"
+										allowfullscreen=""
+										loading="lazy"
+										referrerpolicy="no-referrer-when-downgrade"
+									></iframe>
+								</p>
+							</li>
+						</ul>
+					</div>
+					<!-- </div> -->
+					<div class="col-md-3">
+						<div class="row">
+							<div class="col-md-4 mb-md-0 md-4">
+								<ul class="list-unstyled ps-3 pt-5">
+									<li>
+										<a
+											href="#"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Hem</a
+										>
+									</li>
+									<li>
+										<a
+											href="#work-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Arbeten</a
+										>
+									</li>
+									<li>
+										<a
+											href="#service-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Tjänster</a
+										>
+									</li>
+									<li>
+										<a
+											href="#refernser-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Referenser</a
+										>
+									</li>
+									<li>
+										<a
+											href="about-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Om mig</a
+										>
+									</li>
+									<li>
+										<a
+											href="#pris-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Prislista</a
+										>
+									</li>
+									<li>
+										<a
+											href="#blogg-section"
+											class="py-1 d-block text-light text-decoration-none text-center"
+											>Blogg</a
+										>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+					<div class="col-md-4">
+						<div class="row justify-content-end">
+							<!-- col-md-12 col-lg-11 mb-md-0 mb-4 -->
+							<div class="col-md-12 col-lg-11 mb-md-0 mb-4">
+								<h2 class="display-2--rubrik text-light">Följ mig på...</h2>
+								<ul class="list-unstyled p-0 d-flex flex-row">
+									<li class="social-ikon">
+										<a class="link-light rounded-circle bg-secondary p-3" href="#"
+											><i class="bi bi-github" style="font-size: 2rem"></i
+										></a>
+									</li>
+									<li class="social-ikon">
+										<a class="link-light rounded-circle bg-secondary p-3" href="#"
+											><i class="bi bi-linkedin" style="font-size: 2rem"></i
+										></a>
+									</li>
+									<li class="social-ikon">
+										<a class="link-light rounded-circle bg-secondary p-3" href="#"
+											><i class="bi bi-instagram" style="font-size: 2rem"></i
+										></a>
+									</li>
+								</ul>
+								<h2 class="display-2--rubrik text-light mt-5">Nyhetsbrev ?</h2>
+								<form action="#" class="subscribe-form">
+									<div class="form-group d-flex">
+										<input
+											type="email"
+											class="form-control rounded-4"
+											placeholder="Ange din epost"
+										/>
+										<span>
+											<input
+												type="submit"
+												value="Prenumerera"
+												class="form-control bg-secondary text-light submit border-0 rounded-4"
+											/>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+					</div>
 
-<!-- Bootstrap  -->
-<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+					<div class="d-flex flex-column flex-sm-row justify-content-center my-4 border-top">
+						<p class="mt-2">
+							&copy; 2024 Alla rättigheter reserverade | Denna webbsida är gjord med
+							<i class="bi bi-balloon-heart"></i> av Christina Näsström
+						</p>
+					</div>
+					<!-- **********************************************************
+                            Knapp tillbaka till början     btn-primary
+                    *************************************************************** -->
+					<a href="#" class="shadow bg-secondary rounded-circle back-to-top">
+						<i class="bi bi-arrow-up"></i>
+					</a>
+				</div>
+			</div>
+		</footer>
 
-<!-- Bootstrap darkmode kod -->
-<script src="js/darkmode-toggler.js"></script>
+		<!-- **********************************************************
+           10 - JavaScript m.m.
+        *************************************************************** -->
+		<!-- Bootstrap 5 jQuery -->
+		<script src="node_modules/jquery/dist/jquery.min.js"></script>
 
-<!-- Isotope  -->
-<script src="js/isotope/isotope.pkgd.min.js"></script>
+		<!-- Isotope  -->
+		<script src="js/isotope/isotope.pkgd.min.js"></script>
+		<script src="node_modules/isotope-layout/dist/isotope.pkgd.min.js"></script>
 
-<!-- Extern JavaScript -->
-<script src="js/script.js"></script>
+		<!-- Bootstrap 5 js -->
+		<script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 
-</body>
+		<!-- Bootstrap darkmode kod -->
+		<script src="js/darkmode-toggler.js"></script>
+
+		<!-- Extern JavaScript -->
+		<script src="js/script.js"></script>
+	</body>
 </html>
