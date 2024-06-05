@@ -3,22 +3,23 @@
 // Färger
 $primary: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
 $secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
+
 // $secondary: #6f42c1; //purple
 // $secondary: #ffc107; //Gul
 // $secondary: #dc3545; //Röd
 // $secondary: #d63384; //Rosa
 // $secondary: #adb5bd; //Grå
-$dark: #2b3041; //Blå-svart
-$light: #f3f6f9; // Grå-vit
+// $dark: #2b3041; //Blå-svart
+// $light: #f3f6f9; // Grå-vit
 $transparent: bg-transparent;
 
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
-	"dark": $dark,
-	"light": $light,
+	// "dark": $dark,
+	// "light": $light,
 	// "white": $light,
-	// "black": $dark,,,,
+	// "black": $dark,,,,,,
 );
 
 $color-gradient-start: $primary;

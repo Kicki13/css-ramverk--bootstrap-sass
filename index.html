@@ -1,5 +1,6 @@
 <!DOCTYPE html>
-<html lang="sv" data-bs-theme="dark">
+<html lang="sv">
+	<!--data-bs-theme="dark"-->
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +9,7 @@
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
 	<!-- <body class="bg-light"> -->
-	<body class="bg-light">
+	<body>
 		<!-- **********************************************************
             1 - Navbar section med kontakt modal
         *************************************************************** -->
@@ -75,13 +76,13 @@
 						<li class="nav-item">
 							<div class="btn-group">
 								<button
-									class="btn btn-sm btn-light fw-semibold text-uppercase"
+									class="btn btn-sm bg-white text-black text-uppercase"
 									data-bs-theme-value="light"
 								>
 									Ljust
 								</button>
 								<button
-									class="btn btn-sm btn-dark fw-semibold text-uppercase"
+									class="btn btn-sm bg-black text-white text-uppercase"
 									data-bs-theme-value="dark"
 								>
 									Mörkt
@@ -163,7 +164,7 @@
 				<div class="row align-items-center">
 					<div class="col-md-10 text-start pt-5">
 						<h1 class="display-2">
-							<span class="display-2--heading text-light">
+							<span class="display-2--heading text-white">
 								Upptäck mästaren bakom webben...
 							</span>
 						</h1>
@@ -173,7 +174,7 @@
 							<!-- Text vänstersida -->
 							<div class="text-container pt-3">
 								<h1 class="display-2">
-									<span class="display-2--description lh-base text-light"
+									<span class="display-2--description lh-base text-white"
 										>Stig in i den digitala världen och möt visionära webmaster,
 										Christina. Med en passion för pixlar och en fingertoppskänsla för kod
 										är Christina arkitekten bakom den sömlösa online-upplevelsen du snart
@@ -188,7 +189,7 @@
 									href="#about-section"
 									class="shadow btn btn-hero position-relative btn-lg bg-body"
 								>
-									Vem är vår webmaster?
+									Vem är då denna fantastiska webmaster?
 									<span class="badge text-bg-primary position-absolute top-50"
 										><i class="bi bi-arrow-right"></i></span
 								></a>
@@ -208,10 +209,10 @@
 				</div>
 			</div>
 			<!-- Våg-dropp mönster -->
-			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" currentColor   -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
-					fill="#f3f6f9"
+					fill="currentColor"
 					fill-opacity="1"
 					d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"
 				></path>
@@ -247,106 +248,256 @@
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".design">
 						Design
 					</button>
-					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".mobil">
-						Mobil
-					</button>
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".foto">
 						Foto
 					</button>
 				</div>
 				<!-- Projekt/work lista/poster  -->
-				<!--  justify-content-center g-4 -->
-				<div class="row align-items-start lista">
+				<!--  justify-content-center g-4  row align-items-start-->
+				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4 lista">
 					<!-- projekt 1  col-lg-4 mb-4 col-md-6 -->
-					<div class="col">
-						<div class="card shadow-sm">
-							<div class="element-item webb" data-category="webb">
-								<img
-									src="images/blogg/fonts-400x400.webp"
-									alt="bild"
-									class="card-img-top img-fluid"
-								/>
-								<div class="card-body">
-									<div class="card-title">Webb</div>
-									<p class="card-text"></p>
-									<div class="d-flex justify-content-between align-items-center">
-										<div class="btn-group">
-											<button type="button" class="btn btn-sm btn-outline-secondary">
-												View
-											</button>
-											<button type="button" class="btn btn-sm btn-outline-secondary">
-												Edit
-											</button>
-										</div>
-										<small class="text-muted">9 mins</small>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-				<!-- End of projekt 1-->
-
-				<!-- projekt 2-->
-				<div class="col">
-					<div class="card shadow-sm">
-						<div class="element-item foto" data-category="foto">
+					<div class="col element-item webb">
+						<div class="card h-100 shadow-sm" data-category="webb">
 							<img
-								src="images/blogg/pris-400x400.webp"
-								alt="bild"
 								class="card-img-top img-fluid"
+								src="images/projekt/projekt1-webbplats.png"
+								alt="bild"
 							/>
 							<div class="card-body">
-								<div class="card-title">foto</div>
-								<p class="card-text"></p>
+								<div class="card-title">Webbportfolio</div>
+								<p class="card-text">
+									Webben, eller World Wide Web (WWW), är ett system av sammankopplade
+									hypertextdokument som nås via internet. Webben skapades av Tim
+									Berners-Lee 1989 och har sedan dess revolutionerat hur information delas
+									och hur vi kommunicerar globalt.
+								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-											View
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
 										</button>
-										<button type="button" class="btn btn-sm btn-outline-secondary">
-											Edit
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
 										</button>
 									</div>
-									<small class="text-muted">9 mins</small>
 								</div>
 							</div>
 						</div>
 					</div>
+					<!-- End of projekt 1-->
+
+					<!-- projekt 2-->
+					<div class="col element-item foto">
+						<div class="card h-100 shadow-sm" data-category="foto">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt3-foto.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Älg</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!-- End of projekt 2-->
+
+					<!-- projekt 3-->
+					<div class="col element-item foto">
+						<div class="card h-100 shadow-sm" data-category="foto">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt4-foto.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Tännforsen</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 3-->
+
+					<!-- projekt 4-->
+					<div class="col element-item foto">
+						<div class="card h-100 shadow-sm" data-category="foto">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt5-foto.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Hopp med motorcykel</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 4-->
+
+					<!-- projekt 5-->
+					<div class="col element-item foto">
+						<div class="card h-100 shadow-sm" data-category="foto">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt6-foto.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Mustang Mach 1</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 5-->
+
+					<!-- projekt 6-->
+					<div class="col element-item foto">
+						<div class="card h-100 shadow-sm" data-category="foto">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt7-foto.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Andersön</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 6-->
+
+					<!-- projekt 7-->
+					<div class="col element-item webb">
+						<div class="card h-100 shadow-sm" data-category="webb">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt2-webbplats.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Häste ponny klubb</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 7-->
+
+					<!-- projekt 8-->
+					<div class="col element-item design">
+						<div class="card h-100 shadow-sm" data-category="design">
+							<img
+								class="card-img-top img-fluid"
+								src="images/projekt/projekt8-design.png"
+								alt="bild"
+							/>
+							<div class="card-body">
+								<div class="card-title">Informationsfolder</div>
+								<p class="card-text">
+									Fotografi är konsten och tekniken att fånga ljus för att skapa bilder.
+									Genom att använda en kamera, som kan vara analog eller digital,
+									registreras ljuset på en film eller en bildsensor.
+								</p>
+								<div class="d-flex justify-content-between align-items-center">
+									<div class="btn-group">
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Projektbeskrivning
+										</button>
+										<button type="button" class="btn btn-sm btn-outline-primary">
+											Länk Projektet
+										</button>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- End of projekt 8-->
 				</div>
 			</div>
-			<!-- End of projekt 2-->
-
-			<!-- projekt 3-->
-
-			<!-- End of projekt 3-->
-
-			<!-- projekt 4-->
-
-			<!-- End of projekt 4-->
-
-			<!-- projekt 5-->
-
-			<!-- End of projekt 5-->
-
-			<!-- projekt 6-->
-
-			<!-- End of projekt 6-->
-
-			<!-- <div class="element-item design" data-category="design">
-                        <h3 class="item-name">design</h3>
-                    </div>
-                    <div class="element-item foto" data-category="foto">
-                        <h3 class="item-name">foto 2</h3>
-                    </div>
-                    <div class="element-item mobil" data-category="mobil">
-                        <h3 class="item-name">mobil</h3>
-                    </div> -->
-			<!-- </div> -->
-			<!-- </div> -->
-			<!-- </div> -->
-			<!-- </div>  -->
-			<!-- </div> -->
 		</section>
 
 		<!-- **********************************************************
