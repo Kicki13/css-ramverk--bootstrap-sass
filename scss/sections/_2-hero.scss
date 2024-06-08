@@ -3,14 +3,3 @@
 	@include gradient-background($color-gradient-start, $color-gradient-end);
 	background-size: cover;
 }
-
-.btn-hero {
-	border: 3px solid rgba($primary, 0.7);
-	// font-size: 2.5rem;
-	// font-family: $heading-font-family;
-}
-
-// i {
-// 	font-size: 6rem;
-// 	color: $secondary;
-// }

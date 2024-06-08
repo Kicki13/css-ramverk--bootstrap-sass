@@ -3,7 +3,9 @@
 // Färger
 $primary: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
 $secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
-
+$guld: #d4af37; //  #e6be8a
+$silver: #c0c0c0;
+$brons: #cd7f32;
 // $secondary: #6f42c1; //purple
 // $secondary: #ffc107; //Gul
 // $secondary: #dc3545; //Röd
@@ -16,10 +18,13 @@ $transparent: bg-transparent;
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
+	"guld": $guld,
+	"silver": $silver,
+	"brons": $brons,
 	// "dark": $dark,
 	// "light": $light,
 	// "white": $light,
-	// "black": $dark,,,,,,
+	// "black": $dark,,,,,
 );
 
 $color-gradient-start: $primary;
