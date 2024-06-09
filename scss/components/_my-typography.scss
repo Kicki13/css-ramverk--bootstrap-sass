@@ -54,13 +54,13 @@ $headings-margin-bottom: $spacer * 1;
 .display-3 {
 	font-family: $body-font-family;
 
-	&--title {
-		font-size: 1.2rem;
-		text-transform: capitalize;
-		font-weight: 600;
-		font-family: $heading-font-family;
-		display: inline-block;
-		background-image: linear-gradient(to right, $primary, $secondary);
-		background-clip: text;
-	}
+	// &--title {
+	// 	font-size: 1.2rem;
+	// 	text-transform: capitalize;
+	// 	font-weight: 600;
+	// 	font-family: $heading-font-family;
+	// 	display: inline-block;
+	// 	background-image: linear-gradient(to right, $primary, $secondary);
+	// 	background-clip: text;
+	// }
 }

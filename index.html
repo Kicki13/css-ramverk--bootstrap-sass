@@ -1,6 +1,5 @@
 <!DOCTYPE html>
-<html lang="sv">
-	<!--data-bs-theme="dark"-->
+<html lang="sv" data-bs-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,7 +7,6 @@
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
-	<!-- <body class="bg-light"> -->
 	<body>
 		<!-- **********************************************************
             1 - Navbar section med kontakt modal
@@ -212,10 +210,10 @@
 				</div>
 			</div>
 			<!-- Våg-dropp mönster -->
-			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" currentColor   -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" currentColor  ??? -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
-					fill="currentColor"
+					fill="white"
 					fill-opacity="1"
 					d="M0,32L12.6,64C25.3,96,51,160,76,186.7C101.1,213,126,203,152,176C176.8,149,202,107,227,117.3C252.6,128,278,192,303,229.3C328.4,267,354,277,379,245.3C404.2,213,429,139,455,101.3C480,64,505,64,531,69.3C555.8,75,581,85,606,85.3C631.6,85,657,75,682,96C707.4,117,733,171,758,176C783.2,181,808,139,834,117.3C858.9,96,884,96,909,112C934.7,128,960,160,985,160C1010.5,160,1036,128,1061,128C1086.3,128,1112,160,1137,170.7C1162.1,181,1187,171,1213,149.3C1237.9,128,1263,96,1288,117.3C1313.7,139,1339,213,1364,229.3C1389.5,245,1415,203,1427,181.3L1440,160L1440,320L1427.4,320C1414.7,320,1389,320,1364,320C1338.9,320,1314,320,1288,320C1263.2,320,1238,320,1213,320C1187.4,320,1162,320,1137,320C1111.6,320,1086,320,1061,320C1035.8,320,1011,320,985,320C960,320,935,320,909,320C884.2,320,859,320,834,320C808.4,320,783,320,758,320C732.6,320,707,320,682,320C656.8,320,632,320,606,320C581.1,320,556,320,531,320C505.3,320,480,320,455,320C429.5,320,404,320,379,320C353.7,320,328,320,303,320C277.9,320,253,320,227,320C202.1,320,177,320,152,320C126.3,320,101,320,76,320C50.5,320,25,320,13,320L0,320Z"
 				></path>
@@ -694,7 +692,7 @@
 			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
-					fill="currentColor"
+					fill="white"
 					fill-opacity="1"
 					d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
 				></path>
@@ -912,7 +910,7 @@
 			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
-					fill="currentColor"
+					fill="white"
 					fill-opacity="1"
 					d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"
 				></path>
@@ -1086,7 +1084,7 @@
 						aria-labelledby="cvModalLabel"
 						aria-hidden="true"
 					>
-						<div class="modal-dialog">
+						<div class="modal-dialog modal-xl">
 							<div class="modal-content">
 								<div class="modal-header">
 									<button
@@ -1097,7 +1095,7 @@
 									></button>
 								</div>
 								<div class="modal-body">
-									<img src="images/om-mig/cv.png" alt="cv" />
+									<img src="images/om-mig/cv.png" class="img-fluid" alt="cv" />
 								</div>
 								<div class="modal-footer">Mitt CV</div>
 							</div>
@@ -1247,18 +1245,8 @@
 									src="images/blogg/fonts-400x400.webp"
 									alt="Design"
 								/>
-								<a href="#">
-									<div class="card-img-overlay">
-										<a
-											href="#"
-											class="btn btn-primary text-white position-absolute top-0 end-0 m-1"
-											>Läs mer <i class="bi bi-chevron-double-right"></i
-										></a>
-									</div>
-								</a>
 							</div>
 						</div>
-
 						<div class="card-body m-0 p-0">
 							<div class="mb-3">
 								<ul class="list-unstyled d-flex mb-3">
@@ -1331,15 +1319,6 @@
 									src="images/blogg/pris-400x400.webp"
 									alt="Design"
 								/>
-								<a href="#">
-									<div class="card-img-overlay">
-										<a
-											href="#"
-											class="btn btn-primary text-white position-absolute top-0 end-0 m-1"
-											>Läs mer <i class="bi bi-chevron-double-right"></i
-										></a>
-									</div>
-								</a>
 							</div>
 						</div>
 
@@ -1417,15 +1396,6 @@
 									src="images/blogg/logotyp-400x400.webp"
 									alt="Design"
 								/>
-								<a href="#">
-									<div class="card-img-overlay">
-										<a
-											href="#"
-											class="btn btn-primary text-white position-absolute top-0 end-0 m-1"
-											>Läs mer <i class="bi bi-chevron-double-right"></i
-										></a>
-									</div>
-								</a>
 							</div>
 						</div>
 
@@ -1508,9 +1478,6 @@
 			</svg>
 			<div class="container">
 				<div class="row">
-					<!-- <div class="col-md-5"> -->
-					<!-- col-md-4 mb-md-0 md-4 -->
-					<!-- <div class="col-md-12 col-lg-11 mb-md-0 mb-4"> -->
 					<div class="col-md-5">
 						<div class="row">
 							<h2 class="footer-heading display-2--title text-white">
@@ -1534,10 +1501,8 @@
 							</ul>
 						</div>
 					</div>
-					<!-- </div> -->
 					<div class="col-md-2">
 						<div class="row">
-							<!-- <div class="col-md-4 mb-md-0 md-4"> -->
 							<ul class="list-unstyled ps-3 pt-5">
 								<li>
 									<a
@@ -1589,12 +1554,10 @@
 									>
 								</li>
 							</ul>
-							<!-- </div> -->
 						</div>
 					</div>
 					<div class="col-md-5">
 						<div class="row justify-content-end">
-							<!-- col-md-12 col-lg-11 mb-md-0 mb-4 -->
 							<div class="col-md-12 col-lg-11 mb-md-0 mb-4">
 								<h2 class="display-2--rubrik text-white">Följ mig på...</h2>
 								<ul class="list-unstyled p-0 d-flex flex-row">

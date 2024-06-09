@@ -4,3 +4,5 @@
 @mixin gradient-background($color-gradient-start, $color-gradient-end) {
 	background: linear-gradient(to right, $color-gradient-start, $color-gradient-end);
 }
+
+// Mixin för färgläge Dark/light mode
