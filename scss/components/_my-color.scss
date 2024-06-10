@@ -1,21 +1,21 @@
 //Mina färger
-$orange: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
-$indigo: #6610f2; //Indigo #6610f2 var(--bs-indigo)
+$primary: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
+$secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
 $guld: #d4af37;
 $silver: #c0c0c0;
 $brons: #cd7f32;
 
 $theme-colors: (
-	"primary": $orange,
-	"secondary": $indigo,
+	"primary": $primary,
+	"secondary": $secondary,
 	"guld": $guld,
 	"silver": $silver,
 	"brons": $brons,
 	// "currentColor": white,
 );
 
-$color-gradient-start: $orange;
-$color-gradient-end: $indigo;
+$color-gradient-start: $primary;
+$color-gradient-end: $secondary;
 
 // Color mode variables in _root.scss
 // @include color-mode(dark) {
