@@ -1,22 +1,24 @@
 <!DOCTYPE html>
+<!-- Aktivering av ljust och mörkt tema -->
 <html lang="sv" data-bs-theme="dark">
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<!-- Bootstrap CSS -->
+		<!-- Länkar till anpassad CSS fil, med Bootstrap 5.3 CSS -->
 		<link rel="stylesheet" href="scss/custom.css" />
 		<title>Portfolio med Bootstrap och SASS</title>
 	</head>
 	<body>
 		<!-- **********************************************************
-            1 - Navbar section med kontakt modal
+            1 - Navbar section med kontakt formulär i en modal
         *************************************************************** -->
+		<!-- En navbar som visas i fullbredd, med skugga, är visas alltid längst upp, vart än du befinner dig på sidan och anpassar texten för mörkt bakgrund dvs visas i vit text.-->
+		<!-- Kod hämtad från https://getbootstrap.com/docs/5.3/components/navbar/ -->
 		<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
 			<div class="container">
-				<a class="navbar-brand" href="#"
-					>Christina Näsström
-					<!-- <img src="https://placehold.co/400x100" alt="Logga" /> -->
-				</a>
+				<!-- En text-logga som länkar till toppen av sidan. -->
+				<a class="navbar-brand" href="#">Christina Näsström</a>
+				<!-- På mindre skärmas döljs ordinarie menyn och en knapp visas där menyn finns. -->
 				<button
 					class="navbar-toggler"
 					type="button"
@@ -28,22 +30,29 @@
 				>
 					<span class="navbar-toggler-icon"></span>
 				</button>
+				<!-- Innehåller alla meny-länkar, i detta fall hem & arbeten -->
 				<div class="collapse navbar-collapse" id="navbarSupportedContent">
+					<!-- En lista med meny-länkar -->
 					<ul class="navbar-nav nav-underline ms-auto">
+						<!-- Ett meny-objekt i detta fall, Hem-->
 						<li class="nav-item">
+							<!-- Ett meny-länk i detta fall, Hem -->
 							<a
-								class="nav-link me-3 fw-semibold text-uppercase active"
+								class="nav-link me-3 fw-semibold text-uppercase"
 								aria-current="page"
 								href="#"
 								>Hem</a
 							>
 						</li>
+						<!-- Ett meny-objekt i detta fall, Arbeten-->
 						<li class="nav-item">
+							<!-- Ett meny-länk i detta fall, Arbeten -->
 							<a class="nav-link me-3 fw-semibold text-uppercase" href="#work-section"
 								>Arbeten</a
 							>
 						</li>
-						<li class="nav-item dropdown" data-bs-theme="light">
+						<!-- En dropdown-meny med länkar till fler "sidor" -->
+						<li class="nav-item dropdown">
 							<a
 								class="nav-link dropdown-toggle fw-semibold text-uppercase"
 								href="#"
@@ -61,8 +70,9 @@
 								<li><a class="dropdown-item" href="#blogg-section">Blogg</a></li>
 							</ul>
 						</li>
-						<!--btn btn-outline-primary rounded-pill text-light fw-semibold text-uppercase px-4 mx-3 -->
+
 						<li class="nav-item">
+							<!-- En knapp som öppnar upp en modal till kontaktformuläret -->
 							<a
 								class="btn btn-outline-primary text-light fw-semibold text-uppercase px-3 mx-3"
 								data-bs-toggle="modal"
@@ -72,6 +82,7 @@
 							>
 						</li>
 						<li class="nav-item">
+							<!-- Knappar i grupp för att växla mellan ljust och mörkt bakgrund. -->
 							<div class="btn-group">
 								<button
 									class="btn btn-sm bg-white text-black text-uppercase"
@@ -86,17 +97,15 @@
 									Mörkt
 								</button>
 							</div>
-							<!-- <div class="form-check form-switch">
-                    <input class="form-check-input" type="checkbox" id="darkModeSwitch" checked>  -->
-							<!-- Set the switch to "checked" by default -->
-							<!-- <label class="form-check-label" for="darkModeSwitch">Mörk/ljust läge</label>
-                </div> -->
 						</li>
 					</ul>
 				</div>
 			</div>
 		</nav>
-		<!-- Kontakt Modal -->
+		<!-- End of huvudmeny -->
+		<!-- Kontakt formulär - Modal -->
+		<!-- Skapar en modal som kan öppnas och stängas -->
+		<!-- Kod hämtad från https://getbootstrap.com/docs/5.3/components/modal/-->
 		<div
 			class="modal fade"
 			id="myModal"
@@ -104,8 +113,11 @@
 			aria-labelledby="exampleModalLabel"
 			aria-hidden="true"
 		>
+			<!-- Centrerar modalen på skärmen -->
 			<div class="modal-dialog modal-dialog-centered">
+				<!-- innehållet på modalen -->
 				<div class="modal-content">
+					<!-- Modalens rubrik med stäng knapp -->
 					<div class="modal-header">
 						<h1 class="modal-title fs-5" id="myModalLabel">Kontakta mig</h1>
 						<button
@@ -115,16 +127,22 @@
 							aria-label="Close"
 						></button>
 					</div>
+					<!-- Modalen "kropp" som innehåller ett kontakt formulär -->
 					<div class="modal-body">
+						<!-- Formulär med namn, email, ämne, meddelande och en kryssruta för redo att skicka meddelandet -->
+						<!-- Kod hämtad från https://getbootstrap.com/docs/5.3/forms/overview/-->
 						<form>
 							<div class="mb-3">
+								<!-- inmatningsruta för namn -->
 								<input type="text" class="form-control" placeholder="Namn" />
 							</div>
 							<div class="input-group mb-3">
 								<span class="input-group-text">@</span>
+								<!-- inmatningsruta för email -->
 								<input type="email" class="form-control" placeholder="Email" />
 							</div>
 							<div class="mb-3">
+								<!-- Dropdown ruta för att välja ämne för meddelandet -->
 								<select class="form-select">
 									<option>Ämne</option>
 									<option value="anstallning">Anställning</option>
@@ -134,6 +152,7 @@
 								</select>
 							</div>
 							<div class="mb-3">
+								<!--  textarea för meddelande -->
 								<textarea
 									class="form-control"
 									id="message-text"
@@ -141,11 +160,13 @@
 								></textarea>
 							</div>
 							<div class="mb-3">
+								<!--  checkruta/kryssruta för redo att skicka meddelandet -->
 								<input type="checkbox" class="form-check-input" id="check" />
 								<label for="check" class="form-check-label">
 									Är du redo att skicka meddelandet ?</label
 								>
 							</div>
+							<!--  knapp för att skicka meddelandet -->
 							<button type="button" class="btn btn-primary">Skicka</button>
 						</form>
 					</div>
@@ -159,31 +180,31 @@
         *************************************************************** -->
 		<section id="hero-section" class="hero-section">
 			<div class="container">
+				<!-- Centrerar innehållet -->
 				<div class="row align-items-center">
+					<!-- -->
 					<div class="col-md-10 text-start pt-5">
-						<h1 class="display-2">
+						<!-- <h1 class="display-2">
 							<span class="display-2--heading text-white">
 								Upptäck mästaren bakom webben...
 							</span>
+						</h1> -->
+						<h1 class="display-1 text-white">
+							Upptäck mästaren bakom webben...
 						</h1>
 					</div>
 					<div class="row pt-3">
 						<div class="col-md-6 text-start">
 							<!-- Text vänster kolumn -->
 							<div class="text-container pt-3">
-								<h1 class="display-2">
-									<span class="display-2--description lh-base text-white"
-										>Stig in i den digitala världen och möt visionära webmaster,
-										Christina. Med en passion för pixlar och en fingertoppskänsla för kod
-										är Christina arkitekten bakom den sömlösa online-upplevelsen du snart
-										ska utforska. Beväpnad med kreativitet och teknisk skicklighet väver
-										hon samman design och funktionalitet för att skapa fängslande
-										webbplatser som lämnar ett bestående intryck.</span
-									>
-								</h1>
-								<!-- type="button" role="button" -->
-								<!-- class="btn-lg rounded-pill btn-rounded" -->
-								<!--class="btn btn-hero shadow position-relative btn-lg bg-body" -->
+								<p class="lh-sm display-8 text-white">
+									Stig in i den digitala världen och möt visionära webmaster, Christina.
+									Med en passion för pixlar och en fingertoppskänsla för kod är Christina
+									arkitekten bakom den sömlösa online-upplevelsen du snart ska utforska.
+									Beväpnad med kreativitet och teknisk skicklighet väver hon samman design
+									och funktionalitet för att skapa fängslande webbplatser som lämnar ett
+									bestående intryck.
+								</p>
 								<a
 									href="#about-section"
 									class="btn btn-hero shadow border-primary border-3 bg-body pe-1"

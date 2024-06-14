@@ -8,41 +8,59 @@ $brons: #cd7f32;
 $theme-colors: (
 	"primary": $primary,
 	"secondary": $secondary,
+);
+
+// Create your own map
+$custom-colors: (
 	"guld": $guld,
 	"silver": $silver,
 	"brons": $brons,
-	// "currentColor": white,
 );
 
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+.custom-element {
+	@include color-scheme(dark) {
+		// Insert dark mode styles here
+		// "primary":$secondary,"secondary": $primary;
+	}
+
+	@include color-scheme(custom-named-scheme) {
+		// Insert custom color scheme styles here
+	}
+}
+
+//
 $color-gradient-start: $primary;
 $color-gradient-end: $secondary;
 
-:root,
-[data-bs-theme="dark"] {
-	color-scheme: dark;
-	// --bs-body-color: #dee2e6;
-	// --bs-body-color-rgb: 222, 226, 230;
-	// --bs-body-bg: #212529;
-	// --bs-body-bg-rgb: 33, 37, 41;
-	// --bs-emphasis-color: #fff;
-	// --bs-emphasis-color-rgb: 255, 255, 255;
-	--bs-primary-color: $secondary;
-	--bs-secondary-color: $primary;
-	// --bs-secondary-color: rgba(222, 226, 230, 0.75);
-	// --bs-secondary-color-rgb: 222, 226, 230;
-	// --bs-secondary-bg: #343a40;
-	// --bs-secondary-bg-rgb: 52, 58, 64;
-	// --bs-primary-text-emphasis: #feb272;
-	// --bs-secondary-text-emphasis: #a370f7;
-	// --bs-light-text-emphasis: #f8f9fa;
-	// --bs-dark-text-emphasis: #dee2e6;
-	// --bs-primary-bg-subtle: #331904;
-	// --bs-secondary-bg-subtle: #140330;
-	// --bs-light-bg-subtle: #343a40;
-	// --bs-dark-bg-subtle: #1a1d20;
-	// --bs-primary-border-subtle: #984c0c;
-	// --bs-secondary-border-subtle: #3d0a91;
-}
+// :root,
+// [data-bs-theme="dark"] {
+// 	color-scheme: dark;
+// 	// --bs-body-color: #dee2e6;
+// 	// --bs-body-color-rgb: 222, 226, 230;
+// 	// --bs-body-bg: #212529;
+// 	// --bs-body-bg-rgb: 33, 37, 41;
+// 	// --bs-emphasis-color: #fff;
+// 	// --bs-emphasis-color-rgb: 255, 255, 255;
+// 	--bs-primary-color: $secondary;
+// 	--bs-secondary-color: $primary;
+// --bs-secondary-color: rgba(222, 226, 230, 0.75);
+// --bs-secondary-color-rgb: 222, 226, 230;
+// --bs-secondary-bg: #343a40;
+// --bs-secondary-bg-rgb: 52, 58, 64;
+// --bs-primary-text-emphasis: #feb272;
+// --bs-secondary-text-emphasis: #a370f7;
+// --bs-light-text-emphasis: #f8f9fa;
+// --bs-dark-text-emphasis: #dee2e6;
+// --bs-primary-bg-subtle: #331904;
+// --bs-secondary-bg-subtle: #140330;
+// --bs-light-bg-subtle: #343a40;
+// --bs-dark-bg-subtle: #1a1d20;
+// --bs-primary-border-subtle: #984c0c;
+// --bs-secondary-border-subtle: #3d0a91;
+// }
 
 // Color mode variables in _root.scss
 // @include color-mode(dark) {
