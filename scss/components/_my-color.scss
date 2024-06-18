@@ -35,6 +35,10 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 $color-gradient-start: $primary;
 $color-gradient-end: $secondary;
 
+.gradient-bg {
+	@include gradient-background($color-gradient-start, $color-gradient-end);
+}
+
 // :root,
 // [data-bs-theme="dark"] {
 // 	color-scheme: dark;

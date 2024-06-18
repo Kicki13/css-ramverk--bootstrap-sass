@@ -3,9 +3,17 @@
 // Google typsnitt -- Sacramento och Montserrat
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
 
-$heading-font-family: "Sacramento", sans-serif;
+$heading-font-family: "Sacramento";
 $body-font-family: "Montserrat", sans-serif;
 $font-family-sans-serif: "Montserrat", sans-serif;
+
+.heading-font {
+	font-family: $heading-font-family;
+}
+
+.body-font {
+	font-family: $body-font-family;
+}
 
 // scss-docs-start display-headings
 $display-font-sizes: (

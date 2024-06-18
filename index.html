@@ -14,10 +14,12 @@
         *************************************************************** -->
 		<!-- En navbar som visas i fullbredd, med skugga, är visas alltid längst upp, vart än du befinner dig på sidan och anpassar texten för mörkt bakgrund dvs visas i vit text.-->
 		<!-- Kod hämtad från https://getbootstrap.com/docs/5.3/components/navbar/ -->
-		<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top">
+		<nav class="navbar navbar-expand-lg navbar-dark shadow sticky-top gradient-bg">
 			<div class="container">
 				<!-- En text-logga som länkar till toppen av sidan. -->
-				<a class="navbar-brand" href="#">Christina Näsström</a>
+				<a class="navbar-brand" href="#"
+					><span class="heading-font display-4">Christina Näsström</span></a
+				>
 				<!-- På mindre skärmas döljs ordinarie menyn och en knapp visas där menyn finns. -->
 				<button
 					class="navbar-toggler"
@@ -119,7 +121,7 @@
 				<div class="modal-content">
 					<!-- Modalens rubrik med stäng knapp -->
 					<div class="modal-header">
-						<h1 class="modal-title fs-5" id="myModalLabel">Kontakta mig</h1>
+						<h1 class="modal-title fs-5 heading-font" id="myModalLabel">Kontakta mig</h1>
 						<button
 							type="button"
 							class="btn-close"
@@ -178,18 +180,13 @@
 		<!-- **********************************************************
             2 - Hero section
         *************************************************************** -->
-		<section id="hero-section" class="hero-section">
+		<section id="hero-section" class="hero-section gradient-bg">
 			<div class="container">
 				<!-- Centrerar innehållet -->
 				<div class="row align-items-center">
 					<!-- -->
 					<div class="col-md-10 text-start pt-5">
-						<!-- <h1 class="display-2">
-							<span class="display-2--heading text-white">
-								Upptäck mästaren bakom webben...
-							</span>
-						</h1> -->
-						<h1 class="display-1 text-white">
+						<h1 class="display-1 text-white heading-font">
 							Upptäck mästaren bakom webben...
 						</h1>
 					</div>
@@ -207,7 +204,7 @@
 								</p>
 								<a
 									href="#about-section"
-									class="btn btn-hero shadow border-primary border-3 bg-body pe-1"
+									class="btn btn-hero body-font shadow border-primary border-3 bg-body pe-1"
 								>
 									Vem är då denna fantastiska webmaster?
 									<i
@@ -247,7 +244,7 @@
 		<section id="work-section" class="work-section pt-8">
 			<div class="container">
 				<div class="row text-center">
-					<h1 class="display-2--heading">Mitt fantastiska arbete</h1>
+					<h1 class="display-1 heading-font">Mitt fantastiska arbete</h1>
 					<div class="heading-line"></div>
 					<p class="lead">
 						Jag är stolta över att visa upp mitt arbete och de projekt jag har haft äran att

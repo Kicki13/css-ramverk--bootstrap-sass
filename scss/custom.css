@@ -5,6 +5,14 @@
   padding-top: 10rem;
 }
 
+.heading-font {
+  font-family: "Sacramento";
+}
+
+.body-font {
+  font-family: "Montserrat", sans-serif;
+}
+
 .back-to-top {
   position: fixed;
   width: 3rem;
@@ -12,6 +20,10 @@
   right: 1.875rem;
   bottom: 1.875rem;
   z-index: 9999;
+}
+
+.gradient-bg {
+  background: linear-gradient(to right, #fd7e14, #6610f2);
 }
 
 /*!
@@ -12929,20 +12941,6 @@ textarea.form-control-lg {
     display: none !important;
   }
 }
-.navbar-brand {
-  font-family: "Sacramento", sans-serif;
-  font-size: 60px;
-}
-
-.navbar {
-  background: linear-gradient(to right, #fd7e14, #6610f2);
-}
-
-.hero-section {
-  background: linear-gradient(to right, #fd7e14, #6610f2);
-  background-size: cover;
-}
-
 .referenser {
   position: relative;
   padding: 0;
