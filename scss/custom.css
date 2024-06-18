@@ -5,6 +5,10 @@
   padding-top: 10rem;
 }
 
+.pt-n1 {
+  padding-top: -2rem;
+}
+
 .heading-font {
   font-family: "Sacramento";
 }
@@ -12940,45 +12944,4 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
-}
-.referenser {
-  position: relative;
-  padding: 0;
-  background: linear-gradient(to right, #fd7e14, #6610f2);
-}
-.referenser__card {
-  background-color: #f8f9fa;
-  padding: 2rem;
-  text-align: center;
-}
-.referenser__card i {
-  font-size: 1.5rem;
-  color: rgba(253, 126, 20, 0.7);
-}
-.referenser__bild {
-  width: 8rem;
-  height: 8rem;
-  position: absolute;
-}
-.referenser__bild img {
-  border: 0.325rem solid rgba(253, 126, 20, 0.7);
-}
-.referenser__name {
-  padding-top: 6rem;
-  margin-bottom: 1rem;
-  text-align: center;
-  font-weight: 500;
-  color: #f8f9fa;
-}
-.referenser__name h3, .referenser__name .h3 {
-  padding-top: 0.8rem;
-  text-transform: capitalize;
-}
-.referenser__name p {
-  padding-bottom: 2rem;
-  text-transform: capitalize;
-}
-
-footer {
-  background: linear-gradient(to right, #fd7e14, #6610f2);
 }/*# sourceMappingURL=custom.css.map */
