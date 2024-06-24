@@ -38,39 +38,3 @@ $color-gradient-end: $secondary;
 .gradient-bg {
 	@include gradient-background($color-gradient-start, $color-gradient-end);
 }
-
-// :root,
-// [data-bs-theme="dark"] {
-// 	color-scheme: dark;
-// 	// --bs-body-color: #dee2e6;
-// 	// --bs-body-color-rgb: 222, 226, 230;
-// 	// --bs-body-bg: #212529;
-// 	// --bs-body-bg-rgb: 33, 37, 41;
-// 	// --bs-emphasis-color: #fff;
-// 	// --bs-emphasis-color-rgb: 255, 255, 255;
-// 	--bs-primary-color: $secondary;
-// 	--bs-secondary-color: $primary;
-// --bs-secondary-color: rgba(222, 226, 230, 0.75);
-// --bs-secondary-color-rgb: 222, 226, 230;
-// --bs-secondary-bg: #343a40;
-// --bs-secondary-bg-rgb: 52, 58, 64;
-// --bs-primary-text-emphasis: #feb272;
-// --bs-secondary-text-emphasis: #a370f7;
-// --bs-light-text-emphasis: #f8f9fa;
-// --bs-dark-text-emphasis: #dee2e6;
-// --bs-primary-bg-subtle: #331904;
-// --bs-secondary-bg-subtle: #140330;
-// --bs-light-bg-subtle: #343a40;
-// --bs-dark-bg-subtle: #1a1d20;
-// --bs-primary-border-subtle: #984c0c;
-// --bs-secondary-border-subtle: #3d0a91;
-// }
-
-// Color mode variables in _root.scss
-// @include color-mode(dark) {
-// 	// CSS variable overrides here...
-// 	// .element {
-// 	// 	color: var(--bs-primary-text-emphasis);
-// 	// 	background-color: var(--bs-primary-bg-subtle);
-// 	// }
-// }
