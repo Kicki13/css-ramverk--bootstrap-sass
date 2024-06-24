@@ -180,20 +180,24 @@
 		<!-- **********************************************************
             2 - Hero section
         *************************************************************** -->
+		<!-- En Hero section med ett id för att "meny-valet" skall hitta hit. Sectionen har en bakgrunds gradient-->
 		<section id="hero-section" class="hero-section gradient-bg">
 			<div class="container">
-				<!-- Centrerar innehållet -->
+				<!-- Skapar en ny rad och centrerar innehållet vertikalt -->
 				<div class="row align-items-center">
-					<!-- -->
+					<!-- En kolumn som sträcker sig över 10 delar av radens bredd på medium och större skärmar, med text vänsterställd och padding överst.-->
 					<div class="col-md-10 text-start pt-5">
+						<!-- En stor rubrik med klass för att ange storlek typsnittet och vit text, använder en anpassad font för rubriker.-->
 						<h1 class="display-1 text-white heading-font">
 							Upptäck mästaren bakom webben...
 						</h1>
 					</div>
 					<div class="row pt-3">
+						<!-- En kolumn som sträcker sig över 6 delar av radens bredd på medium och större skärmar, med text vänsterställd. -->
 						<div class="col-md-6 text-start">
 							<!-- Text vänster kolumn -->
 							<div class="text-container pt-3">
+								<!-- En paragraf med liten linjehöjd, liten display-storlek och vit text. -->
 								<p class="lh-sm display-8 text-white">
 									Stig in i den digitala världen och möt visionära webmaster, Christina.
 									Med en passion för pixlar och en fingertoppskänsla för kod är Christina
@@ -202,19 +206,21 @@
 									och funktionalitet för att skapa fängslande webbplatser som lämnar ett
 									bestående intryck.
 								</p>
-								<!-- class="btn btn-hero body-font shadow border-primary border-3 bg-body pe-1" -->
+								<!-- En länk som ser ut som en stor knapp, som leder till "Om mig"-sektionen. Den har vit bakgrund, primär färg för kanten, liten kantbredd, mellanstor text och skugga. -->
 								<a
 									href="#about-section"
 									class="btn btn-lg bg-white border-primary border-1 fs-5 shadow pe-1"
 								>
 									Vem är då denna fantastiska webmaster?
+									<!-- En ikon, som ligger i den stor vita knappen, med rund form i primär bakgrundsfärg. -->
 									<i class="bi bi-arrow-right btn btn-lg btn-primary text-white"></i>
 								</a>
 							</div>
 						</div>
+						<!-- En kolumn som sträcker sig över 6 delar av radens bredd på medium och större skärmar. -->
 						<div class="col-md-6">
 							<!-- Bild höger kolumn-->
-							<!-- Grafisk bilden är färg matchad mot sidan och hämtad från -->
+							<!-- Grafisk bilden är färg matchad mot sidan och hämtad från https://undraw.co/illustrations -->
 							<div class="image-container">
 								<img
 									src="images/illustrationer/hero.svg"
@@ -226,7 +232,7 @@
 					</div>
 				</div>
 			</div>
-			<!-- Våg-dropp mönster -->
+			<!-- Våg-formad-dropp mönster med gradent bakgrund som ger en vågformad-dropp mönster avslutning på sektionen. Hämtat från https://getwaves.io/ -->
 			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" currentColor  ??? -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
@@ -236,15 +242,18 @@
 				></path>
 			</svg>
 		</section>
+		<!-- End of 2 - Hero-section -->
 
 		<!-- **********************************************************
             3 - Work section - mitt fantastiska arbete
         *************************************************************** -->
 		<section id="work-section" class="work-section pt-6">
 			<div class="container">
+				<!-- Skapar en rad med centrerad text. -->
 				<div class="row text-center">
+					<!-- Sektionens huvudrubrik -->
 					<h1 class="display-1 heading-font">Mitt fantastiska arbete</h1>
-					<div class="heading-line"></div>
+					<!-- Kort beskrivning av sektionens innehåll med styling så som lineheight och padding -->
 					<p class="display-8 lh-base py-4">
 						Jag är stolt över att visa upp mitt arbete och de projekt jag har haft äran att
 						vara involverade i. Varje projekt representerar en unik utmaning där jag har
@@ -253,48 +262,63 @@
 				</div>
 				<!-- Filter knappar   -->
 				<!-- Filter funktion med Isotop, hämtad från https://isotope.metafizzy.co/ -->
-				<!-- Projekten är alla gjorda av mig, skärmklipp av webbsidor och den grafiska informationsfoldern. Fotografierna är skärmklipp från min sida på 500px men orginal fotografierna är fotograferade av mig. -->
+				<!-- Projekten är alla gjorda av mig, skärmklipp av där projekten ligger på webben men den grafiska informationsfoldern är bara ett skärmklipp av den digitala foldern och ligger inte ut på webben. Fotografierna är skärmklipp från min sida på https://500px.com/p/kicki?view=photos men orginalen av alla fotografierna är fotograferade av mig. -->
+				<!-- Skapar en flexbox-kolumn för filterknapparna, centrerad och med marginalbotten -->
 				<div
 					id="filters"
 					class="col d-flex justify-content-center button-group filter-button-group mb-4"
 				>
+					<!-- Knapp för att visa alla projekt -->
+					<!-- data-filter attributen används av Isotope för att filtrera projekten baserat på deras kategorierna webb, design och foto-->
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter="*">
 						Alla
 					</button>
+					<!-- Knapp för att visa endast webbprojekt -->
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".webb">
 						Webb
 					</button>
+					<!-- Knapp för att visa endast designprojekt -->
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".design">
 						Design
 					</button>
+					<!-- Knapp för att visa endast fotoprojekt -->
 					<button class="btn btn-outline-primary mx-1" type="button" data-filter=".foto">
 						Foto
 					</button>
 				</div>
 				<!-- Projekt/work lista/poster  -->
+				<!--Skapar en responsiv grid-layout för projekten med olika kolumnantal beroende på skärmstorlek och med en gap och marginalbotten.-->
 				<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 row-cols-xxl-4 g-4 mb-4 lista">
 					<!-- projekt 1   -->
 					<div class="col element-item webb">
+						<!-- I varje kolumn ligger ett kort som visar varje projekt -->
 						<div class="card h-100 shadow-sm" data-category="webb">
+							<!-- En bild som visar projektet. -->
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt1-webbplats.png"
+								src="images/projekt/projekt1-webbplats.webp"
 								alt="bild"
 							/>
+							<!-- Kortets kropp som visar titel, beskrivning och knappar-->
 							<div class="card-body">
+								<!-- Projektets titel. -->
 								<div class="card-title display-8">Webbportfolio</div>
+								<!-- En kort beskrivning av projektet. -->
 								<p class="card-text lh-sm">
 									World Wide Web, är ett system av sammankopplade hypertextdokument som nås
 									via internet.
 								</p>
+								<!-- Grupp med två knappar -->
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://webmaster.christinanasstrom.se/_wpr201/m1-jquery/index.html"
@@ -314,7 +338,7 @@
 						<div class="card h-100 shadow-sm" data-category="foto">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt3-foto.png"
+								src="images/projekt/projekt3-foto.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -324,12 +348,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://500px.com/photo/293396103/sto-med-fol-by-kicki-nasstrom"
@@ -350,7 +376,7 @@
 						<div class="card h-100 shadow-sm" data-category="foto">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt4-foto.png"
+								src="images/projekt/projekt4-foto.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -360,12 +386,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://500px.com/photo/162549335/swedens-largest-waterfall-by-kicki-nasstrom"
@@ -385,7 +413,7 @@
 						<div class="card h-100 shadow-sm" data-category="foto">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt5-foto.png"
+								src="images/projekt/projekt5-foto.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -396,12 +424,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://500px.com/photo/127550915/trick-motorcycle-racers-in-the-evening-by-kicki-nasstrom"
@@ -421,7 +451,7 @@
 						<div class="card h-100 shadow-sm" data-category="foto">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt6-foto.png"
+								src="images/projekt/projekt6-foto.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -432,12 +462,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://500px.com/photo/219045433/ford-mustang-mach-1-by-kicki-nasstrom"
@@ -457,7 +489,7 @@
 						<div class="card h-100 shadow-sm" data-category="foto">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt7-foto.png"
+								src="images/projekt/projekt7-foto.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -467,12 +499,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://500px.com/photo/266340565/anderson-by-kicki-nasstrom"
@@ -492,7 +526,7 @@
 						<div class="card h-100 shadow-sm" data-category="webb">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt2-webbplats.png"
+								src="images/projekt/projekt2-webbplats.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -503,12 +537,14 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
+										<!-- Länk-knapp för att se projektet -->
 										<a
 											class="btn btn-sm btn-primary text-white"
 											href="https://webmaster.christinanasstrom.se/_wpr201/m4-php/index.php"
@@ -528,7 +564,7 @@
 						<div class="card h-100 shadow-sm" data-category="design">
 							<img
 								class="card-img-top img-fluid"
-								src="images/projekt/projekt8-design.png"
+								src="images/projekt/projekt8-design.webp"
 								alt="bild"
 							/>
 							<div class="card-body">
@@ -538,19 +574,21 @@
 								</p>
 								<div class="d-flex justify-content-between align-items-center">
 									<div class="btn-group">
+										<!-- Knapp för projektbeskrivning inaktiverad (disabled) -->
 										<button
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 										>
 											Projektbeskrivning
 										</button>
-										<button
+										<!-- Länk-knapp för att se projektet inaktiverad -->
+										<a
 											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
 											aria-disabled="true"
 										>
 											Se projektet
-										</button>
+										</a>
 									</div>
 								</div>
 							</div>
@@ -560,20 +598,23 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of section 3 - work-section -->
 
 		<!-- **********************************************************
             4 - Service section - mina tjänster
         *************************************************************** -->
 		<section id="service-section" class="service-section pt-6">
+			<!-- Container för sektionens innehåll -->
 			<div class="container">
+				<!-- Centrerad text för rubrik -->
 				<div class="row text-center">
 					<h1 class="display-1 heading-font">Vad jag gör - Mina tjänster</h1>
-					<div class="mb-5"></div>
 				</div>
 			</div>
-			<!-- Vänster kolumn -->
+			<!-- Behållare för vänster  och höger kolumn -->
 			<div class="container">
 				<div class="row pt-2 pb-2 mt-5 mb-5">
+					<!-- Vänster kolumn -->
 					<div class="col-md-6 border-end border-2">
 						<div class="p-3">
 							<h2 class="pt-5 display-7 text-center lh-base">
@@ -608,7 +649,7 @@
 				</div>
 			</div>
 			<div class="container">
-				<!-- 1a min tjänster - webbutveckling -->
+				<!-- Mina Tjänster 1 - webbutveckling -->
 				<div class="row pt-5">
 					<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12 mt-4">
 						<div class="container">
@@ -710,6 +751,7 @@
 				</div>
 			</div>
 		</section>
+		<!-- End of section 4 - Service-section  -->
 
 		<!-- **********************************************************
             5 - Referenser section
@@ -1150,7 +1192,7 @@
 									></button>
 								</div>
 								<div class="modal-body">
-									<img src="images/om-mig/cv.png" class="img-fluid" alt="cv" />
+									<img src="images/om-mig/cv.webp" class="img-fluid" alt="cv" />
 								</div>
 								<div class="modal-footer">Mitt CV</div>
 							</div>
