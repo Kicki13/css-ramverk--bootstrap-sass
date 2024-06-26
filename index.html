@@ -64,7 +64,7 @@
 							>
 								Mer info
 							</a>
-							<ul class="dropdown-menu" aria-labelledby="dropdownMenuButtonLight">
+							<ul class="dropdown-menu">
 								<li><a class="dropdown-item" href="#service-section">Tjänster</a></li>
 								<li><a class="dropdown-item" href="#referenser-section">Referenser</a></li>
 								<li><a class="dropdown-item" href="#about-section">Om mig</a></li>
@@ -108,13 +108,7 @@
 		<!-- Kontakt formulär - Modal -->
 		<!-- Skapar en modal som kan öppnas och stängas -->
 		<!-- Kod hämtad från https://getbootstrap.com/docs/5.3/components/modal/-->
-		<div
-			class="modal fade"
-			id="myModal"
-			tabindex="-1"
-			aria-labelledby="exampleModalLabel"
-			aria-hidden="true"
-		>
+		<div class="modal fade" id="myModal" tabindex="-1" aria-hidden="true">
 			<!-- Centrerar modalen på skärmen -->
 			<div class="modal-dialog modal-dialog-centered">
 				<!-- innehållet på modalen -->
@@ -188,9 +182,9 @@
 					<!-- En kolumn som sträcker sig över 10 delar av radens bredd på medium och större skärmar, med text vänsterställd och padding överst.-->
 					<div class="col-md-10 text-start pt-5">
 						<!-- En stor rubrik med klass för att ange storlek typsnittet och vit text, använder en anpassad font för rubriker.-->
-						<h1 class="display-1 text-white heading-font">
+						<h2 class="display-1 text-white heading-font">
 							Upptäck mästaren bakom webben...
-						</h1>
+						</h2>
 					</div>
 					<div class="row pt-3">
 						<!-- En kolumn som sträcker sig över 6 delar av radens bredd på medium och större skärmar, med text vänsterställd. -->
@@ -252,7 +246,7 @@
 				<!-- Skapar en rad med centrerad text. -->
 				<div class="row text-center">
 					<!-- Sektionens huvudrubrik -->
-					<h1 class="display-1 heading-font">Mitt fantastiska arbete</h1>
+					<h2 class="display-1 heading-font">Mitt fantastiska arbete</h2>
 					<!-- Kort beskrivning av sektionens innehåll med styling så som lineheight och padding -->
 					<p class="display-8 lh-base py-4">
 						Jag är stolt över att visa upp mitt arbete och de projekt jag har haft äran att
@@ -583,9 +577,9 @@
 										</button>
 										<!-- Länk-knapp för att se projektet inaktiverad -->
 										<a
-											type="button"
 											class="btn btn-sm btn-primary text-white disabled"
-											aria-disabled="true"
+											href="#"
+											target="_blank"
 										>
 											Se projektet
 										</a>
@@ -609,7 +603,7 @@
 				<!-- Centrerad text för rubrik -->
 				<div class="row text-center">
 					<!-- Sektionens huvudrubrik -->
-					<h1 class="display-1 heading-font">Vad jag gör - Mina tjänster</h1>
+					<h2 class="display-1 heading-font">Vad jag gör - Mina tjänster</h2>
 				</div>
 			</div>
 			<!-- container för vänster och höger kolumn -->
@@ -777,6 +771,7 @@
             5 - Referenser section
         *************************************************************** -->
 		<section id="referenser-section" class="referenser">
+			<!-- Sectionen har en bakgrunds gradient -->
 			<div class="gradient-bg">
 				<!-- Våg-dropp mönster, hämtat från https://getwaves.io/ -->
 				<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
@@ -787,17 +782,19 @@
 						d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
 					></path>
 				</svg>
-
+				<!-- Container för huvudrubriken i denna section-->
 				<div class="container">
 					<div class="row text-center text-white">
-						<h1 class="display-1 heading-font pb-4">
+						<!-- Huvudrubrik för denna section -->
+						<h2 class="display-1 heading-font pb-4">
 							Referenser från mina sammarbetspartern
-						</h1>
+						</h2>
 					</div>
 				</div>
 				<div class="row align-items-center">
+					<!-- en bootstrap karusell hämtat från https://getbootstrap.com/docs/5.2/components/carousel/ -->
 					<div id="referenser" class="carousel slide" data-bs-ride="carousel">
-						<!-- Indicators/dots -->
+						<!-- Indikatorer som låter användaren navigera mellan karusellens slides -->
 						<div class="carousel-indicators">
 							<button
 								type="button"
@@ -829,9 +826,8 @@
 
 						<!-- The slideshow/carousel  https://getbootstrap.com/docs/5.3/components/carousel/-->
 						<div class="carousel-inner">
-							<!-- Karousel -- kort 1 -->
+							<!-- Karousel kort 1 -->
 							<div class="carousel-item active">
-								<!--class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center" -->
 								<div
 									class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
 								>
@@ -845,6 +841,7 @@
 														alt="kvinna 1"
 														class="card-img-bottom rounded-circle img-fluid border-2 border-black"
 													/>
+													<!--Namn & titel på personen som refererade-->
 													<div class="text-center text-white">
 														<h3 class="heading-font display-5 mt-4">
 															Sofia Andersson
@@ -858,6 +855,7 @@
 														<h5 class="card-title text-center m-4">
 															Brightside Technologies
 														</h5>
+														<!--Företagets referens-->
 														<p class="card-text text-center fst-italic lh-base m-4">
 															"Vi är oerhört nöjda med det arbete som Christina har
 															utfört för oss. Hennes förmåga att kombinera skicklig
@@ -876,7 +874,7 @@
 							</div>
 							<!-- End of kort 1 -->
 
-							<!-- Karousel -- kort 2 -- -->
+							<!-- Karousel kort 2-->
 							<div class="carousel-item">
 								<div
 									class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
@@ -924,7 +922,7 @@
 							</div>
 							<!-- End of kort 2 -->
 
-							<!-- Karousel -- kort 3 -->
+							<!-- Karousel kort 3 -->
 							<div class="carousel-item">
 								<div
 									class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
@@ -939,6 +937,7 @@
 														alt="kvinna 2"
 														class="card-img-bottom rounded-circle img-fluid border-2 border-black"
 													/>
+													<!--Namn & titel på personen som refererade-->
 													<div class="text-center text-white">
 														<h3 class="heading-font display-5 mt-4">
 															Maria Karlsson
@@ -952,6 +951,7 @@
 														<h5 class="card-title text-center m-4">
 															Creative Solutions AB
 														</h5>
+														<!--Företagets referens-->
 														<p class="card-text text-center fst-italic lh-base m-4">
 															"Vi är så tacksamma för det fantastiska arbete som
 															christina har gjort för oss. Hennes förmåga att förstå
@@ -968,7 +968,7 @@
 								</div>
 							</div>
 							<!-- End of kort 3 -->
-							<!-- Karousel -- kort 4 -->
+							<!-- Karousel kort 4 -->
 							<div class="carousel-item">
 								<div
 									class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
@@ -983,6 +983,7 @@
 														alt="man 2"
 														class="card-img-bottom rounded-circle img-fluid border-2 border-black"
 													/>
+													<!--Namn & titel på personen som refererade-->
 													<div class="text-center text-white">
 														<h3 class="heading-font display-5 mt-4">
 															Sven-Erik Johansson
@@ -996,6 +997,7 @@
 														<h5 class="card-title text-center m-4">
 															Peak Performance Consulting
 														</h5>
+														<!--Företagets referens-->
 														<p class="card-text text-center fst-italic lh-base m-4">
 															"Vi är otroligt imponerade av det arbete som Christina
 															har gjort för oss. Hennes skickliga webbutveckling,
@@ -1013,7 +1015,7 @@
 								</div>
 							</div>
 							<!-- End of kort 4 -->
-							<!-- Karousel -- kort 5 -->
+							<!-- Karousel kort 5 -->
 							<div class="carousel-item">
 								<div
 									class="row g-4 row-cols-1 row-cols-sm-2 row-cols-md-3 justify-content-center"
@@ -1028,6 +1030,7 @@
 														alt="kvinna 3"
 														class="card-img-bottom rounded-circle img-fluid border-2 border-black"
 													/>
+													<!--Namn & titel på personen som refererade-->
 													<div class="text-center text-white">
 														<h3 class="heading-font display-5 mt-4">Emma Nilsson</h3>
 														<p class="fw-light">Kommunikationsansvarig</p>
@@ -1039,6 +1042,7 @@
 														<h5 class="card-title text-center m-4">
 															BlueWave Entertainment
 														</h5>
+														<!--Företagets referens-->
 														<p class="card-text text-center fst-italic lh-base m-4">
 															"Tack vare Christina har vi fått en imponerande
 															webbplats och bildmaterial som verkligen fångar vår
@@ -1059,7 +1063,7 @@
 						</div>
 					</div>
 				</div>
-				<!-- Våg-dropp mönster -->
+				<!-- Våg-dropp mönster, hämtat från https://getwaves.io/-->
 				<!--Vilken variabel ska fill ha, för ljust/mört tema??? "#fff" "#f3f6f9" currentColor   -->
 				<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 					<path
@@ -1078,16 +1082,21 @@
 		<section id="about-section" class="about-section pt-6">
 			<div class="container">
 				<div class="row mt-5">
-					<h1 class="display-1 heading-font text-center">Vem är då jag?</h1>
+					<!-- Huvudrubrik för sektionen -->
+					<h2 class="display-1 heading-font text-center">Vem är då jag?</h2>
+					<!-- Kolumn för textinnehåll -->
 					<div class="col-md-6 display-8 lh-sm fw-light">
+						<!-- Paragraf med information om personen -->
 						<p>
 							Jag är en mångsidig individ med en passion för teknik, konst, djur och natur.
 							För närvarande befinner jag mig mitt i min utbildning till webmaster vid
 							Högskolan Väst, där jag fördjupar mig i webbutveckling och design.
 						</p>
+						<!-- Accordion används för att visa mer text vid klick -->
 						<div class="accordion" id="accordionFlushExample">
 							<div class="accordion-item border-0">
 								<h2 class="accordion-header">
+									<!-- Knapp för att visa/dölja innehållet -->
 									<button
 										class="accordion-button"
 										type="button"
@@ -1096,11 +1105,13 @@
 										aria-expanded="true"
 										aria-controls="panelsStayOpen-collapseOne"
 									>
+										<!-- Text på knappen -->
 										<span class="heading-font display-5">Läs mer...</span>
 									</button>
 								</h2>
 								<div id="panelsStayOpen-collapseOne" class="accordion-collapse collapse">
 									<div class="accordion-body bg-light">
+										<!-- Innehållet som visas när "Läs mer" har tryckts på -->
 										<p class="pt-2 display-8 lh-sm fw-light">
 											Mitt hem är beläget på landet i den vackra naturen i Jämtland, där
 											jag delar min tillvaro med min sambo och våra fyra charmiga
@@ -1125,6 +1136,7 @@
 									</div>
 								</div>
 							</div>
+							<!-- En paragraf med mer information om personens erfarenheter -->
 							<p class="mt-4 mb-6 pt-2 display-8 lh-sm fw-light">
 								Min erfarenhet inom webbprogrammering, design och fotografering sträcker sig
 								över många år, och jag har en djup förståelse för hur man skapar digitala
@@ -1134,12 +1146,15 @@
 								projekt ta form och bli verklighet.
 							</p>
 						</div>
+						<!-- Rubrik för kunskapsavsnittet -->
 						<h3 class="display-3 heading-font text-light">Kunskaper i några ämnen</h3>
+						<!-- Paragraf som förklarar kunskapslistan -->
 						<p class="display-8 pt-2 fw-light lh-sm">
 							Här är en lista över mina kunskaper. Även om procentsatserna inte ger en exakt
 							bild av min kompetens, ger de en övergripande uppfattning om mina styrkor inom
 							olika områden.
 						</p>
+						<!-- Lista över kunskaper med progress bar -->
 						<h5><i class="fas fa-check"></i> HTML 5</h5>
 						<div
 							class="progress mb-4"
@@ -1148,6 +1163,7 @@
 							aria-valuemin="0"
 							aria-valuemax="100"
 						>
+							<!-- Progress bar som visar 90% kunskap i HTML 5 -->
 							<div class="progress-bar" style="width: 90%">90%</div>
 						</div>
 
@@ -1159,6 +1175,7 @@
 							aria-valuemin="0"
 							aria-valuemax="100"
 						>
+							<!-- Progress bar som visar 80% kunskap i CSS -->
 							<div class="progress-bar" style="width: 80%">80%</div>
 						</div>
 
@@ -1170,11 +1187,14 @@
 							aria-valuemin="0"
 							aria-valuemax="100"
 						>
+							<!-- Progress bar som visar 60% kunskap i JavaScript -->
 							<div class="progress-bar" style="width: 60%">60%</div>
 						</div>
 					</div>
-					<!-- Höger sida -->
+					<!-- Höger kolumn med en bild -->
 					<div class="col-md-6">
+						<!-- Porträtt-bild med klass för att göra den responsiv och skuggning -->
+						<!-- Bilden är Ai-genererad -->
 						<img
 							src="images/portratt/webmaster-400x400.webp"
 							alt="porträtt"
@@ -1183,8 +1203,10 @@
 					</div>
 				</div>
 			</div>
+			<!-- Rad med 2st CV-knappar -->
 			<div class="row mt-5 text-center">
 				<div class="col-12">
+					<!-- Knapp för att öppna modal för att läsa CV innan nedladdning -->
 					<button
 						type="button"
 						class="btn btn-primary text-white btn-lg px-5 mx-3 my-2"
@@ -1193,17 +1215,12 @@
 					>
 						Se mitt CV
 					</button>
-					<!-- Modal -->
-					<div
-						class="modal fade"
-						id="cvModal"
-						tabindex="-1"
-						aria-labelledby="cvModalLabel"
-						aria-hidden="true"
-					>
+					<!-- Modal för att visa CV-->
+					<div class="modal fade" id="cvModal" tabindex="-1" aria-hidden="true">
 						<div class="modal-dialog modal-xl">
 							<div class="modal-content">
 								<div class="modal-header">
+									<!-- Knapp för att stänga modalen -->
 									<button
 										type="button"
 										class="btn-close"
@@ -1211,6 +1228,7 @@
 										aria-label="Close"
 									></button>
 								</div>
+								<!-- Modalens innehåll -->
 								<div class="modal-body">
 									<img src="images/om-mig/cv.webp" class="img-fluid" alt="cv" />
 								</div>
@@ -1218,6 +1236,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- knapp-länk för att ladda ner CV -->
 					<a href="#" class="btn btn-outline-primary btn-lg px-5 mx-3 my-2"
 						>Ladda ner mitt CV (pdf)</a
 					>
@@ -1232,16 +1251,22 @@
 		<section id="pris-section" class="pris-section pt-6 pb-6">
 			<div class="container">
 				<div class="row text-center mt-5">
-					<h1 class="display-1 heading-font">Priser på mina tjänster</h1>
+					<!-- Rubrik för sektionen -->
+					<h2 class="display-1 heading-font">Priser på mina tjänster</h2>
 					<div class="row mt-5">
 						<div class="col-md-4">
-							<!-- Pris kort 1 -->
+							<!-- Pris kort 1 - Silverpaketet -->
+							<!--Ett kort med rundade hörn, skuggning, och silver bakgrund-->
 							<div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2 bg-silver">
 								<div class="card-body">
+									<!-- Rubrik för Silverpaket -->
 									<div class="heading-line heading-font display-5">Silverpaket</div>
+									<!-- Beskrivning för vilken paketet är lämpligt för-->
 									<p class="text-muted">för dig som är lite mitt i mellan</p>
+									<!-- Pris på paketet -->
 									<h2 class="fs-1 fw-bold mt-4 mb-5">5 000 kr</h2>
 									<ul class="list-group list-group-flush fs-5 mb-5">
+										<!-- Lista med fördelar -->
 										<li class="list-group-item border-0 text-bg-silver">
 											<i class="bi bi-check2"></i> text text
 										</li>
@@ -1256,6 +1281,7 @@
 										</li>
 									</ul>
 									<div class="d-grid">
+										<!-- Knapp för att beställa Silverpaket -->
 										<button class="btn btn-silver rounded-4 mt-5 mb-4 shadow-lg">
 											<span class="heading-font display-7">Beställ Silverpaketet</span>
 										</button>
@@ -1263,19 +1289,24 @@
 								</div>
 							</div>
 						</div>
-						<!-- End of Pris kort 1 -->
+						<!-- End of Pris kort 1 Silverpaketet-->
 
+						<!-- 2a kolumnen-->
 						<div class="col-md-4">
-							<!-- Pris kort 2 -->
+							<!-- Pris kort 2  Guldpaketet-->
 							<div
 								class="card text-bg-primary rounded-4 shadow-lg border-0 mb-5 vstack gap-2 bg-guld"
 							>
 								<div class="card-body">
+									<!-- Rubrik för Guldpaket -->
 									<div class="heading-line heading-font display-5 text-white">
 										Guldpaket
 									</div>
-									<p class="text-white">för dig som vill ha full service</p>
+									<!-- Beskrivning för vilken paketet är lämpligt för-->
+									<p class="text-muted">för dig som vill ha full service</p>
+									<!-- Pris på paketet -->
 									<h2 class="fs-1 fw-bold mt-4 mb-5 text-white">10 000 kr</h2>
+									<!-- Lista med fördelar -->
 									<ul class="list-group list-group-flush fs-5 mb-5">
 										<li class="list-group-item border-0 text-bg-guld">
 											<i class="bi bi-check2 text-white"></i> text text
@@ -1291,6 +1322,7 @@
 										</li>
 									</ul>
 									<div class="d-grid">
+										<!-- Knapp för att beställa Guldpaket -->
 										<button class="btn btn-guld rounded-4 text-white mt-5 mb-4 shadow-lg">
 											<span class="heading-font display-7">Beställ Guldpaketet</span>
 										</button>
@@ -1298,15 +1330,21 @@
 								</div>
 							</div>
 						</div>
-						<!-- End of Pris kort 2 -->
+						<!-- End of Pris kort 2 Guldpaketet-->
+
+						<!-- 3e kolumnen-->
 						<div class="col-md-4">
-							<!-- Pris kort 3 -->
+							<!-- Pris kort 3 Bronspaketet-->
 							<div class="card rounded-4 shadow-lg border-0 mb-5 vstack gap-2 bg-brons">
 								<div class="card-body">
+									<!-- Rubrik för Bronspaket -->
 									<div class="heading-line heading-font display-5">Bronspaket</div>
+									<!-- Beskrivning för vilken paketet är lämpligt för-->
 									<p class="text-muted">för dig som vill sköta allt själv</p>
+									<!-- Pris på paketet -->
 									<h2 class="fs-1 fw-bold mt-4 mb-5">2 500 kr</h2>
 									<ul class="list-group list-group-flush fs-5 mb-5">
+										<!-- Lista med fördelar -->
 										<li class="list-group-item border-0 text-bg-brons">
 											<i class="bi bi-check2"></i> text text
 										</li>
@@ -1321,6 +1359,7 @@
 										</li>
 									</ul>
 									<div class="d-grid">
+										<!-- Knapp för att beställa Bronspaket -->
 										<button class="btn btn-brons rounded-4 mt-5 mb-4 shadow-lg">
 											<span class="heading-font display-7">Beställ Bronspaket</span>
 										</button>
@@ -1328,7 +1367,7 @@
 								</div>
 							</div>
 						</div>
-						<!-- End of Pris kort 3 -->
+						<!-- End of Pris kort 3 Bronspaketet-->
 					</div>
 				</div>
 			</div>
@@ -1341,15 +1380,19 @@
 		<section id="blogg-section" class="blogg-section pt-6">
 			<div class="container">
 				<div class="row text-center mt-5">
-					<h1 class="display-1 heading-font">Senast på bloggen</h1>
+					<!-- Huvudrubrik för sektionen -->
+					<h2 class="display-1 heading-font">Senast på bloggen</h2>
 				</div>
 			</div>
+			<!-- Container för blogginlägg med overflow-hidden för att dölja innehåll som sticker ut -->
 			<div class="container overflow-hidden">
 				<div class="row gy-4 gy-md-5 gx-xl-6 gy-xl-6 gx-xxl-9 gy-xxl-9">
 					<!-- Bloggpost 1-->
 					<div class="col-12 col-lg-4">
 						<div class="card border-0 bg-transparent">
+							<!-- Bild för blogginlägget, med lazy loading för att förbättra laddningstider -->
 							<div class="card-img-top">
+								<!-- Bild Ai-genererad -->
 								<img
 									class="img-fluid rounded-top-4"
 									loading="lazy"
@@ -1360,6 +1403,7 @@
 						</div>
 						<div class="card-body m-0 p-0">
 							<div class="mb-3">
+								<!-- Kategori för blogginlägget -->
 								<ul class="list-unstyled d-flex mb-3">
 									<li>
 										<a
@@ -1369,11 +1413,13 @@
 										>
 									</li>
 								</ul>
+								<!-- Titel för blogginlägget -->
 								<h2 class="card-title h4 m-0">
 									<a class="text-decoration-none display-5 heading-font text-body" href="#"
 										>15 bästa nya typsnitt 2024</a
 									>
 								</h2>
+								<!-- Kort beskrivning av blogginlägget -->
 								<p class="card-text mt-2 lh-sm">
 									Med en värld som ständigt strävar efter att kombinera estetik och
 									funktionalitet, spelar typsnitt en avgörande roll i designlandskapet. Så
@@ -1382,10 +1428,12 @@
 								</p>
 							</div>
 						</div>
+						<!-- Metadata för blogginlägget: författare, datum, och antal kommentarer -->
 						<div class="card-footer border-0 bg-transparent p-0 m-0">
 							<ul class="list-unstyled d-flex align-items-center m-0">
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<div class="ms-2 fs-7">
+										<!-- Samma bild som ovan fast i mindre storlek, Ai-genererad-->
 										<img
 											src="images/portratt/webmaster-40x40.webp"
 											alt="författare"
@@ -1393,17 +1441,20 @@
 										/>
 									</div>
 								</li>
+								<!-- författare -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7">Christina</span>
 								</li>
 								<li><span class="px-3">&bull;</span></li>
+								<!-- datum -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"
 										><i class="bi bi-calendar3"></i> 11 maj 2024
 									</span>
 								</li>
 								<li><span class="px-3">&bull;</span></li>
-								<li class="fs-7 text-decoration-none d-flex align-items-center" href="#!">
+								<!-- antal kommentarer -->
+								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 7 </span>
 								</li>
 							</ul>
@@ -1414,7 +1465,9 @@
 					<!-- Bloggpost 2-->
 					<div class="col-12 col-lg-4">
 						<div class="card border-0 bg-transparent">
+							<!-- Bild för blogginlägget, med lazy loading för att förbättra laddningstider -->
 							<div class="card-img-top">
+								<!-- Bild Ai-genererad -->
 								<img
 									class="img-fluid rounded-top-4"
 									loading="lazy"
@@ -1426,6 +1479,7 @@
 
 						<div class="card-body m-0 p-0">
 							<div class="mb-3">
+								<!-- Kategori för blogginlägget -->
 								<ul class="list-unstyled d-flex mb-3">
 									<li>
 										<a
@@ -1436,10 +1490,12 @@
 									</li>
 								</ul>
 								<h2 class="card-title h4 m-0">
+									<!-- Titel för blogginlägget -->
 									<a class="text-decoration-none display-5 heading-font text-body" href="#"
 										>Vad kostar en webbutvecklare</a
 									>
 								</h2>
+								<!-- Kort beskrivning av blogginlägget -->
 								<p class="card-text mt-2 lh-sm">
 									Att utforska kostnaden för en webbutvecklare är som att öppna en låda med
 									olika priser och möjligheter. Precis som med alla professionella tjänster
@@ -1450,10 +1506,12 @@
 								</p>
 							</div>
 						</div>
+						<!-- Metadata för blogginlägget: författare, datum, och antal kommentarer -->
 						<div class="card-footer border-0 bg-transparent p-0 m-0">
 							<ul class="list-unstyled d-flex align-items-center m-0">
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<div class="ms-2 fs-7">
+										<!-- Samma bild som ovan fast i mindre storlek, Ai-genererad-->
 										<img
 											src="images/portratt/webmaster-40x40.webp"
 											alt="författare"
@@ -1461,17 +1519,20 @@
 										/>
 									</div>
 								</li>
+								<!-- författare -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7">Christina</span>
 								</li>
 								<li><span class="px-3">&bull;</span></li>
+								<!-- datum -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"
 										><i class="bi bi-calendar3"></i> 2 maj 2024
 									</span>
 								</li>
 								<li><span class="px-3">&bull;</span></li>
-								<li class="fs-7 text-decoration-none d-flex align-items-center" href="#!">
+								<!-- antal kommentarer -->
+								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 3 </span>
 								</li>
 							</ul>
@@ -1482,7 +1543,9 @@
 					<!-- Bloggpost 3-->
 					<div class="col-12 col-lg-4">
 						<div class="card border-0 bg-transparent">
+							<!-- Bild för blogginlägget, med lazy loading för att förbättra laddningstider -->
 							<div class="card-img-top">
+								<!-- Bild Ai-genererad -->
 								<img
 									class="img-fluid rounded-top-4"
 									loading="lazy"
@@ -1494,6 +1557,7 @@
 
 						<div class="card-body m-0 p-0">
 							<div class="mb-3">
+								<!-- Kategori för blogginlägget -->
 								<ul class="list-unstyled d-flex mb-3">
 									<li>
 										<a
@@ -1503,11 +1567,13 @@
 										>
 									</li>
 								</ul>
+								<!-- Titel för blogginlägget -->
 								<h2 class="card-title h4 m-0">
 									<a class="text-decoration-none display-5 heading-font text-body" href="#"
 										>Behöver du som företag en logotyp eller inte?</a
 									>
 								</h2>
+								<!-- Kort beskrivning av blogginlägget -->
 								<p class="card-text mt-2 lh-sm">
 									Frågan om företag behöver en logotyp eller inte är som att öppna upp för
 									en diskussion om företagets själ och synlighet i den konkurrensutsatta
@@ -1517,10 +1583,12 @@
 								</p>
 							</div>
 						</div>
+						<!-- Metadata för blogginlägget: författare, datum, och antal kommentarer -->
 						<div class="card-footer border-0 bg-transparent p-0 m-0">
 							<ul class="list-unstyled d-flex align-items-center m-0">
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<div class="ms-2 fs-7">
+										<!-- Samma bild som ovan fast i mindre storlek, Ai-genererad-->
 										<img
 											src="images/portratt/webmaster-40x40.webp"
 											alt="författare"
@@ -1528,17 +1596,20 @@
 										/>
 									</div>
 								</li>
+								<!-- författare -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7">Christina</span>
 								</li>
 								<li><span class="px-3">&bull;</span></li>
+								<!-- datum -->
 								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"
 										><i class="bi bi-calendar3"></i> 5 maj 2024
 									</span>
 								</li>
+								<!-- antal kommentarer -->
 								<li><span class="px-3">&bull;</span></li>
-								<li class="fs-7 text-decoration-none d-flex align-items-center" href="#">
+								<li class="fs-7 text-decoration-none d-flex align-items-center">
 									<span class="ms-2 fs-7"><i class="bi bi-chat-dots"></i> 2 </span>
 								</li>
 							</ul>
@@ -1553,7 +1624,10 @@
 		<!-- **********************************************************
            9 - Footer section
         *************************************************************** -->
+		<!-- Footer med en bakgrunds gradient-->
 		<footer id="footer-section" class="footer-section gradient-bg">
+			<!-- Våg-formad mönster med gradent bakgrund. Hämtat från https://getwaves.io/ -->
+			<!--Vilken variabel ska fill ha, för ljust/mört tema??? "white" currentColor  ??? -->
 			<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
 				<path
 					fill="white"
@@ -1561,8 +1635,10 @@
 					d="M0,96L48,128C96,160,192,224,288,213.3C384,203,480,117,576,117.3C672,117,768,203,864,202.7C960,203,1056,117,1152,117.3C1248,117,1344,203,1392,245.3L1440,288L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"
 				></path>
 			</svg>
+			<!-- Container för footer-innehåll -->
 			<div class="container">
 				<div class="row">
+					<!-- Kolumn för footertitel -->
 					<div class="col-md-3">
 						<div class="row">
 							<h2 class="footer-heading display-3 heading-font text-white">
@@ -1570,10 +1646,12 @@
 							</h2>
 						</div>
 					</div>
+					<!-- Kolumn för navigationslänkar -->
 					<div class="col-md-4">
 						<div class="row">
 							<ul class="list-unstyled ps-3 pt-5">
 								<li>
+									<!-- Länk till webbsidan -->
 									<a
 										href="#"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1581,6 +1659,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till arbeten sektionen-->
 									<a
 										href="#work-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1588,6 +1667,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till tjänster sektionen-->
 									<a
 										href="#service-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1595,6 +1675,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till referenser sektionen-->
 									<a
 										href="#refernser-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1602,6 +1683,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till "Om mig" sektionen -->
 									<a
 										href="about-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1609,6 +1691,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till pris sektionen -->
 									<a
 										href="#pris-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1616,6 +1699,7 @@
 									>
 								</li>
 								<li>
+									<!-- Länk till blogg sektionen-->
 									<a
 										href="#blogg-section"
 										class="py-1 d-block text-white text-decoration-none text-center fw-semibold text-uppercase"
@@ -1625,15 +1709,17 @@
 							</ul>
 						</div>
 					</div>
+					<!-- Kolumn för sociala medier och nyhetsbrev -->
 					<div class="col-md-5">
 						<div class="row justify-content-end">
 							<div class="col-md-12 col-lg-11 mb-md-0 mb-3">
 								<h2 class="display-5 heading-font text-white">
 									Följ mig på sociala medier...
 								</h2>
+								<!-- Lista med ikoner för sociala medier -->
 								<ul class="list-unstyled p-0 d-flex flex-row pt-2">
 									<li class="social-ikon px-1">
-										<!-- link-light rounded-circle style="font-size: 2rem"  p-3-->
+										<!-- GitHub ikon -->
 										<a
 											class="btn btn-lg btn-primary shadow"
 											href="https://github.com/Kicki13"
@@ -1642,6 +1728,7 @@
 										></a>
 									</li>
 									<li class="social-ikon px-1">
+										<!-- LinkedIn ikon -->
 										<a
 											class="btn btn-primary btn-lg shadow"
 											href="https://www.linkedin.com/in/christina-nasstrom-63a8406b/"
@@ -1650,6 +1737,7 @@
 										></a>
 									</li>
 									<li class="social-ikon px-1">
+										<!-- Instagram ikon -->
 										<a
 											class="btn btn-primary btn-lg shadow"
 											href="https://www.instagram.com/kicki133/"
@@ -1659,6 +1747,7 @@
 									</li>
 								</ul>
 								<h2 class="display-5 heading-font text-white mt-6">Nyhetsbrev ?</h2>
+								<!-- Formulär för nyhetsbrevsprenumeration -->
 								<form action="#" class="subscribe-form">
 									<div class="form-group d-flex">
 										<input
@@ -1678,6 +1767,7 @@
 							</div>
 						</div>
 					</div>
+					<!-- Copyright och kreditering -->
 					<div class="d-flex flex-column flex-sm-row justify-content-center border-top my-4">
 						<p class="mt-2 text-white">
 							&copy; 2024 Alla rättigheter reserverade | Denna webbsida är gjord med
