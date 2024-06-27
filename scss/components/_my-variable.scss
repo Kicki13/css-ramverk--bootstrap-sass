@@ -1,3 +1,5 @@
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
+
 // Mina variabler
 
 // Spacers
@@ -14,8 +16,8 @@ $spacers: (
 	8: $spacer * 12,
 ) !default;
 
-$image-hover-overlay-transition: all 0.3s ease-in-out;
-
 .pt-10 {
 	padding-top: 10rem;
 }
+
+$image-hover-overlay-transition: all 0.3s ease-in-out;

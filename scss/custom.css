@@ -1,10 +1,12 @@
 @charset "UTF-8";
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sacramento&display=swap");
 @import "../node_modules/bootstrap-icons/font/bootstrap-icons.min.css";
 .pt-10 {
   padding-top: 10rem;
 }
 
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
 .heading-font {
   font-family: "Sacramento";
 }
@@ -13,6 +15,8 @@
   font-family: "Montserrat", sans-serif;
 }
 
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
 .back-to-top {
   position: fixed;
   width: 3rem;
@@ -22,6 +26,7 @@
   z-index: 9999;
 }
 
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
 .gradient-bg {
   background: linear-gradient(to right, #fd7e14, #6610f2);
 }

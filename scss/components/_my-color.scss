@@ -1,16 +1,20 @@
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
+
 //Mina färger
-$primary: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
-$secondary: #6610f2; //Indigo #6610f2 var(--bs-indigo)
+$orange: #fd7e14; //--bs-orange #fd7e14 var(--bs-orange)
+$indigo: #6610f2; //Indigo #6610f2 var(--bs-indigo)
 $guld: #d4af37;
 $silver: #c0c0c0;
 $brons: #cd7f32;
 
+// Lägger in mina färg val i färgtemat
 $theme-colors: (
-	"primary": $primary,
-	"secondary": $secondary,
+	"primary": $orange,
+	"secondary": $indigo,
 );
 
 // Create your own map
+// Lägger in mina färger som inte finns i bootstraps färger i färgtemat
 $custom-colors: (
 	"guld": $guld,
 	"silver": $silver,
@@ -20,6 +24,7 @@ $custom-colors: (
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+// Färger som skall användas vid darkt tema
 .custom-element {
 	@include color-scheme(dark) {
 		// Insert dark mode styles here
@@ -31,7 +36,7 @@ $theme-colors: map-merge($theme-colors, $custom-colors);
 	}
 }
 
-//
+// Färger som skall användas i gradienten
 $color-gradient-start: $primary;
 $color-gradient-end: $secondary;
 

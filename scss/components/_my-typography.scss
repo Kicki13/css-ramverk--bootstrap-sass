@@ -1,3 +1,5 @@
+/* Kod skriven av Christina Näsström för examinationsuppgift 3 i avancerad webbutveckling med html och css, projektet färdigt den 2024-06-27 */
+
 // -- Mina typsnitt --
 
 // Google typsnitt -- Sacramento och Montserrat
@@ -7,15 +9,18 @@ $heading-font-family: "Sacramento";
 $body-font-family: "Montserrat", sans-serif;
 $font-family-sans-serif: "Montserrat", sans-serif;
 
+// Rubrik typsnitt
 .heading-font {
 	font-family: $heading-font-family;
 }
 
+// Brödtext typsnitt
 .body-font {
 	font-family: $body-font-family;
 }
 
-// scss-docs-start display-headings
+// Storlek på typsnitt
+// Ändrad och utökad typsnitts storlek
 $display-font-sizes: (
 	1: 5rem,
 	2: 4.5rem,
@@ -28,6 +33,7 @@ $display-font-sizes: (
 ) !default;
 
 //Line height
+// Ändring  av radhöjden
 $line-height-sm: 1.7;
 $line-height-base: 2;
 $line-height-lg: 2.8;
